@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.4.3)  10 JUL 2020 15:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.4.3)  10 JUL 2020 15:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -313,34 +313,22 @@ Package pdftex.def Info: tex/titlepage/titlepage.pdf, page1 used on input line 1
 
 
 
- <./tex/titlepage/titlepage.pdf{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}>] (./tex/abstract/abstract.tex
-Overfull \hbox (0.16095pt too wide) in paragraph at lines 2--2
-\OT1/cmr/m/n/12 Lorem ip-sum do-lor sit amet, con-sectetuer adip-isc-ing elit. Ut pu-rus elit, vestibu-
- []
-
-
-./tex/abstract/abstract.tex:3: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \\[1cm]
-           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[2
+ <./tex/titlepage/titlepage.pdf{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}>] (./tex/abstract/abstract.tex [2
 
 
 
-]) (./main.toc)
+]) (./main.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+)
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
  [2
-
 
 
 ] (./tex/introduction/introduction.tex
@@ -349,15 +337,15 @@ chapter 1.
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 5772 strings out of 493013
- 95250 string characters out of 6136994
- 367568 words of memory out of 5000000
- 9223 multiletter control sequences out of 15000+600000
- 5140 words of font info for 19 fonts, out of 8000000 for 9000
+ 5793 strings out of 493013
+ 95507 string characters out of 6136994
+ 367580 words of memory out of 5000000
+ 9237 multiletter control sequences out of 15000+600000
+ 7872 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,18n,66p,8817b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,18n,66p,8817b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on main.pdf (4 pages, 88178 bytes).
+Output written on main.pdf (4 pages, 87135 bytes).
 PDF statistics:
  66 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream
