@@ -498,9 +498,9 @@ class kg_construction(object):
                 #for element in [" ".join(filter(None,item)) for item in self.data[item]]:
                 for element in [item for item in self.data[item]]:
                     if "date" in mapping_dict[item][1].values():
-                        object = "'{}'{}".format(element,xsd_type("date"))
+                        object = "'{}'{}".format(element[0],xsd_type("date"))
                     elif "http" in element:
-                        object = triple_format(element)
+                        object = triple_format(element)+"."
                     elif "decimal" in mapping_dict[item][1].values():
                         if "%" == element[0] or element[2] == "percentage":
                             object = BNode().n3()
