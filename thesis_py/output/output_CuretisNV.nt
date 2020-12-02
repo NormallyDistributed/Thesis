@@ -1,0 +1,25 @@
+<http://example.org/entity/#CuretisN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'Curetis N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol> 'CURE'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> 'Euronext Amsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> 'EuronextBrussels'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> <http://www.wikidata.org/entity/Q478720>.
+<http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> <http://www.wikidata.org/entity/Q1146518>.
+<http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q55>.
+<http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/Q748250> 'not issued a profit forecast.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber> 'NL0011509294'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/Q1166072> 'public offering'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/Q1166072> 'pri-vate placement'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/Q1337875> 'The Company may be classified as a passive foreign investment company for US federal income tax purposes,which could subject US investors in the Shares to significant adverse tax consequences.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/Q192907> '2015-06-30'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/Q192907> 'Curetis AGs unaudited interim condensed financial statementsas of 30 June 2015 and for the six months ended 30 June 2015 and 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> <http://www.wikidata.org/entity/Q176831>.
+<http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/Q8148> 'pharmaceutical'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/Q8148> <http://www.wikidata.org/entity/Q7180753>.
+<http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/Q740419> 'for the years ended 31 December2014, 2013 and 2012;'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/Q192907> 'the audited financial statements of Curetis AG under IFRS as of and for the years ended 31 December2014, 2013 and 2012;'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/Auditor> 'PricewaterhouseCoopers Aktiengesellschaft Wirtschaftsprüfungsgesellschaft'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2015-10-27'^^<https://www.w3.org/2001/XMLSchema#date>.

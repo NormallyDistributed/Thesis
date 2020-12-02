@@ -1,0 +1,77 @@
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q1166072> 'PUBLIC OFFERING'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> 'Frankfurt Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> 'Frankfurt Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> <http://www.wikidata.org/entity/Q151139>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <http://www.w3.org/2000/01/rdf-schema#label> 'DWS Group GmbH & Co. KGaA'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> <http://www.wikidata.org/entity/Q183>.
+_:Na544633369e3462987cdb175581bfeb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '30.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Na544633369e3462987cdb175581bfeb2 <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency> <https://www.wikidata.org/entity/Q4916>.
+_:Na544633369e3462987cdb175581bfeb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> '30.00 to €36.00€€'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Na544633369e3462987cdb175581bfeb2.
+_:Nc01a913eec5a4c17a9cd88fc144793a1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '36.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Nc01a913eec5a4c17a9cd88fc144793a1 <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency> <https://www.wikidata.org/entity/Q4916>.
+_:Nc01a913eec5a4c17a9cd88fc144793a1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> '30.00 to €36.00€€'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nc01a913eec5a4c17a9cd88fc144793a1.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber> 'DE000DWS1007'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber> <http://www.wikidata.org/entity/Q1156210>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol> 'DWS'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'Deutsche Bank AG'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> <http://www.wikidata.org/entity/Q66048>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2018-03-13'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q183>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q192907> 'audited combinedfinancial statements as of and for the fiscal years endedDecember 31, 2017, 2016 and 2015'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> <http://www.wikidata.org/entity/Q176831>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q740419> 'for the fiscal years endedDecember 31, 2017, 2016 and 2015'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/Auditor> 'KPMGAktiengesellschaftWirtschaftsprüfungsgesellschaft'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q330153> 'Assets under Management (AuM)'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q330153> 'Net flows'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q330153> 'Management Fee Margin'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q330153> 'Adjusted Revenues'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q330153> 'Adjusted Costs'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q330153> 'Cost-Income Ratio (CIR)'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q330153> 'Adjusted Cost-Income Ratio'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q330153> 'Adjusted Profit before Tax'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q330153> <http://www.wikidata.org/entity/Q741435>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q330153> 'Profit Before Tax (PBT) has been calculated based on operating result. Adjusted PBT is calculated by adjusting PBT toaccount for the impact of the revenue and cost adjustment items as explained under footnotes (4) and (5) above. Areconciliation of Adjusted PBT to the audited financial result is presented in the table below:'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q2481549> 'No pro forma financial information has beenprepared'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q748250> 'No profit forecast or estimate is beingpresented'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q740419> 'without qualification'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/CIV/Funds/CIV/InvestmentStrategy> 'The Company will not receive any proceeds of this Offering(as defined below in E.3).'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P12nM'^^<https://www.w3.org/2001/XMLSchema#duration>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q1337875> 'The Company’s ability to pay dividends and make other capital distributionsdepends, among other things, on its financial condition and results ofoperations.'^^<http://www.w3.org/2001/XMLSchema#string>.
+_:Nd7ed553ddaee42fb9da26d0554f83b1b <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1650000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Nd7ed553ddaee42fb9da26d0554f83b1b <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency> <https://www.wikidata.org/entity/Q4916>.
+_:Nd7ed553ddaee42fb9da26d0554f83b1b <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> '1,650 million€'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q850210> _:Nd7ed553ddaee42fb9da26d0554f83b1b.
+_:N733ece70ad434cff817553e888a4357a <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1598000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N733ece70ad434cff817553e888a4357a <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency> <https://www.wikidata.org/entity/Q4916>.
+_:N733ece70ad434cff817553e888a4357a <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> '1,598 million€'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q850210> _:N733ece70ad434cff817553e888a4357a.
+_:Ne4de62f28f4644ec91bb77f8a957f75e <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '52000000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Ne4de62f28f4644ec91bb77f8a957f75e <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency> <https://www.wikidata.org/entity/Q4916>.
+_:Ne4de62f28f4644ec91bb77f8a957f75e <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> '52 million€'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q185142> _:Ne4de62f28f4644ec91bb77f8a957f75e.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/ProfitObjectiveProfitObjective> 'The Issuer intends to list its shares on the regulated market segment (regulierter Markt) of theFrankfurt Stock Exchange (Prime Standard) to achieve better access to the capital markets andto further support the evolution of the Company.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q1166072> 'The Issuer and the Selling Shareholder believe the listing will provide a number of benefits tothe Group, including an enhanced external profile and improved brand recognition, moreattractive and liquid shares that can be used for incentive models to attract and retain talentand provide share compensation, and increased flexibility and ability to further support anddevelop the asset management business through organic growth and selected bolt-onacquisitions.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Dividend> 'As referenced in 7.1 above, any determination to pay dividends will be made in accordancewith applicable laws, and will depend upon, among other factors, the Company’s results ofoperations, distributable reserves under HGB, financial condition, contractual restrictions andcapital requirements. Please see 1.5.10 for risks relating to the Company’s ability to paydividends.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/LoanProducts/WorkingCapitalPurpose> 'The Issuer is of the opinion that DWS Group is in a position to meet the payment obligationsthat become due within at least the next twelve months from the date of this prospectus.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q192907> 'single reportable segment'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/isAffectedBy> 'Foreign Currency Fluctuations'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <http://www.omg.org/techprocess/ab/SpecificationMetadata/hasDescription> 'DWS is a global asset manager with €700 billion of assets under management (“AuM”; as of€December 31, 2017) and a diverse offering that spans traditional active and passive strategies,as well as alternatives and bespoke solutions. We believe the business is positioned to delivershareholder value through revenue growth, cost discipline, and dividend distributions.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q8148> 'asset manager'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://wikidata.org/entity/Q963465> 'DWS is positioned to deliver shareholder value through revenue growth, costdiscipline and dividend distribution.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/InvestmentObjectiveBusinessStrategy> 'Deploy growth capital in a disciplined way.'^^<http://www.w3.org/2001/XMLSchema#string>.
+_:N05656c9780644425914fb20025af0ad2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1.5'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N05656c9780644425914fb20025af0ad2 <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
+_:N05656c9780644425914fb20025af0ad2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> '1.5%'.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N05656c9780644425914fb20025af0ad2.
+_:Ncb384eff80c24a8f9aa53dcd06d2f5f3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Ncb384eff80c24a8f9aa53dcd06d2f5f3 <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
+_:Ncb384eff80c24a8f9aa53dcd06d2f5f3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> '1%'.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:Ncb384eff80c24a8f9aa53dcd06d2f5f3.
+<http://example.org/entity/#DWSGroupGmbH&Co.KGaA> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> 'German generally accepted standards for the audit offinancial statements'^^<http://www.w3.org/2001/XMLSchema#string>.

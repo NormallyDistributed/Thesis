@@ -1,0 +1,35 @@
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q1166072> 'admission to trading'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> 'Frankfurt Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> <http://www.wikidata.org/entity/Q151139>.
+<http://example.org/entity/#JOSTWerkeAG> <http://www.w3.org/2000/01/rdf-schema#label> 'JOST Werke AG'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber> 'DE000JST4000'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol> 'JST'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2017-07-14'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#JOSTWerkeAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q183>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q8148> 'the truck and trailer industry'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q740419> 'as of and for the years ended December 31, 2016, December 31, 2015 andDecember 31, 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q192907> 'audited consolidatedfinancial statements as of and for the years ended December 31, 2016, December 31, 2015 andDecember 31, 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q192907> '2017-03-31'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q192907> 'unaudited condensed consolidated interim financial statements as of and for thethree-month period ended March 31, 2017 (including comparative financial information as of and for thethree-month period ended March 31, 2016)'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> <http://www.wikidata.org/entity/Q176831>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q748250> 'No profit forecast or estimate is being presentedby the Company.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q1337875> 'The Company will incur additional costs as a listed company.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q330153> 'Adjusted EBITDA Margin'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q330153> 'Adjusted Interest Expense'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q330153> 'Net Financial Debt'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q330153> 'Capital Expenditure'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q330153> 'Adjusted Free Cash Flow'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q330153> 'Cash Conversion'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q330153> <http://www.wikidata.org/entity/Q1499557>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q330153> 'Adjusted EBITDA Margin is defined as Adjusted EBITDA divided by sales revenues.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q330153> 'Adjusted Interest Expense is defined as interest expense (excluding net interest expenses in connection with theshareholder loan) plus interest income plus realized and unrealized currency gains less realized and unrealized currencylosses. Both interest expense and interest income exclude shareholder loan revaluation.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q330153> 'Net Working Capital'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q330153> 'Net Working Capital is defined as trade receivables plus inventories less trade payables.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q330153> 'Net Financial Debt is defined as current and non-current interest bearing loans and borrowings less cash and cashequivalents.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q330153> 'Capital Expenditure is defined as payments to acquire intangible assets plus payments to acquire property, plant andequipment.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q330153> 'Adjusted Free Cash Flow is defined as Adjusted EBITDA minus Capital Expenditure.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q330153> 'Cash Conversion is defined as Adjusted Free Cash Flow divided by Adjusted EBITDA.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#JOSTWerkeAG> <https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/Auditor> 'PricewaterhouseCoopers GmbHWirtschaftsprüfungsgesellschaft'^^<http://www.w3.org/2001/XMLSchema#string>.

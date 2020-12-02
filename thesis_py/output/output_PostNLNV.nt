@@ -1,0 +1,38 @@
+<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2017-11-17'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#PostNLN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'PostNL N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q55>.
+<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> <http://www.wikidata.org/entity/Q55>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q1166072> 'fixed rate Notes'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> 'Euronext Amsterdam N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> <http://www.wikidata.org/entity/Q478720>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q1337875> 'Credit rating'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'Citibank, N.A., London Branch'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/CIV/Funds/CIV/InvestmentStrategy> 'The net proceeds of the issue of the Securities will be used for general corporate purposes including theredemption of existing debt.The total expenses related to the admission to trading are estimated to amount to approximately €7,200.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber> 'XS1709433509'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q192907> 'fourth reporting segment'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q1166072> 'UPU'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/InvestmentObjectiveBusinessStrategy> 'nternational'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q192907> 'EBITDAoperationalleaseadjustment'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q192907> 'EBITDAoperationalleaseadjustment'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> <http://www.wikidata.org/entity/Q176831>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q330153> 'EBIT – Operating income'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q330153> 'EBITDA margin – EBITDA / Revenue'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q330153> 'Leverage ratio - Adjusted Net debt / EBITDA'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q330153> 'EBITDA - Operating income plus depreciation, amortization and impairment of non-current assets'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q330153> 'These APMs are used to measure performance from operational activities.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q330153> 'This ratio measures the ability of the Issuer to meet its debt and other obligations'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/MuniIssuance/hasFinancialAdvisor> 'Clifford Chance LLP'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/MuniIssuance/hasFinancialAdvisor> <http://www.wikidata.org/entity/Q1101257>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q192907> 'consolidated financial statements of the Issuer'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q192907> 'consolidated financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q192907> <http://www.wikidata.org/entity/Q380559>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q740419> 'without qualification'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q192907> 'have been audited'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q740419> 'forthe year ended 31 December 2015'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q740419> 'for the year ended 31 December 2016'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/Auditor> 'Ernst & Young Accountants LLP'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q192907> 'the unaudited consolidated financialinformation of the Issuer'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q192907> '2017-09-30'^^<https://www.w3.org/2001/XMLSchema#date>.

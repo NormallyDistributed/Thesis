@@ -1,0 +1,19 @@
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2017-06-15'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q55>.
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <https://wikidata.org/entity/Q1166072> 'public offering'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'Triodos VastgoedfondsN.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol> 'TVG'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> 'Euronext Amsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> <http://www.wikidata.org/entity/Q478720>.
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber> 'NL0000079333'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <https://wikidata.org/entity/Q192907> 'audited consolidated financial statements of the Fund asat and for years ended 31 December 2016, 31 December2015 and 31 December 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <https://wikidata.org/entity/Q740419> 'asat and for years ended 31 December 2016, 31 December2015 and 31 December 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <https://wikidata.org/entity/Q748250> 'the Fund has not issued a profit forecast'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <https://wikidata.org/entity/Q1337875> 'The interests of existing Shareholders may be diluted through the issuance of new OrdinaryShares'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> <http://www.wikidata.org/entity/Q176831>.
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <https://wikidata.org/entity/Q8148> 'sustainable property fund'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/Auditor> 'PwC'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TriodosVastgoedfondsN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/Auditor> <http://www.wikidata.org/entity/Q488048>.

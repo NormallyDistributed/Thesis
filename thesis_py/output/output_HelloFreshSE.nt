@@ -1,0 +1,103 @@
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2017-10-23'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q1166072> 'public offering'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> 'Frankfurt StockExchange (Frankfurter Wertpapierbörse)ö'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol> 'HFG'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'Deutsche Bank'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'J.P. Morgan'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'Morgan Stanley'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'Berenberg'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'BNP PARIBAS'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> <http://www.wikidata.org/entity/Q66048>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> <http://www.wikidata.org/entity/Q192314>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> <http://www.wikidata.org/entity/Q334204>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> <http://www.wikidata.org/entity/Q670792>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> <http://www.wikidata.org/entity/Q1227544>.
+<http://example.org/entity/#HelloFreshSE> <http://www.w3.org/2000/01/rdf-schema#label> 'HelloFresh SE'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber> 'DE000A161408'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber> <http://www.wikidata.org/entity/Q23014836>.
+_:N492bfd7aec2b4b67b7a9bb5ba34fda42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '9.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N492bfd7aec2b4b67b7a9bb5ba34fda42 <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency> <https://www.wikidata.org/entity/Q4916>.
+_:N492bfd7aec2b4b67b7a9bb5ba34fda42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> 'EUR 9.00 – EUR 11.50'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N492bfd7aec2b4b67b7a9bb5ba34fda42.
+_:N1fbdda6cda974ca68c1fb279ee5a7bf6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '11.50'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N1fbdda6cda974ca68c1fb279ee5a7bf6 <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency> <https://www.wikidata.org/entity/Q4916>.
+_:N1fbdda6cda974ca68c1fb279ee5a7bf6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> 'EUR 9.00 – EUR 11.50'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N1fbdda6cda974ca68c1fb279ee5a7bf6.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q8148> 'food industry,'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q8148> <http://www.wikidata.org/entity/Q540912>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> <http://www.wikidata.org/entity/Q176831>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q192907> 'audited consolidated financial statements as ofand for the years ended December 31, 2016, December 31, 2015 as well asDecember 31, 2014, 2013 and 2012'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q192907> 'unaudited condensedconsolidated interim financial statements as of and for the six monthsended June 30, 2017'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q740419> 'for the years ended December 31, 2016, December 31, 2015 as well asDecember 31, 2014, 2013 and 2012'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q192907> '2017-06-30'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/Auditor> 'Ernst & Young GmbH Wirtschaftsprüfungsgesellschaft'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q740419> 'unqualified'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q740419> 'unqualified'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q2481549> 'has not prepared pro forma financial'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q748250> 'No profit forecast or estimate'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/Dividend> 'do not intend to pay dividends in theforeseeable future,'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P180D'^^<https://www.w3.org/2001/XMLSchema#duration>.
+_:Nf2a596f91ead4a559b7523335ec1ba0d <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '318.3'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Nf2a596f91ead4a559b7523335ec1ba0d <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> '318.3'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q850210> _:Nf2a596f91ead4a559b7523335ec1ba0d.
+_:N795268573fb04b4fa7dbaec302aca808 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '11.0'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N795268573fb04b4fa7dbaec302aca808 <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> '11.0'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q185142> _:N795268573fb04b4fa7dbaec302aca808.
+_:N438eecb45cdc4e4588c3c6b770145ca1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '307.2'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N438eecb45cdc4e4588c3c6b770145ca1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> '307.2'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q850210> _:N438eecb45cdc4e4588c3c6b770145ca1.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q1337875> 'An investment in the Issuer’s shares by an investor whose principal currency is not the euro may be affected byexchange rate fluctuations.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/ProfitObjectiveProfitObjective> 'The Issuer intends to list its shares on the regulated market segment (regulierter Markt) of the FrankfurtStock Exchange (Prime Standard) to achieve access to the capital markets. The Issuer also intends topursue the Offering to receive the proceeds from the placement of the New Shares to finance the growthand development of its business.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/CIV/Funds/CIV/InvestmentStrategy> 'The Issuer intends to use about EUR 50 million to EUR 100 million of the proceeds of the Offering tofund its continued investment into the growth of its business. In addition, the Issuer intends to invest up toabout EUR 60 million of the net proceeds of the Offering into property, plant and equipment, primarilyautomation equipment. If the gross proceeds from the Offering to the Issuer amount to at leastEUR 150 million, the Issuer also intends to use a portion of the net proceeds from the Offering of EUR27 million to EUR 28 million (including accrued interest) to repay the amount dispersed under ashareholder loan with Rocket Internet SE, one of the major shareholders of the Issuer (for furtherinformation on the shareholder loan, see ‘‘11.16.2 Shareholder Loan’’). The Issuer intends to use theremainder of the proceeds of the Offering to create strategic flexibility for new business lines and potentialadd-on M&A activities as well as for general corporate purposes.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/LoanProducts/WorkingCapitalPurpose> 'The Issuer is of the opinion that the Group is in a position to meet the payment obligations that becomedue within at least the next twelve months from the date of this prospectus.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q330153> 'EBITDA'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q330153> 'adjusted EBITDA'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q330153> 'contribution margin'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q330153> 'net working capital'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q330153> 'capital expenditure'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q330153> 'free cash flow'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q330153> <http://www.wikidata.org/entity/Q720862>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q330153> 'EBITDA (Earnings Before Interest, Taxes, Depreciation and Amortization, ‘‘EBITDA’’) is operatingloss (EBIT) before depreciation and amortization;'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q330153> 'adjusted EBITDA (Adjusted Earnings Before Interest, Taxes, Depreciation and Amortization,‘‘Adjusted EBITDA’’) is calculated by adjusting EBITDA for special items and, on the segment level,holding fees; special items consist of share-based compensation expense and other special items of anon-recurring nature, which include, among other items, expenses related to legal advice and otherservices incurred in connection with equity financing rounds (capital increases), debt financings andpreparation for the Issuer’s initial public offering;'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q330153> 'contribution margin (‘‘Contribution Margin’’) is calculated as revenue less cost of goods sold net ofshare-based compensation expense included in cost of goods sold and fulfilment expenses net ofshare-based compensation expense included in fulfilment expenses;'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q330153> 'net working capital is inventories plus trade receivables, plus VAT receivables less trade (and other)payables, less VAT payables less deferred revenue;'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q330153> 'capital expenditure is defined as cash used for purchase of property, plant and equipment, softwaredevelopment expenditure and purchase of software licenses;'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q330153> 'free cash flow is the sum of net cash used in operating activities and net cash used in investingactivities.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q192907> 'Other special items are non-recurring and include, among other items, expenses related to legal adviceand other services incurred in connection with equity financing rounds (capital increases), debt financingsand preparation for the Issuer’s initial public offering.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q192907> 'two'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/isAffectedBy> 'Currency Translation Effects'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q243460> 'Revenue'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q243460> 'Cost of goods sold'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q243460> 'Gross profit'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q243460> 'Fulfilment expenses'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q243460> 'Marketing expenses'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q243460> 'General and administrative expenses'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q243460> 'Other operating income'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q243460> 'Other operating expenses'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q243460> 'Operating loss'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q243460> 'Finance income'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q243460> 'Finance expense'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q243460> 'Loss before income tax benefit (expense)'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q243460> 'Income tax benefit (expense)'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q243460> 'Loss for the year/period'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <http://www.omg.org/techprocess/ab/SpecificationMetadata/hasDescription> 'Operating under our brand HelloFresh, we provide fresh, healthy and personalized meal solutions to about1.3 million Active Customers4 (in the three months ended June 30, 2017) in nine countries. We aim toprovide the households in our geographies with the opportunity to enjoy fresh, delicious, home-cookedmeals with no planning, no shopping and no stress. Our key product line, our meal kits, are delivereddirectly to our customers’ doors at a convenient time and contain nearly everything required to createinspiring meals from mainly locally sourced ingredients.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://wikidata.org/entity/Q963465> 'Strong Financial Model Combining Growth at Scale with Powerful Unit Economics'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/InvestmentObjectiveBusinessStrategy> 'Improve Financial Metrics Through Scale and Operating Improvements'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> <http://www.wikidata.org/entity/Q183>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q183>.
+_:N3d2071719b0a4df58fb837c6b1e19ad6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1.30'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N3d2071719b0a4df58fb837c6b1e19ad6 <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
+_:N3d2071719b0a4df58fb837c6b1e19ad6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> 'up to 1.30% of the gross proceeds fromthe Offering of the New Shares'.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N3d2071719b0a4df58fb837c6b1e19ad6.
+_:N6a4e033c717c4051b04b24d8d828db96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1.45'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N6a4e033c717c4051b04b24d8d828db96 <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
+_:N6a4e033c717c4051b04b24d8d828db96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> '1.45% of the gross proceeds from the Offering of the New Shares'.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N6a4e033c717c4051b04b24d8d828db96.
+<http://example.org/entity/#HelloFreshSE> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> 'International Standards on Auditing'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#HelloFreshSE> <https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/has> _:N3
+_:N3 rdf:type <ISIN>
+_:N3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#label> 'DE000A161408'^^<http://www.w3.org/2001/XMLSchema#string>.

@@ -16,7 +16,7 @@ import datefinder
 
 class kg_construction(object):
 
-    map_dir = "/Users/mlcb/Desktop/mapping" # directory for input/output files
+    map_dir = "/Users/mlcb/Desktop/mapping"  # directory for input/output files
 
     input_list = {
                 "accounting_standards": "{?item wdt:P31 wd:Q317623. ?item skos:altLabel ?altlabel.} UNION {?item wdt:P31 wd:Q1779838. ?item skos:altLabel ?altlabel.}",
@@ -25,15 +25,15 @@ class kg_construction(object):
                 "country_of_registration/incorporation": "?item wdt:P31 wd:Q6256. ?item skos:altLabel ?altlabel.",
                 "external_auditor": "?item wdt:P452 wd:Q23700345. ?item skos:altLabel ?altlabel.",
                 "financial_advisor": "{ {?item wdt:P31 wd:Q613142.} OPTIONAL { ?item skos:altLabel ?altlabel.} } UNION { {?item wdt:P31 wd:Q4830453.} OPTIONAL {?item skos:altLabel ?altlabel.} }",
-                "industry":"{?item wdt:P31 wd:Q8148. ?item skos:altLabel ?altlabel.} UNION {?item wdt:P31 wd:Q268592. ?item skos:altLabel ?altlabel.}",
+                "industry": "{?item wdt:P31 wd:Q8148. ?item skos:altLabel ?altlabel.} UNION {?item wdt:P31 wd:Q268592. ?item skos:altLabel ?altlabel.}",
                 "initial_price_range": "{?item wdt:P31 wd:Q8142. ?item skos:altLabel ?altlabel.}",
                 "investment_bank": "{?item wdt:P31 wd:Q319845. ?item skos:altLabel ?altlabel.} UNION {?item wdt:P31 wd:Q22687. ?item skos:altLabel ?altlabel.} UNION {?item wdt:P31 wd:Q568041. ?item skos:altLabel ?altlabel.} UNION {?item wdt:P31 wd:Q670792. ?item skos:altLabel ?altlabel.} UNION {?item wdt:P31 wd:Q4830453. ?item skos:altLabel ?altlabel.} UNION {?item wdt:P31 wd:Q2111088. ?item skos:altLabel ?altlabel.}",
-                "isin":"?item wdt:P946 ?object. ?item skos:altLabel ?altlabel.",
+                "isin": "?item wdt:P946 ?object. ?item skos:altLabel ?altlabel.",
                 "listing_venue": "?item wdt:P31 wd:Q11691. ?item skos:altLabel ?altlabel.",
                 "non-gaap_measure": "{{?item wdt:P31 wd:Q832161.} OPTIONAL {?item skos:altLabel ?altlabel.}}"
                  }
 
-    def __init__(self,dir):
+    def __init__(self, dir):
         self.dir = dir
         self.data = None
         self.input = str()
@@ -50,7 +50,7 @@ class kg_construction(object):
 
     def preprocessing(self):
 
-        ## extract annotations from parsed pdf
+        # extract annotations from parsed pdf
         placeholder: Dict[Any, Any] = {}
         for annotation in range(0, len(self.data["blobs"])):
             if len(self.data["blobs"][annotation]["annotations"]) != 0:
@@ -58,17 +58,17 @@ class kg_construction(object):
                 placeholder.update(base)
         self.data = placeholder
 
-        ## Date extractor
+        # Date extractor
         def xsd_date(item):
             try:
                 for i in self.data[item]:
                     matches = datefinder.find_dates(i)
-                    if matches != None:
+                    if matches is not None:
                         self.data[item][self.data[item].index(i)] = [str(datetime.date(match)) for match in matches]
             except KeyError:
                 pass
 
-        ## Duration extractor
+        # Duration extractor
         numbers_dict = {
             'zero': 0,
             'one': 1,
@@ -104,6 +104,7 @@ class kg_construction(object):
             'billion': 1000000000,
             'point': '.'
         }
+
         def xsd_duration(var):
             try:
                 for item in self.data[var]:
@@ -127,12 +128,12 @@ class kg_construction(object):
                     "P" + item.replace("day", "D").replace("month", "nM").replace("year", "Y").replace(" ", "") for item in
                     self.data[var]]
                 for item in self.data[var]:
-                    if item == "P" or len(item) > 7:  ## replace with sequence
+                    if item == "P" or len(item) > 7:  # replace with sequence
                         self.data[var][self.data[var].index(item)] = "unknown"
             except KeyError:
                 pass
 
-        ## Monetary values extractor
+        # Monetary values extractor
         def monetary_values(key):
             try:
                 for item in self.data[key]:
@@ -154,17 +155,17 @@ class kg_construction(object):
                         self.data[key] = cache
                     else:
                         if "%" in item or "percentage" in item.lower():
-                            for number in re.findall(r"(\d*\.?\d+)%",item.replace(" ","")):
-                                cache.append([item,number,"percentage"])
+                            for number in re.findall(r"(\d*\.?\d+)%", item.replace(" ", "")):
+                                cache.append([item, number, "percentage"])
                             self.data[key] = cache
                         else:
-                            cache.append([item,str(Price.fromstring(item).amount), currency_mapper(Price.fromstring(item).currency)])
+                            cache.append([item, str(Price.fromstring(item).amount), currency_mapper(Price.fromstring(item).currency)])
                             self.data[key] = cache
                 return self.data[key]
             except KeyError:
                 pass
 
-        ## Monetary values extractor
+        # Monetary values extractor
         currencies = {
             "GBP": "\u00a3",
             "CNY": "\u00a5",
@@ -191,7 +192,7 @@ class kg_construction(object):
                 for key in currencies:
                     symbol = symbol.replace(currencies[key], key)
                 for key in currency_map:
-                    symbol = symbol.replace(key,currency_map[key])
+                    symbol = symbol.replace(key, currency_map[key])
                 return symbol
             except AttributeError:
                 pass
@@ -201,23 +202,23 @@ class kg_construction(object):
                 for item in self.data[key]:
                     cache = []
                     for number in re.findall(r"([0-9.,]*[0-9]+)", item):
-                        cache.append([item, str(Price.fromstring(number).amount),currency_mapper(str(Price.fromstring(item).currency))])
+                        cache.append([item, str(Price.fromstring(number).amount), currency_mapper(str(Price.fromstring(item).currency))])
                         self.data[key] = cache
                 return self.data[key]
             except KeyError:
                 pass
 
-        ## Assign boolean value "true" if rule applies; either direct or fuzzy match
+        # Assign boolean value "true" if rule applies; either direct or fuzzy match
         def xsd_boolean(var):
             try:
                 for item in [re.sub('[^A-Za-z0-9]+', '', item).replace(" ", "").lower() for item in
                              self.data[var]]:
-                    if (var.replace("applies","").replace("_","").replace(" ","") in item) or (fuzz.token_set_ratio(var.replace("applies","").replace("_","").replace(" ",""), item) > 85) or (item in ["yes", "true", "1"]):
+                    if (var.replace("applies", "").replace("_", "").replace(" ", "") in item) or (fuzz.token_set_ratio(var.replace("applies", "").replace("_", "").replace(" ", ""), item) > 85) or (item in ["yes", "true", "1"]):
                         self.data[var] = [str(True)]
             except KeyError:
                 pass
 
-        ## Accounting standards categorization
+        # Accounting standards categorization
         def accounting_categorization(var):
             try:
                 for item in self.data[var]:
@@ -232,22 +233,38 @@ class kg_construction(object):
             except KeyError:
                 pass
 
-        ## ISIN check
+        # ISIN check
         def isin_check(var):
             sequence = re.compile(r"[A-Za-z]{2}[a-zA-Z0-9]{10}$")
             try:
-                for item in range(0,len(self.data[var])):
-                    self.data[var][item], *tail = ["".join(x) for x in re.findall(pattern=sequence, string=self.data[var][item].replace(" ", "").replace(".","").replace(",",""))]
+                for item in range(0, len(self.data[var])):
+                    self.data[var][item], *tail = ["".join(x) for x in re.findall(pattern=sequence, string=self.data[var][item].replace(" ", "").replace(".", "").replace(",", ""))]
             except ValueError:
                 pass
             except KeyError:
                 pass
 
-        ## Underwriting fees
-        # try:
-        #     self.data["underwriting_fees"] = re.compile(r"[^\d.,]+").sub('', str(self.data["underwriting_fees"]))
-        # except KeyError:
-        #     pass
+        # Complex-Financials: 2 Types -> {"Combined Financial Statements": "shows financial results of different subsidiary companies from that of the parent company", "Consolidated Financial Statements": "aggregate the financial position of a parent company and its subsidiaries"}
+        def complex_categorization(var):
+            try:
+                for item in [element.lower().strip() for element in self.data[var]]:
+                    for i in range(0, len(item.split())):
+                        if ("combined" in item.split()[i]) and (item.split()[i-1] != "no"):
+                            self.data[var].append("combined financial statement")
+                        if ("consolidated" in item.split()[i]) and (item.split()[i-1] != "no"):
+                            self.data[var].append("consolidated financial statement")
+            except KeyError:
+                pass
+
+        # Audit-Report: 4 Types -> {"qualified": "company’s financial records have not been maintained in accordance with GAAP but no misrepresentations are identified, an auditor will issue a qualified opinion", "unqualified": "audit report that is issued when an auditor determines that each of the financial records provided by the small business is free of any misrepresentations+in accordance with GAAP", "adverse": "indicates that the firm’s financial records do not conform to GAAP + the financial records provided by the business have been grossly misrepresented", "disclaimer": "auditor is unable to complete an accurate audit report"}
+        # def audit_categorization(var): #qualified, unqualified/without-/no qualification(s), adverse, disclaimer
+            # pass
+            # try:
+            #     for item in self.data[var]:
+            # except KeyError:
+            #     pass
+
+
 
         # dictionary = {"variable_to_be_preprocessed": "corresponding_xsd_standard"}
         preprocessing_dict = {"lock-up_period": xsd_duration,
@@ -264,35 +281,13 @@ class kg_construction(object):
                               "offering_costs": monetary_values,
                               "initial_price_range": decimal_values,
                               "expected_gross_proceeds": monetary_values,
-                              "expected_net_proceeds": monetary_values
+                              "expected_net_proceeds": monetary_values,
+                              "complex_financials": complex_categorization
                               }
 
         # apply preprocessing for all keys in preprocessing_dict
         for key in preprocessing_dict.keys():
             preprocessing_dict[key](key)
-
-    # ## Audit-Report: 4 Types -> {"qualified": "company’s financial records have not been maintained in accordance with GAAP but no misrepresentations are identified, an auditor will issue a qualified opinion",
-    # #                            "unqualified": "audit report that is issued when an auditor determines that each of the financial records provided by the small business is free of any misrepresentations+in accordance with GAAP",
-    # #                            "adverse": "indicates that the firm’s financial records do not conform to GAAP + the financial records provided by the business have been grossly misrepresented",
-    # #                            "disclaimer": "auditor is unable to complete an accurate audit report"}
-    # # try:
-    # #     for item in self.data["audit_report"]:
-    # #         if
-    # # except KeyError:
-    # #     pass
-    #
-    # # Complex-Financials: 2 Types -> {"Combined Financial Statements": "shows financial results of different subsidiary companies from that of the parent company",
-    # #                                 "Consolidated Financial Statements": "aggregate the financial position of a parent company and its subsidiaries"}
-    # try:
-    #     for item in [element.lower().strip() for element in self.data["complex_financials"]]:
-    #         for i in range(0,len(item.split())):
-    #             if ("combined" in item.split()[i]) and (item.split()[i-1] != "no"):
-    #                 self.data["complex_financials"].append("combined financial statement")
-    #             if ("consolidated" in item.split()[i]) and (item.split()[i-1] != "no"):
-    #                 self.data["complex_financials"].append("consolidated financial statement")
-    # except KeyError:
-    #     pass
-
 
     def query(self):
 
@@ -312,7 +307,7 @@ class kg_construction(object):
         self.results_list = []
         for i in results["results"]["bindings"]:
             if query_command.count("?object") > 1:
-                item = {'label': i["itemLabel"]["value"], 'object': i["object"]["value"], 'value': i["item"]["value"],"altlabel": i["altlabel"]["value"]}
+                item = {'label': i["itemLabel"]["value"], 'object': i["object"]["value"], 'value': i["item"]["value"], "altlabel": i["altlabel"]["value"]}
                 self.results_list.append({self.output: item})
             else:
                 if "altlabel" not in i.keys():
@@ -340,9 +335,9 @@ class kg_construction(object):
         # link extracted values to wikidata database
 
         # open extracted wikidata entries from wikidata sparql query
-        with open("/Users/mlcb/PycharmProjects/Thesis/thesis_py/queries/query_{}.json".format(self.output.replace("/", "")),"r") as json_file:
+        with open("/Users/mlcb/PycharmProjects/Thesis/thesis_py/queries/query_{}.json".format(self.output.replace("/", "")), "r") as json_file:
             output_file = json_file.read()
-            output_file = output_file.replace("'","").replace(',}','}').replace(',]',']').replace('\n','').replace('\t','')
+            output_file = output_file.replace("'", "").replace(',}', '}').replace(',]', ']').replace('\n', '').replace('\t', '')
             self.results_list = json.loads(output_file)
 
         placeholder_list = list(map(itemgetter(self.output), list(filter(lambda x: self.output in x, self.results_list))))
@@ -353,7 +348,7 @@ class kg_construction(object):
             form = "label"
 
         def norm(item):
-            return str(item).lower().replace(" ","").replace(".","")
+            return str(item).lower().replace(" ", "").replace(".", "")
 
         ## lower case and strip all whitespaces when comparing
         ## Pseudocode: Find match (key,value) pair in self.data to wikidata sparql query result
@@ -416,7 +411,7 @@ class kg_construction(object):
                        "fibo-loan-typ-prod": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/LoanProducts/"
                        }
 
-        mapping_dict = {"accounting_standards": [{"fibo-be-le-lei": "AccountingFramework"}, {"datatype": "string"}], #
+        mapping_dict = {"accounting_standards": [{"fibo-be-le-lei": "AccountingFramework"}, {"datatype": "string"}], # has _: . _: rdf:type fibo-be-le-lei:AccountingFramework.
                         "audit_report": [{"wd": "Q740419"}, {"datatype": "string"}], #
                         "audited_financial_statements": [{"wd": "Q192907"}, {"datatype": "string"}], #still to do
                         "competitive_strength": [{"wd": "Q963465"}, {"datatype": "string"}], # should be fine
@@ -427,48 +422,50 @@ class kg_construction(object):
                         "detailed_transaction": [{"fibo-bp-iss-ipo": "FilingDetails"}, {"datatype": "string"}], # placeholder
                         "dividend_policy": [{"fibo-sec-eq-eq": "Dividend"},{"datatype": "string"}],
                         "emphasis_of_matter": [{"wd": "Q5373973"}, {"datatype": "string"}],
-                        "expected_gross_proceeds": [{"wd": "Q850210"}, {"datatype": "decimal"}], #placeholder + triples
-                        "expected_net_proceeds": [{"wd": "Q850210"}, {"datatype": "decimal"}], #placeholder + triples
-                        "external_auditor": [{"fibo-be-oac-exec": "Auditor"}, {"datatype": "string"}],
+                        "expected_gross_proceeds": [{"wd": "Q850210"}, {"datatype": "decimal"}], #placeholder
+                        "expected_net_proceeds": [{"wd": "Q850210"}, {"datatype": "decimal"}], #placeholder
+                        "external_auditor": [{"wd": "P8571"}, {"datatype": "string"}],
                         "filing_date": [{"fibo-fnd-agr-ctr": "hasExecutionDate"}, {"datatype": "date"}],
                         "financial_advisor": [{"fibo-bp-iss-muni": "hasFinancialAdvisor"}, {"datatype": "string"}],
                         "gaas": [{"fibo-be-le-lei": "AccountingFramework"}, {"datatype": "string"}],
-                        "industry": [{"wd": "Q8148"}, {"datatype": "string"}],
+                        "industry": [{"wd": "P452"}, {"datatype": "string"}],
                         "initial_price_range": [{"fibo-fbc-pas-fpas": "hasOfferingPrice"}, {"datatype": "decimal"}], #update
                         "investment_bank": [{"fibo-fbc-fct-fse": "InvestmentBank"}, {"datatype": "string"}],
-                        "isin": [{"fibo-sec-sec-id": "InternationalSecuritiesIdentificationNumber"}, {"datatype": "string"}],
+                        "isin": [{"wd": "P946"}, {"datatype": "string"}],
                         "issuer_name": [{"rdfs": "label"}, {"datatype": "string"}],
-                        "key_element_strategy": [{"fibo-fnd-gao-obj": "BusinessStrategy"}, {"datatype": "string"}],
+                        "key_element_strategy": [{"fibo-fnd-gao-obj": "BusinessStrategy"}, {"datatype": "string"}],# :company :has _: / _: rdf:type fibo:BusinessStrategy / _: fibo:hasGoal ""^^.xsd_string
                         "key_factor_affecting_results": [{"fibo-fnd-pty-pty": "isAffectedBy"}, {"datatype": "string"}],
                         "key_line_item_income_statement": [{"wd": "Q243460"}, {"datatype": "string"}],
-                        "listing_venue": [{"fibo-fbc-fct-mkt": "Exchange"}, {"datatype": "string"}],
+                        "listing_venue": [{"wd": "P414"}, {"datatype": "string"}],
                         "lock-up_period": [{"fibo-sec-dbt-bnd":"hasLockoutPeriod"}, {"datatype": "duration"}],
                         "non-gaap_measure": [{"wd": "Q330153"}, {"datatype": "string"}], #
                         "non-gaap_measure;_definition": [{"wd": "Q330153"}, {"datatype": "string"}], #
-                        #"non-recurring_item": [{"key": ""}, {"datatype": "string"}], #string
-                        #"number_of_reportable_segments": [{"key": ""}, {"datatype": "string"}],
+                        "non-recurring_item": [{"wd": "Q192907"}, {"datatype": "string"}], #string #placeholder
+                        "number_of_reportable_segments": [{"wd": "Q192907"}, {"datatype": "string"}], #placeholder
                         "offering_costs": [{"wd": "Q185142"}, {"datatype": "decimal"}], #placeholder
                         "periods_of_audited_financial_statements": [{"wd": "Q740419"}, {"datatype": "string"}],
-                       # "periods_of_pffi": [{"key": ""}, {"datatype": "date"}], #extract dates
-                       # "periods_of_unaudited_financial_statements": [{"": ""}, {"datatype": "string"}],
-                       # "periods_of_unaudited_interim_fs": [{"key": ""}, {"datatype": "date"}],
+                        "periods_of_pffi": [{"wd": "Q1166072"}, {"datatype": "date"}], #placeholder
+                        "periods_of_unaudited_financial_statements": [{"wd": "Q192907"}, {"datatype": "string"}], #placeholder
+                        "periods_of_unaudited_interim_fs": [{"wd": "Q192907"}, {"datatype": "date"}], #placeholder
                         "pro_forma_financial_information": [{"wd": "Q2481549"}, {"datatype": "string"}],
                         "profit_forecast": [{"wd": "Q748250"}, {"datatype": "string"}],
                         "reasons_for_the_offering": [{"fibo-be-le-lp": "ProfitObjective"}, {"datatype": "string"}],
                         "regulation_s_applies": [{"fibo-sec-sec-rst": "RegulationS"}, {"datatype": "string"}],
                         "risk_factor": [{"wd": "Q1337875"},{"datatype": "string"}],
                         "rule_144a_applies": [{"wd": "Q7378915"}, {"datatype": "boolean"}],
-                       # "shareholder_transaction": [{"key": ""}, {"datatype": "string"}],
-                       # "shareholders_transaction": [{"key": ""}, {"datatype": "string"}],
-                        "ticker": [{"fibo-sec-sec-id": "TickerSymbol"}, {"datatype": "string"}],
+                        "shareholder_transaction": [{"wd": "Q1166072"}, {"datatype": "string"}], # placeholder
+                        "shareholders_transaction": [{"wd": "Q1166072"}, {"datatype": "string"}], # placeholder
+                        "ticker": [{"wd": "P249"}, {"datatype": "string"}],
                         "transaction": [{"wd": "Q1166072"}, {"datatype": "string"}],
-                      # "unaudited_financial_statements": [{"key": ""}, {"datatype": "string"}],
-                      # "unaudited_interim_financial_statements": [{"key": ""}, {"datatype": "string"}],
+                        "unaudited_financial_statements": [{"wd": "Q192907"}, {"datatype": "string"}], #placeholder
+                        "unaudited_interim_financial_statements": [{"wd": "Q192907"}, {"datatype": "string"}], #placeholder
                         "underwriters_incentive_fee": [{"fibo-fbc-fct-fse": "UnderwritingArrangement"}, {"datatype": "decimal"}],
                         "underwriting_fees": [{"fibo-fbc-fct-fse": "UnderwritingArrangement"}, {"datatype": "decimal"}],
                         "use_of_proceeds": [{"fibo-civ-fnd-civ": "InvestmentStrategy"}, {"datatype": "string"}],
                         "working_capital_statement": [{"fibo-loan-typ-prod": "WorkingCapitalPurpose"}, {"datatype": "string"}]
                         }
+
+                        # ticker-symbol: <https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/isIdentifiedBy> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol>.
 
         def triple_subject():
             subject = triple_format("{}#{}".format(URIRef("http://example.org/entity/"),self.data["issuer_name"][0].replace(" ", "")))
@@ -490,12 +487,12 @@ class kg_construction(object):
         def xsd_type(input):
             return "^^<https://www.w3.org/2001/XMLSchema#{}>.".format(input)
 
-
         def object(item):
             subject = triple_subject()
             predicate = triple_predicate(item)
+            output_path = "/Users/mlcb/PycharmProjects/Thesis/thesis_py/output/output_{}.nt".format(''.join(e for e in self.data["issuer_name"][0] if e.isalnum()))
+            f = open(output_path,"a")
             if item in mapping_dict:
-                #for element in [" ".join(filter(None,item)) for item in self.data[item]]:
                 for element in [item for item in self.data[item]]:
                     if "date" in mapping_dict[item][1].values():
                         object = "'{}'{}".format(element[0],xsd_type("date"))
@@ -503,71 +500,30 @@ class kg_construction(object):
                         object = triple_format(element)+"."
                     elif "decimal" in mapping_dict[item][1].values():
                         if "%" == element[0] or element[2] == "percentage":
-                            object = BNode().n3()
-                            print(object, "<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>","{}^^<https://www.w3.org/2001/XMLSchema#decimal>.".format(element[1]))
-                            print(object,"<http://www.w3.org/2000/01/rdf-schema#property>","<https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.")
-                            print(object, "<http://www.w3.org/1999/02/22-rdf-syntax-ns#label>","{}.".format(element[0]))
+                            object = BNode().n3()+"."
+                            print(object.replace(".",""), "<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>","'{}'^^<https://www.w3.org/2001/XMLSchema#decimal>.".format(element[1]), file=f)
+                            print(object.replace(".",""),"<http://www.w3.org/2000/01/rdf-schema#property>","<https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.", file=f)
+                            print(object.replace(".",""), "<http://www.w3.org/1999/02/22-rdf-syntax-ns#comment>","'{}'.".format(element[0]), file=f)
                         else:
-                            object = BNode().n3()
-                            print(object,"<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>", "{}^^<https://www.w3.org/2001/XMLSchema#decimal>.".format(element[1]))
+                            object = BNode().n3()+"."
+                            print(object.replace(".",""),"<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>", "'{}'^^<https://www.w3.org/2001/XMLSchema#decimal>.".format(element[1]), file=f)
                             if element[2] != None:
-                                print(object, "<https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency>","{}.".format(element[2]))
-                            print(object, "<http://www.w3.org/1999/02/22-rdf-syntax-ns#label>","{}.".format(element[0]))
+                                print(object.replace(".",""), "<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn>","{}.".format(element[2]), file=f)
+                            print(object.replace(".",""), "<http://www.w3.org/1999/02/22-rdf-syntax-ns#comment>","'{}'^^<http://www.w3.org/2001/XMLSchema#string>.".format(element[0].replace("'","").replace('"', "")), file=f)
                     elif "duration" in mapping_dict[item][1].values():
                         object = "'{}'{}".format(element,xsd_type("duration"))
                     elif element in [str(True),str(False)]:
                         object = "'{}'{}".format(element, xsd_type("boolean"))
                     else:
-                        object = "'{}'^^<http://www.w3.org/2001/XMLSchema#string>.".format(element)
+                        try:
+                            object = "'{}'^^<http://www.w3.org/2001/XMLSchema#string>.".format(element.replace("'", "").replace('"', ""))
+                        except AttributeError:
+                            object = "'{}'^^<http://www.w3.org/2001/XMLSchema#string>.".format([elem.replace("'", "").replace('"', "") for elem in element])
+                    print(subject, predicate, object, file=f)
+            f.close()
 
-                    print(subject,predicate,object)
-            else:
-                #print("UNKNOWN KEY: {}".format(item))
-                pass
-        # try:
-        #     for item in self.data["initial_price_range"]:
-        #         print("0: {}, 1: {}, 2: {}".format(item[0],item[1],item[2]))
-        # except KeyError:
-        #     pass
-        #
         for instance in self.data:
             object(instance)
-
-        # try:
-        #     print(self.data["initial_price_range"])
-        # except KeyError:
-        #     pass
-
-
-        # # Subject
-        # if ("isin" in self.data.keys()) and (len(self.data["isin"])>1):
-        #     subject = "<{}>".format(self.data["isin"][1])
-        # else:
-        #     subject = "<{}#{}>".format(URIRef("http://example.org/entity/"),self.data["issuer_name"][0].replace(" ",""))
-        # # Predicate
-        # for item in self.data:
-        #      for element in [self.data[item]]:
-        #          for x in element:
-        #              if item in mapping_dict:
-        #                   for key in mapping_dict[item][0]:
-        #                         predicate = "<{}{}>".format(prefix_dict[key], *mapping_dict[item][0].values())
-        #                         if "date" in mapping_dict[item][1].values():
-        #                             objekt = "'{}'^^<http://www.w3.org/2001/XMLSchema#date>.".format(x)
-        #                         elif "http" in x:
-        #                             objekt = "<{}>.".format(x)
-        #                         elif "decimal" in mapping_dict[item][1].values():
-        #                             objekt = "'{}'^^<http://www.w3.org/2001/XMLSchema#decimal>.".format("".join(x))
-        #                         elif "duration" in mapping_dict[item][1].values():
-        #                             objekt = "'{}'^^<http://www.w3.org/2001/XMLSchema#duration>.".format(x)
-        #                         else:
-        #                             objekt = "'{}'^^<http://www.w3.org/2001/XMLSchema#string>.".format(x)
-        #
-
-        #                   import sys
-        #                   sys.stdout = open('log.nt', 'a')
-        #                   #print(subject,predicate,objekt)
-        # sys.stdout.close()
-                          #self.data_graph.append([subject,predicate,objekt])
 
     def runall(self):
         if __name__ == '__main__':
@@ -577,7 +533,6 @@ class kg_construction(object):
             Thread(target = self.generate_triples()).start()
             #Thread(target = self.metadata()).start()
 
-
 if __name__ == "__main__":
     path = "/Users/mlcb/PycharmProjects/Thesis/thesis_py/data"
     with os.scandir(path) as it:
@@ -585,8 +540,6 @@ if __name__ == "__main__":
             if entry.name.endswith(".json") and entry.is_file():
                 kg_construction(entry.path).runall()
                 #break
-
-
      # def metadata(self):
      #        pass
      #    # dublin_core_namespace = {"dc": "http://purl.org/dc/elements/1.1/"}

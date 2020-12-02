@@ -1,0 +1,22 @@
+<http://example.org/entity/#KoninklijkeAholdN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'Koninklijke Ahold N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'the Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q55>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> 'Euronext Amsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> 'Euronext Brussels'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> <http://www.wikidata.org/entity/Q478720>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> <http://www.wikidata.org/entity/Q1146518>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://wikidata.org/entity/Q1166072> 'admission to listing and trading'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol> 'AH'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2016-01-29'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/FilingDetailsFilingDetails> 'cross-border legal mergerof Delhaize Group NV/SA (Delhaize) into Ahold (the Merger), with Ahold continuing as the survivingcompany in the Merger (the Combined Company),'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://wikidata.org/entity/Q740419> 'for the financial years ended December 28, 2014, December 29,2013, and December 30, 2012'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://wikidata.org/entity/Q192907> '2015-10-04'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://wikidata.org/entity/Q192907> ' consolidated financial information as of and for the third quarter ended October 4, 2015 and October5, 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> <http://www.wikidata.org/entity/Q176831>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://wikidata.org/entity/Q330153> 'free cash flow'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://wikidata.org/entity/Q330153> 'Ahold defines free cash flow as operating cash flows from continuing operations less net capital expenditures and net interest paid plus dividends received.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://wikidata.org/entity/Q2481549> 'unaudited pro forma financial information'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber> 'NL0006033250'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://wikidata.org/entity/Q8148> 'food retail industry'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeAholdN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/Auditor> 'PricewaterhouseCoopers Accountants N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
