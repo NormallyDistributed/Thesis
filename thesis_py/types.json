@@ -1,0 +1,1 @@
+{"entities": {"company": {"short": "company", "verbose": "company"}, "interrogative_word": {"short": "interrogative word", "verbose": "interrogative word"}}, "relations": ["stock price", "financial advisor", "isin", "issuer name", "ticker", "accounting standards", "external auditor"]}

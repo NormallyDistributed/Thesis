@@ -6,6 +6,7 @@ import re
 from SPARQLWrapper import SPARQLWrapper, JSON
 import os
 import time
+import csv
 from operator import itemgetter
 from datetime import datetime
 from urllib.error import HTTPError
@@ -15,8 +16,6 @@ import datefinder
 
 
 class kg_construction(object):
-
-    map_dir = "/Users/mlcb/Desktop/mapping"  # directory for input/output files
 
     input_list = {
                 "accounting_standards": "{?item wdt:P31 wd:Q317623. ?item skos:altLabel ?altlabel.} UNION {?item wdt:P31 wd:Q1779838. ?item skos:altLabel ?altlabel.}",
@@ -39,6 +38,7 @@ class kg_construction(object):
         self.input = str()
         self.results_list = []
         self.data_graph = []
+        self.location = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
     def parse_pdf(self):
         pass
@@ -235,6 +235,7 @@ class kg_construction(object):
 
         # ISIN check
         def isin_check(var):
+            # mandatory costraint: [A-Z]{2}[A-Z\d]{9}\d (wikidata)
             sequence = re.compile(r"[A-Za-z]{2}[a-zA-Z0-9]{10}$")
             try:
                 for item in range(0, len(self.data[var])):
@@ -258,11 +259,23 @@ class kg_construction(object):
 
         # Audit-Report: 4 Types -> {"qualified": "company’s financial records have not been maintained in accordance with GAAP but no misrepresentations are identified, an auditor will issue a qualified opinion", "unqualified": "audit report that is issued when an auditor determines that each of the financial records provided by the small business is free of any misrepresentations+in accordance with GAAP", "adverse": "indicates that the firm’s financial records do not conform to GAAP + the financial records provided by the business have been grossly misrepresented", "disclaimer": "auditor is unable to complete an accurate audit report"}
         # def audit_categorization(var): #qualified, unqualified/without-/no qualification(s), adverse, disclaimer
-            # pass
-            # try:
-            #     for item in self.data[var]:
-            # except KeyError:
-            #     pass
+        #     try:
+        #         for item in [element.lower().strip().replace("s","") for element in self.data[var]]:
+        #             for key in audit_categories:
+        #                 for element in audit_categories[key]:
+        #                     if re.search(r'\bunqualified\b', item):
+        #                         print(item)
+        #                     #print("match: {}, item: {}".format(re.search(r'\bunqualified\b', element),item))
+        #                         #print(element,item)
+        #     except KeyError:
+        #         pass
+        #
+        # audit_categories = {
+        #                     "qualified opinion": ["qualified", "with qualification"],
+        #                     "unqualified opinion": ["without qualification", "no qualification", "unqualified"],
+        #                     "adverse opinion": ["adverse"],
+        #                     "disclaimer of opinion": ["disclaimer"]
+        #                     }
 
 
 
@@ -289,6 +302,11 @@ class kg_construction(object):
         for key in preprocessing_dict.keys():
             preprocessing_dict[key](key)
 
+        try:
+            print(self.data["underwriting_fees"])
+        except KeyError:
+            pass
+
     def query(self):
 
         sparql = SPARQLWrapper("https://query.wikidata.org/sparql")
@@ -303,7 +321,6 @@ class kg_construction(object):
         sparql.setReturnFormat(JSON)
         results = sparql.query().convert()
 
-
         self.results_list = []
         for i in results["results"]["bindings"]:
             if query_command.count("?object") > 1:
@@ -315,14 +332,14 @@ class kg_construction(object):
                 item = {'label': i["itemLabel"]["value"], 'value': i["item"]["value"], "altlabel": i["altlabel"]["value"]}
                 self.results_list.append({self.output: item})
 
-        with open("/Users/mlcb/PycharmProjects/Thesis/thesis_py/queries/query_{}.json".format(self.output.replace("/", "")), 'w') as outfile:
+        with open(os.path.join(self.location,"queries/query_{}.json").format(self.output.replace("/", "")), 'w') as outfile:
             json.dump(self.results_list, outfile)
 
     def run_query(self):
         for item in self.input_list:
             self.output = item
             self.input = self.input_list.get(item)
-            if os.path.isfile("/Users/mlcb/PycharmProjects/Thesis/thesis_py/queries/query_{}.json".format(self.output.replace("/", ""))) == True:
+            if os.path.isfile(os.path.join(self.location,"queries/query_{}.json").format(self.output.replace("/", ""))) == True:
                 kg_construction.fuzzy_matching(self)
             else:
                 try:
@@ -330,12 +347,13 @@ class kg_construction(object):
                 except HTTPError:
                     time.sleep(8)
                 kg_construction.fuzzy_matching(self)
+        print(self.data)
 
     def fuzzy_matching(self):
         # link extracted values to wikidata database
 
         # open extracted wikidata entries from wikidata sparql query
-        with open("/Users/mlcb/PycharmProjects/Thesis/thesis_py/queries/query_{}.json".format(self.output.replace("/", "")), "r") as json_file:
+        with open(os.path.join(self.location,"queries/query_{}.json").format(self.output.replace("/", "")), "r") as json_file:
             output_file = json_file.read()
             output_file = output_file.replace("'", "").replace(',}', '}').replace(',]', ']').replace('\n', '').replace('\t', '')
             self.results_list = json.loads(output_file)
@@ -380,78 +398,99 @@ class kg_construction(object):
 
     def generate_triples(self):
 
-        prefix_dict = {
-                       "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-                       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-                       "wd": "https://wikidata.org/entity/",
-                       "omg-spec": "http://www.omg.org/techprocess/ab/SpecificationMetadata/",
-                       "omg-lr": "https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/",
-                       "omg-cc": "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/",
-                       "fibo-fbc-fi-fi": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/",
-                       "fibo-sec-sec-lst": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/",
-                       "fibo-fnd-org-fm": "https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/",
-                       "fibo-fbc-pas-fpas": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/",
-                       "fibo-sec-sec-id": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/",
-                       "fibo-fbc-fct-fse": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/",
-                       "fibo-fnd-agr-ctr": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/",
-                       "fibo-fbc-fct-mkt": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/",
-                       "fibo-be-le-lei": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/",
-                       "fibo-be-le-lp": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/ProfitObjective",
-                       "fibo-be-oac-exec": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/",
-                       "fibo-sec-dbt-bnd": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/",
-                       "fibo-sec-eq-eq": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/",
-                       "fibo-sec-sec-rst": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/",
-                       "fibo-fnd-arr-cls": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/IndustrySectorClassifier/",
-                       "fibo-sec-sec-iss": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/",
-                       "fibo-civ-fnd-civ": "https://spec.edmcouncil.org/fibo/ontology/CIV/Funds/CIV/",
-                       "fibo-fnd-gao-obj": "https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/InvestmentObjective",
-                       "fibo-fnd-pty-pty": "https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/",
-                       "fibo-bp-iss-muni": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/MuniIssuance/",
-                       "fibo-bp-iss-ipo": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/FilingDetails",
-                       "fibo-loan-typ-prod": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/LoanProducts/"
-                       }
+        fibo_prefixes = {}
 
-        mapping_dict = {"accounting_standards": [{"fibo-be-le-lei": "AccountingFramework"}, {"datatype": "string"}], # has _: . _: rdf:type fibo-be-le-lei:AccountingFramework.
-                        "audit_report": [{"wd": "Q740419"}, {"datatype": "string"}], #
-                        "audited_financial_statements": [{"wd": "Q192907"}, {"datatype": "string"}], #still to do
-                        "competitive_strength": [{"wd": "Q963465"}, {"datatype": "string"}], # should be fine
-                        "complex_financials": [{"wd": "Q192907"}, {"datatype": "string"}],
-                        "country_of_origin/headquarters": [{"fibo-fnd-org-fm": "isDomiciledIn"}, {"datatype": "string"}], #
-                        "country_of_registration/incorporation": [{"fibo-fbc-fct-mkt": "operatesInCountry"}, {"datatype": "string"}], #
+        prefixes = {
+                   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+                   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+                   "wd": "https://wikidata.org/entity/",
+                   "omg-spec": "http://www.omg.org/techprocess/ab/SpecificationMetadata/",
+                   "omg-lr": "https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/",
+                   "omg-cc": "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/",
+                   "fibo-ph": "https://spec.edmcouncil.org/fibo/ontology/placeholder/"
+                    }
+
+        # prefix = {
+        #                "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        #                "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        #                "wd": "https://wikidata.org/entity/",
+        #                "omg-spec": "http://www.omg.org/techprocess/ab/SpecificationMetadata/",
+        #                "omg-lr": "https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/",
+        #                "omg-cc": "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/",
+        #                "fibo-fbc-fi-fi": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/",
+        #                "fibo-sec-sec-lst": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/",
+        #                "fibo-fnd-org-fm": "https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/",
+        #                "fibo-fbc-pas-fpas": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/",
+        #                "fibo-sec-sec-id": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/",
+        #                "fibo-fbc-fct-fse": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/",
+        #                "fibo-fnd-agr-ctr": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/",
+        #                "fibo-fbc-fct-mkt": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/",
+        #                "fibo-be-le-lei": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/",
+        #                "fibo-be-le-lp": "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/ProfitObjective",
+        #                "fibo-be-oac-exec": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/",
+        #                "fibo-sec-dbt-bnd": "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/",
+        #                "fibo-sec-eq-eq": "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/",
+        #                "fibo-sec-sec-rst": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/",
+        #                "fibo-fnd-arr-cls": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/IndustrySectorClassifier/",
+        #                "fibo-sec-sec-iss": "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/",
+        #                "fibo-civ-fnd-civ": "https://spec.edmcouncil.org/fibo/ontology/CIV/Funds/CIV/",
+        #                "fibo-fnd-gao-obj": "https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/InvestmentObjective",
+        #                "fibo-fnd-pty-pty": "https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/",
+        #                "fibo-bp-iss-muni": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/MuniIssuance/",
+        #                "fibo-bp-iss-ipo": "https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/FilingDetails",
+        #                "fibo-loan-typ-prod": "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/LoanProducts/",
+        #                "fibo-fnd-arr-rt": "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/",
+        #                "fibo-ph": "https://spec.edmcouncil.org/fibo/ontology/placeholder/"
+        #                }
+
+        with open(os.path.join(self.location,"prefixes_fibo.csv"), newline='') as csvfile:
+            reader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+            for row in reader:
+                fibo_prefixes.update({row[1].replace(":",""): row[2]})
+
+        prefix_dict = {**fibo_prefixes, **prefixes}
+
+        mapping_dict = {"accounting_standards": [{"fibo-be-le-lei": "hasAccountingStandard"}, {"datatype": "string"}],
+                        "audit_report": [{"fibo-sec-sec-lst": "hasAuditReport"}, {"datatype": "string"}],
+                        "audited_financial_statements": [{"fibo-sec-sec-lst": "hasAuditedFinancialStatement"}, {"datatype": "string"}],
+                        "competitive_strength": [{"fibo-fnd-arr-rt": "hasCompetitiveStrength"}, {"datatype": "string"}],
+                        "complex_financials": [{"wd": "Q192907"}, {"datatype": "string"}], # uri+string
+                        "country_of_origin/headquarters": [{"fibo-fnd-org-fm": "isDomiciledIn"}, {"datatype": "string"}],
+                        "country_of_registration/incorporation": [{"fibo-fbc-fct-mkt": "operatesInCountry"}, {"datatype": "string"}],
                         "description_of_the_business": [{"omg-spec": "hasDescription"}, {"datatype": "string"}],
-                        "detailed_transaction": [{"fibo-bp-iss-ipo": "FilingDetails"}, {"datatype": "string"}], # placeholder
-                        "dividend_policy": [{"fibo-sec-eq-eq": "Dividend"},{"datatype": "string"}],
-                        "emphasis_of_matter": [{"wd": "Q5373973"}, {"datatype": "string"}],
-                        "expected_gross_proceeds": [{"wd": "Q850210"}, {"datatype": "decimal"}], #placeholder
-                        "expected_net_proceeds": [{"wd": "Q850210"}, {"datatype": "decimal"}], #placeholder
+                        "detailed_transaction": [{"fibo-bp-iss-ipo": "FilingDetails"}, {"datatype": "string"}],
+                        "dividend_policy": [{"fibo-sec-eq-eq": "hasDividendPolicy"},{"datatype": "string"}],
+                        "emphasis_of_matter": [{"fibo-ph": "emphasisOfMatter"}, {"datatype": "string"}],
+                        "expected_gross_proceeds": [{"fibo-ph": "hasExpectedGrossProceeds"}, {"datatype": "decimal"}],
+                        "expected_net_proceeds": [{"fibo-ph": "hasExpectedNetProceeds"}, {"datatype": "decimal"}],
                         "external_auditor": [{"wd": "P8571"}, {"datatype": "string"}],
                         "filing_date": [{"fibo-fnd-agr-ctr": "hasExecutionDate"}, {"datatype": "date"}],
                         "financial_advisor": [{"fibo-bp-iss-muni": "hasFinancialAdvisor"}, {"datatype": "string"}],
                         "gaas": [{"fibo-be-le-lei": "AccountingFramework"}, {"datatype": "string"}],
                         "industry": [{"wd": "P452"}, {"datatype": "string"}],
-                        "initial_price_range": [{"fibo-fbc-pas-fpas": "hasOfferingPrice"}, {"datatype": "decimal"}], #update
+                        "initial_price_range": [{"fibo-fbc-pas-fpas": "hasOfferingPrice"}, {"datatype": "decimal"}],
                         "investment_bank": [{"fibo-fbc-fct-fse": "InvestmentBank"}, {"datatype": "string"}],
                         "isin": [{"wd": "P946"}, {"datatype": "string"}],
                         "issuer_name": [{"rdfs": "label"}, {"datatype": "string"}],
-                        "key_element_strategy": [{"fibo-fnd-gao-obj": "BusinessStrategy"}, {"datatype": "string"}],# :company :has _: / _: rdf:type fibo:BusinessStrategy / _: fibo:hasGoal ""^^.xsd_string
-                        "key_factor_affecting_results": [{"fibo-fnd-pty-pty": "isAffectedBy"}, {"datatype": "string"}],
-                        "key_line_item_income_statement": [{"wd": "Q243460"}, {"datatype": "string"}],
-                        "listing_venue": [{"wd": "P414"}, {"datatype": "string"}],
+                        "key_element_strategy": [{"fibo-fnd-gao-obj": "BusinessStrategy"}, {"datatype": "string"}],#placeholder
+                        "key_factor_affecting_results": [{"fibo-fnd-pty-pty": "isAffectedBy"}, {"datatype": "string"}], #placeholder
+                        "key_line_item_income_statement": [{"wd": "Q243460"}, {"datatype": "string"}], #placeholder
+                        "listing_venue": [{"fibo-sec-sec-lst": "isTradedOn"}, {"datatype": "string"}],
                         "lock-up_period": [{"fibo-sec-dbt-bnd":"hasLockoutPeriod"}, {"datatype": "duration"}],
-                        "non-gaap_measure": [{"wd": "Q330153"}, {"datatype": "string"}], #
-                        "non-gaap_measure;_definition": [{"wd": "Q330153"}, {"datatype": "string"}], #
+                        "non-gaap_measure": [{"wd": "Q330153"}, {"datatype": "string"}], #placeholder
+                        "non-gaap_measure;_definition": [{"wd": "Q330153"}, {"datatype": "string"}], #placeholder
                         "non-recurring_item": [{"wd": "Q192907"}, {"datatype": "string"}], #string #placeholder
                         "number_of_reportable_segments": [{"wd": "Q192907"}, {"datatype": "string"}], #placeholder
                         "offering_costs": [{"wd": "Q185142"}, {"datatype": "decimal"}], #placeholder
-                        "periods_of_audited_financial_statements": [{"wd": "Q740419"}, {"datatype": "string"}],
+                        "periods_of_audited_financial_statements": [{"wd": "Q740419"}, {"datatype": "string"}], #placeholder
                         "periods_of_pffi": [{"wd": "Q1166072"}, {"datatype": "date"}], #placeholder
                         "periods_of_unaudited_financial_statements": [{"wd": "Q192907"}, {"datatype": "string"}], #placeholder
                         "periods_of_unaudited_interim_fs": [{"wd": "Q192907"}, {"datatype": "date"}], #placeholder
-                        "pro_forma_financial_information": [{"wd": "Q2481549"}, {"datatype": "string"}],
-                        "profit_forecast": [{"wd": "Q748250"}, {"datatype": "string"}],
-                        "reasons_for_the_offering": [{"fibo-be-le-lp": "ProfitObjective"}, {"datatype": "string"}],
+                        "pro_forma_financial_information": [{"wd": "Q2481549"}, {"datatype": "string"}], #placeholder
+                        "profit_forecast": [{"wd": "Q748250"}, {"datatype": "string"}], #placeholder
+                        "reasons_for_the_offering": [{"fibo-be-le-lp": "ProfitObjective"}, {"datatype": "string"}], #placeholder
                         "regulation_s_applies": [{"fibo-sec-sec-rst": "RegulationS"}, {"datatype": "string"}],
-                        "risk_factor": [{"wd": "Q1337875"},{"datatype": "string"}],
+                        "risk_factor": [{"wd": "Q1337875"},{"datatype": "string"}], #placeholder
                         "rule_144a_applies": [{"wd": "Q7378915"}, {"datatype": "boolean"}],
                         "shareholder_transaction": [{"wd": "Q1166072"}, {"datatype": "string"}], # placeholder
                         "shareholders_transaction": [{"wd": "Q1166072"}, {"datatype": "string"}], # placeholder
@@ -459,13 +498,11 @@ class kg_construction(object):
                         "transaction": [{"wd": "Q1166072"}, {"datatype": "string"}],
                         "unaudited_financial_statements": [{"wd": "Q192907"}, {"datatype": "string"}], #placeholder
                         "unaudited_interim_financial_statements": [{"wd": "Q192907"}, {"datatype": "string"}], #placeholder
-                        "underwriters_incentive_fee": [{"fibo-fbc-fct-fse": "UnderwritingArrangement"}, {"datatype": "decimal"}],
-                        "underwriting_fees": [{"fibo-fbc-fct-fse": "UnderwritingArrangement"}, {"datatype": "decimal"}],
+                        "underwriters_incentive_fee": [{"fibo-fbc-fct-fse": "UnderwritingArrangement"}, {"datatype": "decimal"}], #placeholder
+                        "underwriting_fees": [{"fibo-fbc-fct-fse": "UnderwritingArrangement"}, {"datatype": "decimal"}], #placeholder
                         "use_of_proceeds": [{"fibo-civ-fnd-civ": "InvestmentStrategy"}, {"datatype": "string"}],
                         "working_capital_statement": [{"fibo-loan-typ-prod": "WorkingCapitalPurpose"}, {"datatype": "string"}]
                         }
-
-                        # ticker-symbol: <https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/isIdentifiedBy> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol>.
 
         def triple_subject():
             subject = triple_format("{}#{}".format(URIRef("http://example.org/entity/"),self.data["issuer_name"][0].replace(" ", "")))
@@ -534,19 +571,13 @@ class kg_construction(object):
             #Thread(target = self.metadata()).start()
 
 if __name__ == "__main__":
-    path = "/Users/mlcb/PycharmProjects/Thesis/thesis_py/data"
+    path = os.path.realpath(os.path.join(os.getcwd(), "data"))
     with os.scandir(path) as it:
         for entry in it:
             if entry.name.endswith(".json") and entry.is_file():
                 kg_construction(entry.path).runall()
                 #break
-     # def metadata(self):
-     #        pass
-     #    # dublin_core_namespace = {"dc": "http://purl.org/dc/elements/1.1/"}
-     #    # for subject in self.data_graph:
-     #    #     print(self.data_graph)
-     #    #     #print("subject: {}".format(subject))
-     #    # pass
+
 
 
 

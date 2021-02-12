@@ -1,5 +1,8 @@
-# Part I:   Entity Linking - including mention detection & entity disambiguation
+# Part I:   Entity Linking - including mention detection (e.g. BERT-CRF) & entity disambiguation (e.g. BERT-Softmax)
 
-# Part II:  Predicate Mapping
+# Which entity is referred to by NLQ q
+
+
+# Part II:  Predicate Mapping (e.g. BERT-Softmax)
 
 # Part III: Answer Selection
