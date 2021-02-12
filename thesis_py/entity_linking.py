@@ -1,12 +1,13 @@
 from threading import Thread
-import json
 from fuzzywuzzy import fuzz
+import json
 
 
 class EntityLinking(object):
 
-    def __init__(self, dir_prediction):
+    def __init__(self, dir_prediction: str, threshold: float):
         self.dir_prediction = dir_prediction
+        self.threshold = threshold
         self.prediction = None
         self.relation = None
         self.entity = None
@@ -22,7 +23,6 @@ class EntityLinking(object):
                 print(self.relation)
 
     def extract_entity(self):
-
         start_end = None
         for i in self.prediction:
             for j in range(0, len(i["entities"])):
@@ -36,17 +36,19 @@ class EntityLinking(object):
             self.entity = " ".join(entity_cache)
             return print(self.entity)
 
+    def kg_entity_query(self):
+        pass
+
     def entity_matching(self):
 
+        # placeholder KG
         knowledge_graph = ["Volkswagen AG", "Gamestop", "BMW"]
-
-        threshold = 0.85
 
         best_candidate = "No Match"
 
         for entity_candidate in knowledge_graph:
-            if fuzz.token_set_ratio(self.entity, entity_candidate) > threshold:
-                threshold = fuzz.token_set_ratio(self.entity, entity_candidate)
+            if fuzz.token_set_ratio(self.entity, entity_candidate) > self.threshold:
+                self.threshold = fuzz.token_set_ratio(self.entity, entity_candidate)
                 best_candidate = entity_candidate
 
         return print(best_candidate)
@@ -61,4 +63,5 @@ class EntityLinking(object):
 
 if __name__ == "__main__":
     prediction_dir = "/Users/mlcb/Desktop/spert-master-3/data/predictions.json"
-    EntityLinking(prediction_dir).runall()
+    threshold_value = 0.85
+    EntityLinking(prediction_dir, threshold_value).runall()
