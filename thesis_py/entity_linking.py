@@ -1,9 +1,9 @@
 from threading import Thread
 import json
 from fuzzywuzzy import fuzz
-'''''''''INPUT: json_file -> dict'''''''''''''''
 
-class entity_linking(object):
+
+class EntityLinking(object):
 
     def __init__(self, dir_prediction):
         self.dir_prediction = dir_prediction
@@ -22,6 +22,8 @@ class entity_linking(object):
                 print(self.relation)
 
     def extract_entity(self):
+
+        start_end = None
         for i in self.prediction:
             for j in range(0, len(i["entities"])):
                 if i["entities"][j]["type"] == "company":
@@ -36,21 +38,27 @@ class entity_linking(object):
 
     def entity_matching(self):
 
-        knowledge_graph = ["Volkswagen AG", "Gamestop AG", "BMW"]
+        knowledge_graph = ["Volkswagen AG", "Gamestop", "BMW"]
 
-        for entity in knowledge_graph:
-            print(entity)
+        threshold = 0.85
 
-            fuzz.token_set_ratio()
+        best_candidate = "No Match"
 
+        for entity_candidate in knowledge_graph:
+            if fuzz.token_set_ratio(self.entity, entity_candidate) > threshold:
+                threshold = fuzz.token_set_ratio(self.entity, entity_candidate)
+                best_candidate = entity_candidate
+
+        return print(best_candidate)
 
     def runall(self):
         if __name__ == '__main__':
             Thread(target=self.load_prediction()).start()
             Thread(target=self.extract_relation()).start()
             Thread(target=self.extract_entity()).start()
+            Thread(target=self.entity_matching()).start()
 
 
 if __name__ == "__main__":
     prediction_dir = "/Users/mlcb/Desktop/spert-master-3/data/predictions.json"
-    entity_linking(prediction_dir).runall()
+    EntityLinking(prediction_dir).runall()
