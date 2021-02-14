@@ -513,7 +513,7 @@ class kg_construction(object):
             global predicate
             if item in mapping_dict:
                 for key in mapping_dict[item][0]:
-                        predicate = "<{}{}>".format(prefix_dict[key], *mapping_dict[item][0].values())
+                    predicate = "<{}{}>".format(prefix_dict[key], *mapping_dict[item][0].values())
             else:
                 pass
             return predicate
