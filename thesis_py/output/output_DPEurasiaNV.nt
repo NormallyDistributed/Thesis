@@ -25,3 +25,138 @@
 <http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/>FilingDetails> 'The combined financial information isbased on the aggregation of the consolidated financial information of Fidesrus and Fides Food. These twosubsidiaries of the Group have been under common control throughout the period presented as combinedfinancial information. Subsidiaries are fully consolidated from when control is transferred to the Company (the“Acquisition”).'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'UNAUDITED CONDENSED COMBINED AND CONSOLIDATED INTERIMFINANCIAL INFORMATION'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> '2017-03-31'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#DPEurasiaN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'DP Eurasia N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/>hasExecutionDate> '2017-06-28'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/>RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/>operatesInCountry> 'the Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/>operatesInCountry> <http://www.wikidata.org/entity/Q55>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P946> 'NL0012328801'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P249> 'DPEU'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/>isTradedOn> 'London Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/>isTradedOn> <http://www.wikidata.org/entity/Q171240>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q1337875> 'Following Brexit the main market of the London Stock Exchange may cease to be a regulated market whichmay affect trading of the Shares, the ability of the Company to raise capital and the rights of shareholders'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'The Company’s combined and consolidated financial information'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'combined financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'consolidated financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> <http://www.wikidata.org/entity/Q380559>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/>hasAccountingStandard> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/>hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P452> 'the food service industry'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q330153> 'Leverage Ratio'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q330153> 'Leverage Ratio is defined as Adjusted Net Debt divided by Adjusted EBITDA'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q1166072> 'Offer'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P8571> 'PwC BağımsızDenetim ve Serbest Muhasebeci Mali Müşavirlik A.Ş'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q740419> 'AS AT AND FOR THE YEARS ENDED 31 DECEMBER 2016, 2015 AND 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/>hasAuditedFinancialStatement> 'COMBINED AND CONSOLIDATEDFINANCIAL INFORMATIONAS AT AND FOR THE YEARS ENDED 31 DECEMBER 2016, 2015 AND 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/>FilingDetails> 'The combined financial information isbased on the aggregation of the consolidated financial information of Fidesrus and Fides Food. These twosubsidiaries of the Group have been under common control throughout the period presented as combinedfinancial information. Subsidiaries are fully consolidated from when control is transferred to the Company (the“Acquisition”).'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'UNAUDITED CONDENSED COMBINED AND CONSOLIDATED INTERIMFINANCIAL INFORMATION'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> '2017-03-31'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#DPEurasiaN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'DP Eurasia N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/>hasExecutionDate> '2017-06-28'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/>RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/>operatesInCountry> 'the Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/>operatesInCountry> <http://www.wikidata.org/entity/Q55>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P946> 'NL0012328801'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P249> 'DPEU'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/>isTradedOn> 'London Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/>isTradedOn> <http://www.wikidata.org/entity/Q171240>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q1337875> 'Following Brexit the main market of the London Stock Exchange may cease to be a regulated market whichmay affect trading of the Shares, the ability of the Company to raise capital and the rights of shareholders'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'The Company’s combined and consolidated financial information'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'combined financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'consolidated financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> <http://www.wikidata.org/entity/Q380559>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/>hasAccountingStandard> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/>hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P452> 'the food service industry'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q330153> 'Leverage Ratio'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q330153> 'Leverage Ratio is defined as Adjusted Net Debt divided by Adjusted EBITDA'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q1166072> 'Offer'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P8571> 'PwC BağımsızDenetim ve Serbest Muhasebeci Mali Müşavirlik A.Ş'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q740419> 'AS AT AND FOR THE YEARS ENDED 31 DECEMBER 2016, 2015 AND 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/>hasAuditedFinancialStatement> 'COMBINED AND CONSOLIDATEDFINANCIAL INFORMATIONAS AT AND FOR THE YEARS ENDED 31 DECEMBER 2016, 2015 AND 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/>FilingDetails> 'The combined financial information isbased on the aggregation of the consolidated financial information of Fidesrus and Fides Food. These twosubsidiaries of the Group have been under common control throughout the period presented as combinedfinancial information. Subsidiaries are fully consolidated from when control is transferred to the Company (the“Acquisition”).'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'UNAUDITED CONDENSED COMBINED AND CONSOLIDATED INTERIMFINANCIAL INFORMATION'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> '2017-03-31'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#DPEurasiaN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'DP Eurasia N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/>hasExecutionDate> '2017-06-28'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/>RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/>operatesInCountry> 'the Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/>operatesInCountry> <http://www.wikidata.org/entity/Q55>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P946> 'NL0012328801'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P249> 'DPEU'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/>isTradedOn> 'London Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/>isTradedOn> <http://www.wikidata.org/entity/Q171240>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q1337875> 'Following Brexit the main market of the London Stock Exchange may cease to be a regulated market whichmay affect trading of the Shares, the ability of the Company to raise capital and the rights of shareholders'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'The Company’s combined and consolidated financial information'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'combined financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'consolidated financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> <http://www.wikidata.org/entity/Q380559>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/>hasAccountingStandard> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/>hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P452> 'the food service industry'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q330153> 'Leverage Ratio'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q330153> 'Leverage Ratio is defined as Adjusted Net Debt divided by Adjusted EBITDA'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q1166072> 'Offer'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P8571> 'PwC BağımsızDenetim ve Serbest Muhasebeci Mali Müşavirlik A.Ş'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q740419> 'AS AT AND FOR THE YEARS ENDED 31 DECEMBER 2016, 2015 AND 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/>hasAuditedFinancialStatement> 'COMBINED AND CONSOLIDATEDFINANCIAL INFORMATIONAS AT AND FOR THE YEARS ENDED 31 DECEMBER 2016, 2015 AND 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/>FilingDetails> 'The combined financial information isbased on the aggregation of the consolidated financial information of Fidesrus and Fides Food. These twosubsidiaries of the Group have been under common control throughout the period presented as combinedfinancial information. Subsidiaries are fully consolidated from when control is transferred to the Company (the“Acquisition”).'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'UNAUDITED CONDENSED COMBINED AND CONSOLIDATED INTERIMFINANCIAL INFORMATION'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> '2017-03-31'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#DPEurasiaN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'DP Eurasia N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/>hasExecutionDate> '2017-06-28'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/>RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/>operatesInCountry> 'the Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/>operatesInCountry> <http://www.wikidata.org/entity/Q55>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P946> 'NL0012328801'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P249> 'DPEU'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/>isTradedOn> 'London Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/>isTradedOn> <http://www.wikidata.org/entity/Q171240>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q1337875> 'Following Brexit the main market of the London Stock Exchange may cease to be a regulated market whichmay affect trading of the Shares, the ability of the Company to raise capital and the rights of shareholders'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'The Company’s combined and consolidated financial information'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'combined financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'consolidated financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> <http://www.wikidata.org/entity/Q380559>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/>hasAccountingStandard> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/>hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P452> 'the food service industry'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q330153> 'Leverage Ratio'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q330153> 'Leverage Ratio is defined as Adjusted Net Debt divided by Adjusted EBITDA'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q1166072> 'Offer'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P8571> 'PwC BağımsızDenetim ve Serbest Muhasebeci Mali Müşavirlik A.Ş'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q740419> 'AS AT AND FOR THE YEARS ENDED 31 DECEMBER 2016, 2015 AND 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/>hasAuditedFinancialStatement> 'COMBINED AND CONSOLIDATEDFINANCIAL INFORMATIONAS AT AND FOR THE YEARS ENDED 31 DECEMBER 2016, 2015 AND 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/>FilingDetails> 'The combined financial information isbased on the aggregation of the consolidated financial information of Fidesrus and Fides Food. These twosubsidiaries of the Group have been under common control throughout the period presented as combinedfinancial information. Subsidiaries are fully consolidated from when control is transferred to the Company (the“Acquisition”).'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'UNAUDITED CONDENSED COMBINED AND CONSOLIDATED INTERIMFINANCIAL INFORMATION'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> '2017-03-31'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#DPEurasiaN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'DP Eurasia N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/>hasExecutionDate> '2017-06-28'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/>RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/>operatesInCountry> 'the Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/>operatesInCountry> <http://www.wikidata.org/entity/Q55>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P946> 'NL0012328801'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P249> 'DPEU'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/>isTradedOn> 'London Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/>isTradedOn> <http://www.wikidata.org/entity/Q171240>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q1337875> 'Following Brexit the main market of the London Stock Exchange may cease to be a regulated market whichmay affect trading of the Shares, the ability of the Company to raise capital and the rights of shareholders'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'The Company’s combined and consolidated financial information'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'combined financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'consolidated financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> <http://www.wikidata.org/entity/Q380559>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/>hasAccountingStandard> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/>hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P452> 'the food service industry'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q330153> 'Leverage Ratio'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q330153> 'Leverage Ratio is defined as Adjusted Net Debt divided by Adjusted EBITDA'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q1166072> 'Offer'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P8571> 'PwC BağımsızDenetim ve Serbest Muhasebeci Mali Müşavirlik A.Ş'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q740419> 'AS AT AND FOR THE YEARS ENDED 31 DECEMBER 2016, 2015 AND 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/>hasAuditedFinancialStatement> 'COMBINED AND CONSOLIDATEDFINANCIAL INFORMATIONAS AT AND FOR THE YEARS ENDED 31 DECEMBER 2016, 2015 AND 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <<https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/>FilingDetails> 'The combined financial information isbased on the aggregation of the consolidated financial information of Fidesrus and Fides Food. These twosubsidiaries of the Group have been under common control throughout the period presented as combinedfinancial information. Subsidiaries are fully consolidated from when control is transferred to the Company (the“Acquisition”).'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'UNAUDITED CONDENSED COMBINED AND CONSOLIDATED INTERIMFINANCIAL INFORMATION'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> '2017-03-31'^^<https://www.w3.org/2001/XMLSchema#date>.
