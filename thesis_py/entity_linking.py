@@ -4,19 +4,33 @@ import json
 import os
 import csv
 import rdflib.graph as g
+from spacy.lang.en import English
+import subprocess
 
 
 class EntityLinking(object):
 
-    def __init__(self, dir_prediction: str, initial_threshold: int):
+    def __init__(self, dir_prediction: str, initial_threshold: int, question_input: str):
         self.dir_prediction = dir_prediction
         self.threshold = initial_threshold
+        self.question = question_input
         self.prediction = None
         self.relation = None
         self.relation_uri = None
         self.entity_uri = None
         self.entity = None
         self.location = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
+
+    def questions(self):
+        nlp = English()
+        tokenizer = nlp.tokenizer
+        with open('/Users/mlcb/PycharmProjects/Thesis/thesis_py/question.json', 'w') as fp:
+            json.dump([{"tokens": ["{}".format(i) for i in tokenizer(self.question)]}], fp)
+        subprocess.call(["python",
+                         "/Users/mlcb/PycharmProjects/Thesis/thesis_py/spert-master-3/spert.py",
+                         "predict",
+                         "--config",
+                         "/Users/mlcb/PycharmProjects/Thesis/thesis_py/spert-master-3/configs/example_predict.conf"])
 
     def load_prediction(self):
         with open(self.dir_prediction) as json_file:
@@ -171,40 +185,56 @@ class EntityLinking(object):
                 entity_cache.append(i["tokens"][j])
             self.entity = " ".join(entity_cache)
 
-    def kg_entity_query(self):
-        pass
-
     def entity_matching(self):
 
-        # placeholder KG
-        knowledge_graph_entities = ["Volkswagen AG", "Gamestop", "BMW", "Hello Fresh SE"]
+        graph = g.Graph()
+        graph.parse('data/CovestroAG.nt', format='ttl')
+        #                  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+        query_command = "?subject <http://www.w3.org/2000/01/rdf-schema#label> ?object"
+
+        query_result = graph.query("""
+          SELECT * WHERE {
+          """ + query_command + """ .
+          }""")
+
+        candidate_list = list()
+        for row in query_result:
+            candidate_list.append([str(row.asdict()["object"].toPython()), str(row.asdict()["subject"].toPython())])
 
         best_candidate = "No Match"
 
         threshold: int = self.threshold
 
-        for entity_candidate in knowledge_graph_entities:
-            if fuzz.token_set_ratio(self.entity, entity_candidate) > threshold:
+        for entity_candidate in candidate_list:
+            if fuzz.token_set_ratio(self.entity, entity_candidate[0]) > threshold:
                 threshold = fuzz.token_set_ratio(self.entity, entity_candidate)
                 best_candidate = entity_candidate
+        self.entity_uri = best_candidate[1]
 
     def query(self):
         graph = g.Graph()
         graph.parse('data/CovestroAG.nt', format='ttl')
 
-        self.entity_uri = "<http://example.org/entity/#CovestroAG>"
-
-        query_command = str(self.entity_uri + " " + str(self.relation_uri) + " " + "?object")
+        query_command = str("<{}>".format(self.entity_uri) + " " + str(self.relation_uri) + " " + "?object")
 
         query_result = graph.query("""
           SELECT ?object WHERE {
           """ + query_command + """ .
           }""")
+
+        answer_list = list()
         for row in query_result:
-            print("The {} of {} is {}.".format(self.relation, self.entity, row[0]))
+            answer_list.append(str(row.asdict()["object"].toPython()))
+
+        if not answer_list:
+            return print("Answer unknown.")
+        else:
+            return print("The {} of {} is {}.".format(self.relation, self.entity, answer_list[0]))
 
     def runall(self):
         if __name__ == '__main__':
+            Thread(target=self.questions()).start()
             Thread(target=self.load_prediction()).start()
             Thread(target=self.extract_relation()).start()
             Thread(target=self.extract_entity()).start()
@@ -213,6 +243,7 @@ class EntityLinking(object):
 
 
 if __name__ == "__main__":
-    prediction_dir = "/Users/mlcb/Desktop/spert-master-3/data/predictions.json"
+    prediction_dir = "/Users/mlcb/PycharmProjects/Thesis/thesis_py/prediction.json"
     threshold_value = 85
-    EntityLinking(prediction_dir, threshold_value).runall()
+    question = "What is the isin of vapiano"
+    EntityLinking(prediction_dir, threshold_value, question).runall()

@@ -1,5 +1,6 @@
 import json
 from spacy.lang.en import English
+
 nlp = English()
 tokenizer = nlp.tokenizer
 
@@ -11,4 +12,4 @@ def questions(question: str):
     with open('questions_prediction_example.json', 'w') as fp:
         json.dump([{"tokens": ["{}".format(i) for i in tokenizer(question)]}], fp)
 
-questions(test)
+
