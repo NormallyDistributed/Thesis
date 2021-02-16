@@ -3,6 +3,7 @@ import itertools
 import json
 import os
 
+
 class GenerateQuestions(object):
 
     def __init__(self, dir_relations, dir_entities, dir_commands):
@@ -34,20 +35,20 @@ class GenerateQuestions(object):
             questions.append(x)
 
         for j in range(0, len(questions)):
-            cache = []
-            cache2 = []
-            cache3 = []
+            cache = [list(), list(), list()]
             counter = 0
             for i in questions[j]:
-                cache.append(i[0].split())
+                cache[0].append(i[0].split())
                 if i[1][0] in [key for key in self.relations.keys()]:
                     counter += i[1][1]
-                    cache3.append({"type": i[1][0], "head": 1, "tail": 0})
+                    cache[2].append({"type": i[1][0], "head": 1, "tail": 0})
                 else:
                     counter += i[1][1]
-                    cache2.append({"type": i[1][0], "start": counter - i[1][1], "end": counter})
+                    cache[1].append({"type": i[1][0], "start": counter - i[1][1], "end": counter})
             self.questions_list.append(
-                {"tokens": [item for sublist in cache for item in sublist], "entities": cache2, "relations": cache3,
+                {"tokens": [item for sublist in cache[0] for item in sublist],
+                 "entities": cache[1],
+                 "relations": cache[2],
                  "orig_id": j})
 
     def train_dev_test_split(self):
@@ -77,7 +78,7 @@ class GenerateQuestions(object):
 
 
 if __name__ == "__main__":
-    relations_dict = os.path.realpath(os.path.join(os.getcwd(), "/input/relations_dict.json"))
-    entities_dict = os.path.realpath(os.path.join(os.getcwd(), "/input/entities_dict.json"))
-    commands_dict = os.path.realpath(os.path.join(os.getcwd(), "/input/commands_dict.json"))
+    relations_dict = os.path.realpath(os.path.join(os.getcwd(), "question_generation/input/relations_dict.json"))
+    entities_dict = os.path.realpath(os.path.join(os.getcwd(), "question_generation/input/entities_dict.json"))
+    commands_dict = os.path.realpath(os.path.join(os.getcwd(), "question_generation/input/commands_dict.json"))
     GenerateQuestions(relations_dict, entities_dict, commands_dict).runall()
