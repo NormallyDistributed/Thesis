@@ -16,31 +16,30 @@ import datefinder
 
 
 class KnowledgeGraphConstruction(object):
-
     input_list = {
-                "accounting_standards": "{?item wdt:P31 wd:Q317623. ?item skos:altLabel ?altlabel.} "
-                                        "UNION {?item wdt:P31 wd:Q1779838. ?item skos:altLabel ?altlabel.}",
-                "complex_financials": "{?item wdt:P279 wd:Q192907. ?item skos:altLabel ?altlabel.}",
-                "country_of_origin/headquarters": "?item wdt:P31 wd:Q6256. ?item skos:altLabel ?altlabel.",
-                "country_of_registration/incorporation": "?item wdt:P31 wd:Q6256. ?item skos:altLabel ?altlabel.",
-                "external_auditor": "?item wdt:P452 wd:Q23700345. ?item skos:altLabel ?altlabel.",
-                "financial_advisor": "{ {?item wdt:P31 wd:Q613142.} "
-                                     "OPTIONAL { ?item skos:altLabel ?altlabel.} } "
-                                     "UNION { {?item wdt:P31 wd:Q4830453.} "
-                                     "OPTIONAL {?item skos:altLabel ?altlabel.} }",
-                "industry": "{?item wdt:P31 wd:Q8148. ?item skos:altLabel ?altlabel.} "
-                            "UNION {?item wdt:P31 wd:Q268592. ?item skos:altLabel ?altlabel.}",
-                "initial_price_range": "{?item wdt:P31 wd:Q8142. ?item skos:altLabel ?altlabel.}",
-                "investment_bank": "{?item wdt:P31 wd:Q319845. ?item skos:altLabel ?altlabel.} "
-                                   "UNION {?item wdt:P31 wd:Q22687. ?item skos:altLabel ?altlabel.} "
-                                   "UNION {?item wdt:P31 wd:Q568041. ?item skos:altLabel ?altlabel.} "
-                                   "UNION {?item wdt:P31 wd:Q670792. ?item skos:altLabel ?altlabel.} "
-                                   "UNION {?item wdt:P31 wd:Q4830453. ?item skos:altLabel ?altlabel.} "
-                                   "UNION {?item wdt:P31 wd:Q2111088. ?item skos:altLabel ?altlabel.}",
-                "isin": "?item wdt:P946 ?object. ?item skos:altLabel ?altlabel.",
-                "listing_venue": "?item wdt:P31 wd:Q11691. ?item skos:altLabel ?altlabel.",
-                "non-gaap_measure": "{{?item wdt:P31 wd:Q832161.} OPTIONAL {?item skos:altLabel ?altlabel.}}"
-                 }
+        "accounting_standards": "{?item wdt:P31 wd:Q317623. ?item skos:altLabel ?altlabel.} "
+                                "UNION {?item wdt:P31 wd:Q1779838. ?item skos:altLabel ?altlabel.}",
+        "complex_financials": "{?item wdt:P279 wd:Q192907. ?item skos:altLabel ?altlabel.}",
+        "country_of_origin/headquarters": "?item wdt:P31 wd:Q6256. ?item skos:altLabel ?altlabel.",
+        "country_of_registration/incorporation": "?item wdt:P31 wd:Q6256. ?item skos:altLabel ?altlabel.",
+        "external_auditor": "?item wdt:P452 wd:Q23700345. ?item skos:altLabel ?altlabel.",
+        "financial_advisor": "{ {?item wdt:P31 wd:Q613142.} "
+                             "OPTIONAL { ?item skos:altLabel ?altlabel.} } "
+                             "UNION { {?item wdt:P31 wd:Q4830453.} "
+                             "OPTIONAL {?item skos:altLabel ?altlabel.} }",
+        "industry": "{?item wdt:P31 wd:Q8148. ?item skos:altLabel ?altlabel.} "
+                    "UNION {?item wdt:P31 wd:Q268592. ?item skos:altLabel ?altlabel.}",
+        "initial_price_range": "{?item wdt:P31 wd:Q8142. ?item skos:altLabel ?altlabel.}",
+        "investment_bank": "{?item wdt:P31 wd:Q319845. ?item skos:altLabel ?altlabel.} "
+                           "UNION {?item wdt:P31 wd:Q22687. ?item skos:altLabel ?altlabel.} "
+                           "UNION {?item wdt:P31 wd:Q568041. ?item skos:altLabel ?altlabel.} "
+                           "UNION {?item wdt:P31 wd:Q670792. ?item skos:altLabel ?altlabel.} "
+                           "UNION {?item wdt:P31 wd:Q4830453. ?item skos:altLabel ?altlabel.} "
+                           "UNION {?item wdt:P31 wd:Q2111088. ?item skos:altLabel ?altlabel.}",
+        "isin": "?item wdt:P946 ?object. ?item skos:altLabel ?altlabel.",
+        "listing_venue": "?item wdt:P31 wd:Q11691. ?item skos:altLabel ?altlabel.",
+        "non-gaap_measure": "{{?item wdt:P31 wd:Q832161.} OPTIONAL {?item skos:altLabel ?altlabel.}}"
+    }
 
     def __init__(self, dir):
         self.dir = dir
@@ -60,7 +59,6 @@ class KnowledgeGraphConstruction(object):
             self.data = json.load(json_file)
 
     def preprocessing(self):
-
         # extract annotations from parsed pdf
         placeholder: Dict[Any, Any] = {}
         for annotation in range(0, len(self.data["blobs"])):
@@ -158,7 +156,7 @@ class KnowledgeGraphConstruction(object):
                             if "," in number and "." in number:
                                 zeros1 = abs(Price.fromstring(number).amount.as_tuple().exponent)
                                 cache.append([item, number.replace(".", "").replace(",", "") + "0" * (3 - int(zeros1)),
-                                             currency_mapper(Price.fromstring(item).currency)])
+                                              currency_mapper(Price.fromstring(item).currency)])
                             if "." in number and "," not in number:
                                 zeros2 = abs(Price.fromstring(number).amount.as_tuple().exponent)
                                 cache.append([item, number.replace(".", "") + "0" * (6 - int(zeros2)),
@@ -228,7 +226,7 @@ class KnowledgeGraphConstruction(object):
             try:
                 for item in [re.sub('[^A-Za-z0-9]+', '', item).replace(" ", "").lower() for item in
                              self.data[var]]:
-                    if (var.replace("applies", "").replace("_", "").replace(" ", "") in item)\
+                    if (var.replace("applies", "").replace("_", "").replace(" ", "") in item) \
                             or (fuzz.token_set_ratio(var.replace("applies", "").replace("_", "").replace(" ", ""),
                                                      item) > 85) or (item in ["yes", "true", "1"]):
                         self.data[var] = [str(True)]
@@ -276,9 +274,9 @@ class KnowledgeGraphConstruction(object):
             try:
                 for item in [element.lower().strip() for element in self.data[var]]:
                     for i in range(0, len(item.split())):
-                        if ("combined" in item.split()[i]) and (item.split()[i-1] != "no"):
+                        if ("combined" in item.split()[i]) and (item.split()[i - 1] != "no"):
                             self.data[var].append("combined financial statement")
-                        if ("consolidated" in item.split()[i]) and (item.split()[i-1] != "no"):
+                        if ("consolidated" in item.split()[i]) and (item.split()[i - 1] != "no"):
                             self.data[var].append("consolidated financial statement")
             except KeyError:
                 pass
@@ -330,11 +328,6 @@ class KnowledgeGraphConstruction(object):
         # apply preprocessing for all keys in preprocessing_dict
         for key in preprocessing_dict.keys():
             preprocessing_dict[key](key)
-
-        try:
-            print(self.data["underwriting_fees"])
-        except KeyError:
-            pass
 
     def query(self):
 
@@ -389,7 +382,7 @@ class KnowledgeGraphConstruction(object):
         with open(os.path.join(self.location,
                                "queries/query_{}.json").format(self.output.replace("/", "")), "r") as json_file:
             output_file = json_file.read()
-            output_file = output_file.replace("'", "").replace(',}', '}').replace(',]', ']').replace('\n', '')\
+            output_file = output_file.replace("'", "").replace(',}', '}').replace(',]', ']').replace('\n', '') \
                 .replace('\t', '')
             self.results_list = json.loads(output_file)
 
@@ -423,8 +416,9 @@ class KnowledgeGraphConstruction(object):
                         threshold = 85
                         for element in self.data[self.output]:
                             for x in placeholder_list:
-                                if (fuzz.ratio(norm(x["label"]), norm(element)) or
-                                        fuzz.ratio(norm(x["altlabel"]), norm(element))) > threshold:
+                                if (fuzz.ratio(norm(x["label"]),
+                                               norm(element)) or fuzz.ratio(norm(x["altlabel"]),
+                                                                            norm(element))) > threshold:
                                     threshold = max(fuzz.ratio(norm(x["label"]),
                                                                norm(element)),
                                                     fuzz.ratio(norm(x["altlabel"]), norm(element)))
@@ -440,23 +434,25 @@ class KnowledgeGraphConstruction(object):
         fibo_prefixes = {}
 
         prefixes = {
-                   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-                   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-                   "wd": "https://wikidata.org/entity/",
-                   "omg-spec": "http://www.omg.org/techprocess/ab/SpecificationMetadata/",
-                   "omg-lr": "https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/",
-                   "omg-cc": "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/",
-                   "fibo-ph": "https://spec.edmcouncil.org/fibo/ontology/placeholder/"
-                    }
+            "fibo-ph": "https://spec.edmcouncil.org/fibo/ontology/placeholder/",
+            "omg-spec": "http://www.omg.org/techprocess/ab/SpecificationMetadata/",
+            "omg-lr": "https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/",
+            "omg-cc": "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/",
+            "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "skos": "http://www.w3.org/2004/02/skos/core#",
+            "wd": "https://wikidata.org/entity/"
+        }
 
         with open(os.path.join(self.location, "prefixes_fibo.csv"), newline='') as csvfile:
             reader = csv.reader(csvfile, delimiter=' ', quotechar='|')
             for row in reader:
-                fibo_prefixes.update({row[1].replace(":", ""): row[2]})
+                fibo_prefixes.update({row[1].replace(":", ""): row[2].replace(">", "")})
 
         prefix_dict = {**fibo_prefixes, **prefixes}
 
         mapping_dict = {"accounting_standards": [{"fibo-be-le-lei": "hasAccountingStandard"}, {"datatype": "string"}],
+                        "alternative_label": [{"skos": "altLabel"}, {"datatype": "string"}],
                         "audit_report": [{"fibo-sec-sec-lst": "hasAuditReport"}, {"datatype": "string"}],
                         "audited_financial_statements": [{"fibo-sec-sec-lst": "hasAuditedFinancialStatement"},
                                                          {"datatype": "string"}],
@@ -533,6 +529,7 @@ class KnowledgeGraphConstruction(object):
             if item in mapping_dict:
                 for key in mapping_dict[item][0]:
                     predicate = "<{}{}>".format(prefix_dict[key], *mapping_dict[item][0].values())
+                    predicate = predicate.replace("<<", "<")
             else:
                 pass
             return predicate
@@ -542,6 +539,9 @@ class KnowledgeGraphConstruction(object):
 
         def xsd_type(input_value):
             return "^^<https://www.w3.org/2001/XMLSchema#{}>.".format(input_value)
+
+        if not os.path.exists(os.path.realpath(os.path.join(os.getcwd(), "output"))):
+            os.makedirs(os.path.realpath(os.path.join(os.getcwd(), "output")))
 
         def object_(item_):
             subject = triple_subject()
@@ -571,7 +571,7 @@ class KnowledgeGraphConstruction(object):
                             print(object_value.replace(".", ""), "<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>",
                                   "'{}'^^<https://www.w3.org/2001/XMLSchema#decimal>.".format(element[1]),
                                   file=f)
-                            if element[2] is not None:
+                            if element[2] is not None and element[2] != "None":
                                 print(object_value.replace(".", ""),
                                       "<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/" +
                                       "FinancialInstruments/isDenominatedIn>",
@@ -580,6 +580,8 @@ class KnowledgeGraphConstruction(object):
                                   "'{}'^^<http://www.w3.org/2001/XMLSchema#string>.".format(
                                       element[0].replace("'", "").replace('"', "")),
                                   file=f)
+                            if element[2] == 'None':
+                                pass
                     elif "duration" in mapping_dict[item_][1].values():
                         object_value = "'{}'{}".format(element, xsd_type("duration"))
                     elif element in [str(True), str(False)]:
@@ -591,7 +593,7 @@ class KnowledgeGraphConstruction(object):
                         except AttributeError:
                             object_value = "'{}'^^<http://www.w3.org/2001/XMLSchema#string>.".format(
                                 [elem.replace("'", "").replace('"', "") for elem in element])
-                    print(subject, predicate, object_value, file=f)
+                    print(subject, predicate, object_value.replace("['", "").replace("']", ""), file=f)
             f.close()
 
         for instance in self.data:
@@ -600,10 +602,9 @@ class KnowledgeGraphConstruction(object):
     def runall(self):
         if __name__ == '__main__':
             Thread(target=self.load_parsed_pdf()).start()
-            Thread(target=self.preprocessing()).start()
+            Thread(target=self.preprocessing).start()
             Thread(target=self.run_query()).start()
             Thread(target=self.generate_triples()).start()
-            #  Thread(target = self.metadata()).start()
 
 
 if __name__ == "__main__":
@@ -612,4 +613,3 @@ if __name__ == "__main__":
         for entry in it:
             if entry.name.endswith(".json") and entry.is_file():
                 KnowledgeGraphConstruction(entry.path).runall()
-                #  break

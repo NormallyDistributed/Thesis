@@ -1,1 +1,0 @@
-[{"tokens": ["What", "is", "the", "ISIN", "of", "AXA", "AG", "?"], "entities": [{"type": "interrogative_word", "start": 0, "end": 1}, {"type": "company", "start": 5, "end": 8}], "relations": [{"type": "isin", "head": 1, "tail": 0}]}]

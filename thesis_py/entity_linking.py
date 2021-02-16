@@ -162,7 +162,8 @@ class EntityLinking(object):
             predicate = None
             if item in mapping_dict:
                 for key in mapping_dict[item][0]:
-                    predicate = "<{}{}>".format(prefix_dict[key].replace(">", ""), *mapping_dict[item][0].values())
+                    predicate = "<{}{}>".format(prefix_dict[key].replace(">", "").replace("<", ""),
+                                                *mapping_dict[item][0].values())
             else:
                 pass
             return predicate
@@ -170,7 +171,7 @@ class EntityLinking(object):
         for i in self.prediction:
             for j in range(0, len(i["relations"])):
                 self.relation = i["relations"][0]["type"]
-                self.relation_uri = triple_predicate(self.relation)
+                self.relation_uri = triple_predicate(self.relation.replace(" ", "_"))
 
     def extract_entity(self):
         start_end = None
@@ -188,15 +189,16 @@ class EntityLinking(object):
     def entity_matching(self):
 
         graph = g.Graph()
-        graph.parse('data/CovestroAG.nt', format='ttl')
-        #                  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+        graph.parse('KnowledgeBase.nt', format='ttl')
 
         query_command = "?subject <http://www.w3.org/2000/01/rdf-schema#label> ?object"
 
-        query_result = graph.query("""
+        query_result = graph.query(
+            """
           SELECT * WHERE {
           """ + query_command + """ .
-          }""")
+          }"""
+        )
 
         candidate_list = list()
         for row in query_result:
@@ -214,14 +216,17 @@ class EntityLinking(object):
 
     def query(self):
         graph = g.Graph()
-        graph.parse('data/CovestroAG.nt', format='ttl')
+        graph.parse('KnowledgeBase.nt', format='ttl')
 
-        query_command = str("<{}>".format(self.entity_uri) + " " + str(self.relation_uri) + " " + "?object")
+        query_command = str("<{}>".format(self.entity_uri)
+                            + " " + str(self.relation_uri) + " " + "?object").replace("<<", "<")
 
-        query_result = graph.query("""
+        query_result = graph.query(
+            """
           SELECT ?object WHERE {
           """ + query_command + """ .
-          }""")
+          }"""
+        )
 
         answer_list = list()
         for row in query_result:
@@ -245,5 +250,5 @@ class EntityLinking(object):
 if __name__ == "__main__":
     prediction_dir = "/Users/mlcb/PycharmProjects/Thesis/thesis_py/prediction.json"
     threshold_value = 85
-    question = "What is the isin of vapiano"
+    question = "What is the ISIN of HelloFresh"
     EntityLinking(prediction_dir, threshold_value, question).runall()

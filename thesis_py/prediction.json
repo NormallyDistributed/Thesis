@@ -1,1 +1,1 @@
-[{"tokens": ["What", "is", "the", "isin", "of", "vapiano"], "entities": [{"type": "interrogative_word", "start": 0, "end": 1}, {"type": "company", "start": 5, "end": 6}], "relations": [{"type": "isin", "head": 1, "tail": 0}]}]
+[{"tokens": ["What", "is", "the", "ISIN", "of", "HelloFresh"], "entities": [{"type": "interrogative_word", "start": 0, "end": 1}, {"type": "company", "start": 5, "end": 6}], "relations": [{"type": "isin", "head": 1, "tail": 0}]}]

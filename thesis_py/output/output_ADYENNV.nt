@@ -1,23 +1,22 @@
 <http://example.org/entity/#ADYENN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'ADYEN N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#ADYENN.V.> <<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/>operatesInCountry> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#ADYENN.V.> <<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/>operatesInCountry> <http://www.wikidata.org/entity/Q55>.
-<http://example.org/entity/#ADYENN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/>isTradedOn> 'EuronextAmsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#ADYENN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/>isTradedOn> <http://www.wikidata.org/entity/Q478720>.
+<http://example.org/entity/#ADYENN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#ADYENN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q55>.
+<http://example.org/entity/#ADYENN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> 'EuronextAmsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#ADYENN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q478720>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
-<http://example.org/entity/#ADYENN.V.> <<https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/>hasExecutionDate> '2018-06-04'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#ADYENN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2018-06-04'^^<https://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/P452> 'thepaymentsindustry'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/P946> 'NL0012969182'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/P249> 'ADYEN'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q1166072> 'private placements'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q1337875> 'The rights and responsibilities of a Shareholder are governed by Dutch law and will differ in somerespects from the rights and obligations of shareholders under the laws of other jurisdictions and theshareholder rights under Dutch law may not be as clearly established as the rights of a shareholderestablished under the laws of some other jurisdictions.'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#ADYENN.V.> <<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/>hasAccountingStandard> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#ADYENN.V.> <<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/>hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
+<http://example.org/entity/#ADYENN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/P8571> 'PricewaterhouseCoopers Accountants N.V. '^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q330153> 'Free Cash Flow'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q330153> 'Net revenue'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q330153> 'Free Cash Flow for a period, as Adjusted EBITDA net of capital expenditure, with capitalexpenditure consisting of the line items Purchases of plant and equipment and Capitalization ofintangible assets on the consolidated statement of cash flows.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q330153> 'Net revenue for a period, as revenue less costs incurred from financial institutions and cost ofinventory.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q740419> 'as at and for the years ended 31 December 2015, 31December 2016 and 2017'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#ADYENN.V.> <<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/>hasAuditedFinancialStatement> 'audited annual consolidatedfinancial statements of theCompany as at and for the years ended 31 December 2015, 31December 2016 and 2017'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#ADYENN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditedFinancialStatement> 'audited annual consolidatedfinancial statements of theCompany as at and for the years ended 31 December 2015, 31December 2016 and 2017'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q192907> '2018-03-31'^^<https://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q192907> 'unaudited condensed consolidated interim financial statementsof the Company as of and for the three months ended 31 March2018 and for the three months ended 31 March 2017'^^<http://www.w3.org/2001/XMLSchema#string>.
