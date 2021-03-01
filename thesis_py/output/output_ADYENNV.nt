@@ -1,8 +1,8 @@
 <http://example.org/entity/#ADYENN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'ADYEN N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#ADYENN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q55>.
-<http://example.org/entity/#ADYENN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> 'EuronextAmsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#label> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q478720>.
+<http://www.wikidata.org/entity/Q478720> <http://www.w3.org/2000/01/rdf-schema#label> 'Euronext Amsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
 <http://example.org/entity/#ADYENN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2018-06-04'^^<https://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/P452> 'thepaymentsindustry'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -10,7 +10,8 @@
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/P249> 'ADYEN'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q1166072> 'private placements'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q1337875> 'The rights and responsibilities of a Shareholder are governed by Dutch law and will differ in somerespects from the rights and obligations of shareholders under the laws of other jurisdictions and theshareholder rights under Dutch law may not be as clearly established as the rights of a shareholderestablished under the laws of some other jurisdictions.'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#ADYENN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#ADYENN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
+<http://www.wikidata.org/entity/Q176831> <http://www.w3.org/2000/01/rdf-schema#label> 'International Financial Reporting Standards'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/P8571> 'PricewaterhouseCoopers Accountants N.V. '^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q330153> 'Free Cash Flow'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q330153> 'Net revenue'^^<http://www.w3.org/2001/XMLSchema#string>.

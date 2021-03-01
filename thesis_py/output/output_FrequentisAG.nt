@@ -1,48 +1,46 @@
 <http://example.org/entity/#FrequentisAG> <http://www.w3.org/2000/01/rdf-schema#label> 'Frequentis AG'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'Austria'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q40>.
-<http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> 'Frankfurt Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> 'Vienna Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.wikidata.org/entity/Q40> <http://www.w3.org/2000/01/rdf-schema#label> 'Austria'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q151139>.
+<http://www.wikidata.org/entity/Q151139> <http://www.w3.org/2000/01/rdf-schema#label> 'Frankfurt Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q698535>.
+<http://www.wikidata.org/entity/Q698535> <http://www.w3.org/2000/01/rdf-schema#label> 'Wiener Börse'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FrequentisAG> <https://wikidata.org/entity/Q1166072> 'Admission to trading and listing'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:Nbbe082e4dc8c4de78a175585e2b3f5ad <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '18.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nbbe082e4dc8c4de78a175585e2b3f5ad <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:Nbbe082e4dc8c4de78a175585e2b3f5ad <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 18.00 andEUR 21.00'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nbbe082e4dc8c4de78a175585e2b3f5ad.
-_:N6ab3a0d3dc9740c5b875660145a36480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '21.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N6ab3a0d3dc9740c5b875660145a36480 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N6ab3a0d3dc9740c5b875660145a36480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 18.00 andEUR 21.00'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N6ab3a0d3dc9740c5b875660145a36480.
+_:Nfd558f3a22f848ef9bf2e742b77f536f <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '18.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Nfd558f3a22f848ef9bf2e742b77f536f <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Nfd558f3a22f848ef9bf2e742b77f536f <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 18.00 andEUR 21.00'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nfd558f3a22f848ef9bf2e742b77f536f.
+_:N0d8278021521497bba329bacb0adbb1f <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '21.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N0d8278021521497bba329bacb0adbb1f <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N0d8278021521497bba329bacb0adbb1f <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 18.00 andEUR 21.00'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N0d8278021521497bba329bacb0adbb1f.
 <http://example.org/entity/#FrequentisAG> <https://wikidata.org/entity/P946> 'ATFREQUENT09'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#FrequentisAG> <https://wikidata.org/entity/P946> <http://www.wikidata.org/entity/Q1455549>.
-<http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'COMMERZBANK Aktiengesellschaft'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'flatex Bank AG'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> <http://www.wikidata.org/entity/Q157617>.
-<http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> <http://www.wikidata.org/entity/Q1113764>.
+<http://www.wikidata.org/entity/Q157617> <http://www.w3.org/2000/01/rdf-schema#label> 'Commerzbank'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2019-04-26'^^<https://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditedFinancialStatement> 'Audited AnnualConsolidated Financial Statements'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FrequentisAG> <https://wikidata.org/entity/Q740419> 'for the years ended December 31,2018, 2017 and 2016'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
+<http://www.wikidata.org/entity/Q176831> <http://www.w3.org/2000/01/rdf-schema#label> 'International Financial Reporting Standards'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FrequentisAG> <https://wikidata.org/entity/Q2481549> 'No pro-forma financial information'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FrequentisAG> <https://wikidata.org/entity/Q748250> 'No profit forecasts or estimates'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditReport> 'without qualifications'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N4806adc102c54fd79ba9800c871c8efe <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1600000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N4806adc102c54fd79ba9800c871c8efe <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N4806adc102c54fd79ba9800c871c8efe <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 1.6 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#FrequentisAG> <https://wikidata.org/entity/Q185142> _:N4806adc102c54fd79ba9800c871c8efe.
-_:N8a35af8cf5ab4a7ab863957659f2a878 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '23400000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N8a35af8cf5ab4a7ab863957659f2a878 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N8a35af8cf5ab4a7ab863957659f2a878 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 23.4 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:N8a35af8cf5ab4a7ab863957659f2a878.
-_:Ne5d248afb3474484a826dbae9ac97081 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '21800000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Ne5d248afb3474484a826dbae9ac97081 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:Ne5d248afb3474484a826dbae9ac97081 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 21.8 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:Ne5d248afb3474484a826dbae9ac97081.
+_:N47dbcf44a8fd467ebb928f4d793d7ce6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1600000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N47dbcf44a8fd467ebb928f4d793d7ce6 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N47dbcf44a8fd467ebb928f4d793d7ce6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 1.6 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#FrequentisAG> <https://wikidata.org/entity/Q185142> _:N47dbcf44a8fd467ebb928f4d793d7ce6.
+_:Nc57450b5709f40989ea847b33082dba2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '23400000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Nc57450b5709f40989ea847b33082dba2 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Nc57450b5709f40989ea847b33082dba2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 23.4 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:Nc57450b5709f40989ea847b33082dba2.
+_:N4d6e254ea0324e728de655d39e8aeed4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '21800000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N4d6e254ea0324e728de655d39e8aeed4 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N4d6e254ea0324e728de655d39e8aeed4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 21.8 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:N4d6e254ea0324e728de655d39e8aeed4.
 <http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/CIV/Funds/CIV/InvestmentStrategy> 'The Company intends to use the proceeds to pursue its M&Astrategy, to accelerate product developments enlarging itsportfolio for control centre solutions, to support the acquisitionand delivery of a larger number of high-volume projects as aprime contractor and for general corporate purposes and tobuild up its international presence. The net amount of theproceeds will be approximately EUR 21.8 million (assumingthe placement at the mid-point of total costs and expenses).'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
-<http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P12nM'^^<https://www.w3.org/2001/XMLSchema#duration>.
+<http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P12M'^^<https://www.w3.org/2001/XMLSchema#duration>.
 <http://example.org/entity/#FrequentisAG> <https://wikidata.org/entity/Q1337875> 'The Company’s shareholders could suffer total loss in the value of their Shares in the event of theCompany’s insolvency'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FrequentisAG> <https://wikidata.org/entity/P249> 'FQT'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FrequentisAG> <https://wikidata.org/entity/Q330153> 'marginEBIT'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -69,3 +67,5 @@ _:Ne5d248afb3474484a826dbae9ac97081 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#FrequentisAG> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/ProfitObjective> 'The Company’s processes are expected to be enhanced by adopting best practices for listed companiesand its position vis-à-vis its stakeholders should be optimized and its attractiveness for management,staff, and customers supported. The Company intends to use the proceeds to pursue its M&A strategy,to accelerate product developments enlarging its portfolio for control centre solutions, to support theacquisition and delivery of a larger number of high-volume projects as a prime contractor, and forgeneral corporate purposes and to increase its international presence. The Company will receive thenet proceeds from the placement of the New Shares; the Selling Shareholder will receive the netproceeds from the placement of the Reallocation Shares and the Overallotment Shares.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FrequentisAG> <https://wikidata.org/entity/P8571> 'BDO Austria GmbH Wirtschaftsprüfungs- und Steuerberatungsgesellschaft'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FrequentisAG> <https://wikidata.org/entity/P8571> 'CONFIDA Wirtschaftstreuhandgesellschaftm.b.H. Wirtschaftsprüfungs- undSteuerberatungsgesellschaft'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#FrequentisAG> <http://www.w3.org/2004/02/skos/core#altLabel> 'Frequentis'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#FrequentisAG> <http://www.w3.org/2004/02/skos/core#altLabel> 'Frequentis AG'^^<http://www.w3.org/2001/XMLSchema#string>.

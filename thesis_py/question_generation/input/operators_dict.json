@@ -1,0 +1,6 @@
+{
+  "argmin_max": ["largest", "highest", "biggest", "hugest", "maximum", "maximal", "max", "lowest", "smallest", "minimum", "minimal", "min"],
+  "count": ["how many", "how many companies", "number of", "number of companies", "number companies", "count", "count all companies", "count companies", "count of", "amount of", "amount of all companies"],
+  "aggregate": ["enumerate", "enumerate all", "enumerate all companies", "tabulate", "tabulate all", "tabulate all companies", "all", "all companies", "aggregate"]
+}
+

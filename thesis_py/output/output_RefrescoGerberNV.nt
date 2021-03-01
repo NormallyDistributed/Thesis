@@ -1,9 +1,9 @@
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q1166072> 'Public offering'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'Refresco Gerber N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#RefrescoGerberN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'Netherlands.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q55>.
-<http://example.org/entity/#RefrescoGerberN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> 'Euronext Amsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#label> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q478720>.
+<http://www.wikidata.org/entity/Q478720> <http://www.w3.org/2000/01/rdf-schema#label> 'Euronext Amsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/P249> 'RFRG'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
@@ -11,23 +11,25 @@
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q748250> 'Not applicable. The Company has not issued a profit forecast.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/P946> 'NL0011214010'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q1337875> 'Investors with a reference currency other than the euro will become subject to certain foreign exchange riskswhen investing in the Shares.'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#RefrescoGerberN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
+<http://www.wikidata.org/entity/Q176831> <http://www.w3.org/2000/01/rdf-schema#label> 'International Financial Reporting Standards'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditedFinancialStatement> 'audited consolidated financial information of the Group as at and for the yearsended 31 December 2014, 2013 and 2012'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q740419> 'as at and for the yearsended 31 December 2014, 2013 and 2012'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q330153> 'EBITDA'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q330153> 'Adjusted EBITDA'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q330153> 'Gross profit margin per litre'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q330153> 'Net Debt'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q330153> 'Leverage ratio'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q330153> 'Cash flow conversion'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q330153> 'Return on capital employed'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q330153> 'Working capital'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q330153> 'Gross profit'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q330153> 'Operating expenses'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q330153> <http://www.wikidata.org/entity/Q720862>.
+<http://www.wikidata.org/entity/Q720862> <http://www.w3.org/2000/01/rdf-schema#label> 'earnings before interest and taxes'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q330153> <http://www.wikidata.org/entity/Q1755687>.
+<http://www.wikidata.org/entity/Q1755687> <http://www.w3.org/2000/01/rdf-schema#label> 'Return on capital employed'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q330153> <http://www.wikidata.org/entity/Q1755687>.
+<http://www.wikidata.org/entity/Q1755687> <http://www.w3.org/2000/01/rdf-schema#label> 'Return on capital employed'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q330153> <http://www.wikidata.org/entity/Q570938>.
+<http://www.wikidata.org/entity/Q570938> <http://www.w3.org/2000/01/rdf-schema#label> 'net income'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q330153> 'EBITDA, which the Company defines as operating profit before depreciation, amortisation and impairmentcosts.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q330153> 'Adjusted EBITDA, which the Company defines as EBITDA excluding the costs related to the combinationwith Gerber and other exceptional costs.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q330153> 'Gross profit margin per litre, which the Company defines as revenue and other income7 less other costs ofsales, raw materials and consumables used, divided by the number of litres sold.'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -40,5 +42,5 @@
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q330153> 'Operating expenses are employee benefits expense and other operating expenses.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/P452> 'bottling platform'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/P8571> 'PwC,'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/P8571> 'EY'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/P8571> <http://www.wikidata.org/entity/Q489097>.
+<http://www.wikidata.org/entity/Q489097> <http://www.w3.org/2000/01/rdf-schema#label> 'Ernst & Young'^^<http://www.w3.org/2001/XMLSchema#string>.

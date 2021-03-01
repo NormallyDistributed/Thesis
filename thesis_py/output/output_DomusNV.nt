@@ -1,44 +1,45 @@
 <http://example.org/entity/#DomusN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'Domus N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
-_:N077f201fe96d47ea8cbb5aaf1853a419 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '38000000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N077f201fe96d47ea8cbb5aaf1853a419 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'A38 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:N077f201fe96d47ea8cbb5aaf1853a419.
-<http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> 'Euronext Amsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
+_:N6a51a1cfe0ca471d99c789822778b20c <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '38000000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N6a51a1cfe0ca471d99c789822778b20c <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'A38 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:N6a51a1cfe0ca471d99c789822778b20c.
 <http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q478720>.
-_:Nf2fcf220dfbe46b6adeda56be3a4813a <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '16.50'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nf2fcf220dfbe46b6adeda56be3a4813a <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'A16.50 and A20.50'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nf2fcf220dfbe46b6adeda56be3a4813a.
-_:Nb16021a3c3a44ecf87ea7497af7fe516 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '20.50'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nb16021a3c3a44ecf87ea7497af7fe516 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'A16.50 and A20.50'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nb16021a3c3a44ecf87ea7497af7fe516.
-<http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'J.P. Morgan'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.wikidata.org/entity/Q478720> <http://www.w3.org/2000/01/rdf-schema#label> 'Euronext Amsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
+_:N0545bd1662bd47ec866fa5dc7d090204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '16.50'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N0545bd1662bd47ec866fa5dc7d090204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'A16.50 and A20.50'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N0545bd1662bd47ec866fa5dc7d090204.
+_:N7118081b48e04c6a92bc100583ba4857 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '20.50'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N7118081b48e04c6a92bc100583ba4857 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'A16.50 and A20.50'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N7118081b48e04c6a92bc100583ba4857.
 <http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> <http://www.wikidata.org/entity/Q192314>.
+<http://www.wikidata.org/entity/Q192314> <http://www.w3.org/2000/01/rdf-schema#label> 'JPMorgan Chase'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2014-04-24'^^<https://www.w3.org/2001/XMLSchema#date>.
-<http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> <http://www.wikidata.org/entity/Q55>.
-<http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#label> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q55>.
+<http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#label> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/Q2481549> 'No pro forma information'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/Q748250> 'No profit forecast or estimate'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditReport> 'no qualifications'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/LoanProducts/WorkingCapitalPurpose> 'Not applicable. The Company believes that the working capitalavailable to the Group is sufficient for the Group’s presentrequirements, that is for at least the next 12 months following the dateof the Prospectus.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/P946> 'NL0010733416'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/P946> <http://www.wikidata.org/entity/Q59160966>.
 <http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/P249> 'DOMUS'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:Nc16c4c4ee30e40bc9f52cfba058757d2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '35000000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nc16c4c4ee30e40bc9f52cfba058757d2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'A35 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:Nc16c4c4ee30e40bc9f52cfba058757d2.
-_:N1de4f3af97d0401c8683890d6d7b72c9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '2000000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N1de4f3af97d0401c8683890d6d7b72c9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'A2 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N1de4f3af97d0401c8683890d6d7b72c9.
+_:Nc2513b0a70b74e15bafb545bf55afc22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '35000000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Nc2513b0a70b74e15bafb545bf55afc22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'A35 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:Nc2513b0a70b74e15bafb545bf55afc22.
+_:N8b45e5a8719e48f98402a06941361b4d <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '2000000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N8b45e5a8719e48f98402a06941361b4d <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'A2 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N8b45e5a8719e48f98402a06941361b4d.
 <http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P180D'^^<https://www.w3.org/2001/XMLSchema#duration>.
 <http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/Q1337875> 'Investors with a reference currency other than the euro will become subject to foreign exchange rate risk wheninvesting in the Shares.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/P452> 'ealestate market'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/Q192907> 'Company had prepared consolidated financial statements'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/Q192907> 'consolidated financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/Q192907> <http://www.wikidata.org/entity/Q380559>.
-<http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/Q330153> 'EBITDA'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.wikidata.org/entity/Q380559> <http://www.w3.org/2000/01/rdf-schema#label> 'consolidated financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/Q192907> <http://www.wikidata.org/entity/Q380559>.
+<http://www.wikidata.org/entity/Q380559> <http://www.w3.org/2000/01/rdf-schema#label> 'consolidated financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/Q330153> <http://www.wikidata.org/entity/Q720862>.
+<http://www.wikidata.org/entity/Q720862> <http://www.w3.org/2000/01/rdf-schema#label> 'earnings before interest and taxes'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/Q192907> '‘‘Adjusted EBITDA’’ means EBITDA, adjusted to exclude fair value adjustment on investment properties,gain/(loss) from sale of investment property and certain one-off costs'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/Q330153> '‘‘EBITDA’’ means earnings before net financial expense, tax, depreciation and amortisation'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/ProfitObjective> 'BXR Group Limited has indirectly owned RPG Byty since 2004 and has invested a significant amount ofcapital to restructure its operations. Through BXR Group Limited’s efforts, RPG Byty has achieved astable operating structure that supports the efficient management of its residential real estate portfolio.Following the substantial completion of its one-off investment programme in 2013, the business is now wellpositioned to achieve revenue growth through contracted increases in post-regulated rents as well as there-leasing of vacant units at market rates, while incurring relatively limited capital and operatingexpenditure going forward. RPG Byty has also achieved a stable capital structure. Furthermore, BXRGroup Limited, together with RPG Byty’s management, believe that additional upside coming fromregional consolidation and potentially cheaper refinancing will be better captured as a listed company. As aresult of these factors, BXR Group Limited believes that RPG Byty is now an attractive opportunity forinvestors.'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -48,14 +49,17 @@ _:N1de4f3af97d0401c8683890d6d7b72c9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/hasCompetitiveStrength> 'Strong operating performance underpinned by conservative capital structure'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/BusinessStrategy> 'Continue to pursue a conservative capital structure'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/Q740419> 'for the years ended 31 December 2011, 2012 and 2013'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
+<http://www.wikidata.org/entity/Q176831> <http://www.w3.org/2000/01/rdf-schema#label> 'International Financial Reporting Standards'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/isAffectedBy> 'Fair value adjustments of investment properties'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/Q243460> 'Income tax expense'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> 'The financial statements have been prepared in accordance with International Financial ReportingStandards as adopted by the European Union (IFRSs).'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/Q1166072> 'Public Offering'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/MuniIssuance/hasFinancialAdvisor> 'Linklaters LLP'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/MuniIssuance/hasFinancialAdvisor> 'Linklaters LLP'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/MuniIssuance/hasFinancialAdvisor> 'ˇKocián Šolc Balašt́ık, advokátńı'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/MuniIssuance/hasFinancialAdvisor> <http://www.wikidata.org/entity/Q1317942>.
+<http://www.wikidata.org/entity/Q1317942> <http://www.w3.org/2000/01/rdf-schema#label> 'Linklaters'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DomusN.V.> <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/MuniIssuance/hasFinancialAdvisor> <http://www.wikidata.org/entity/Q1317942>.
+<http://www.wikidata.org/entity/Q1317942> <http://www.w3.org/2000/01/rdf-schema#label> 'Linklaters'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DomusN.V.> <https://wikidata.org/entity/P8571> 'ˇKPMG Česká republika Audit'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DomusN.V.> <http://www.w3.org/2004/02/skos/core#altLabel> 'Domus'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DomusN.V.> <http://www.w3.org/2004/02/skos/core#altLabel> 'Domus N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.

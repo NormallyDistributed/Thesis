@@ -1,7 +1,7 @@
-<http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> <http://www.wikidata.org/entity/Q55>.
-<http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> 'NYSE Euronext Amsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#label> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q478720>.
+<http://www.wikidata.org/entity/Q478720> <http://www.w3.org/2000/01/rdf-schema#label> 'Euronext Amsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'D.E MASTER BLENDERS 1753 N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://wikidata.org/entity/Q1166072> 'first admission to listing and trading'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://wikidata.org/entity/Q7378915> 'US Securities Act'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -40,9 +40,9 @@
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditReport> 'we	do	not	express	anaudit	opinion'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://spec.edmcouncil.org/fibo/ontology/placeholder/emphasisOfMatter> 'As	discussed	in	Note	1,	the	International	Coffee	and	Tea	Operations	of	Sara	Lee	Corporation	have	not	operated	as	anentity	separate	from	Sara	Lee	Corporation.		Therefore,	these	condensed	combined	interim	financial	statements maynot	necessarily	be	indicative	of	results	that	would	have	occurred	had	the	International	Coffee	and	Tea	Operations	ofSara	Lee	Corporation	been	a	separate	stand-alone	entity.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://wikidata.org/entity/Q2481549> 'pro forma financial information has been properly compiled on the basis stated in section Unaudited ProForma Combined Financial Information of the Prospectus'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'The Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q55>.
-<http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/MuniIssuance/hasFinancialAdvisor> 'De Brauw Blackstone Westbroek N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#label> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/MuniIssuance/hasFinancialAdvisor> <http://www.wikidata.org/entity/Q2262398>.
-<http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'ABN AMRO Bank N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.wikidata.org/entity/Q2262398> <http://www.w3.org/2000/01/rdf-schema#label> 'De Brauw Blackstone Westbroek'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> <http://www.wikidata.org/entity/Q287471>.
+<http://www.wikidata.org/entity/Q287471> <http://www.w3.org/2000/01/rdf-schema#label> 'ABN AMRO'^^<http://www.w3.org/2001/XMLSchema#string>.

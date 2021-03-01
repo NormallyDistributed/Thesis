@@ -1,25 +1,25 @@
 <http://example.org/entity/#VoltaboxAG> <https://wikidata.org/entity/Q1166072> 'public offering'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> 'Frankfurt StockExchange'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q151139>.
+<http://www.wikidata.org/entity/Q151139> <http://www.w3.org/2000/01/rdf-schema#label> 'Frankfurt Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <http://www.w3.org/2000/01/rdf-schema#label> 'Voltabox AG'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N4177f3f215204b729b07ae6cdd4fdb1a <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '20.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N4177f3f215204b729b07ae6cdd4fdb1a <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N4177f3f215204b729b07ae6cdd4fdb1a <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '20.00 –24.00€€'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N4177f3f215204b729b07ae6cdd4fdb1a.
-_:N6782bfd3b7f24d35a04e1f412d7e8d9c <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '24.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N6782bfd3b7f24d35a04e1f412d7e8d9c <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N6782bfd3b7f24d35a04e1f412d7e8d9c <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '20.00 –24.00€€'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N6782bfd3b7f24d35a04e1f412d7e8d9c.
+_:Neda9a260e46f4842ba07239d4aff6f5a <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '20.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Neda9a260e46f4842ba07239d4aff6f5a <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Neda9a260e46f4842ba07239d4aff6f5a <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '20.00 –24.00€€'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Neda9a260e46f4842ba07239d4aff6f5a.
+_:Nd8917872915e4a1c8f02b042bad1caee <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '24.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Nd8917872915e4a1c8f02b042bad1caee <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Nd8917872915e4a1c8f02b042bad1caee <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '20.00 –24.00€€'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nd8917872915e4a1c8f02b042bad1caee.
 <http://example.org/entity/#VoltaboxAG> <https://wikidata.org/entity/P946> 'DE000A2E4LE9'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <https://wikidata.org/entity/P249> 'VBX'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'Bankhaus Lampe KG'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> <http://www.wikidata.org/entity/Q806772>.
+<http://www.wikidata.org/entity/Q806772> <http://www.w3.org/2000/01/rdf-schema#label> 'Bankhaus Lampe'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2017-09-25'^^<https://www.w3.org/2001/XMLSchema#date>.
-<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q183>.
+<http://www.wikidata.org/entity/Q183> <http://www.w3.org/2000/01/rdf-schema#label> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditedFinancialStatement> 'audited combined financial statements ofVoltabox AG prepared in accordance with International Financial ReportingStandards (“IFRS”), as adopted by the European Union for the fiscal yearsended December 31, 2016, December 31, 2015 and December 31, 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
+<http://www.wikidata.org/entity/Q176831> <http://www.w3.org/2000/01/rdf-schema#label> 'International Financial Reporting Standards'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <https://wikidata.org/entity/Q192907> 'unaudited condensed consolidated interim financial statements of Voltabox AG prepared in accordancewith International Financial Reporting Standards, as adopted by the EU (“IFRS”) for interim financialreporting (IAS 34), as of and for the six months ended June 30, 2017'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <https://wikidata.org/entity/Q740419> 'for the fiscal yearsended December 31, 2016, December 31, 2015 and December 31, 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <https://wikidata.org/entity/Q192907> '2017-06-30'^^<https://www.w3.org/2001/XMLSchema#date>.
@@ -28,22 +28,22 @@ _:N6782bfd3b7f24d35a04e1f412d7e8d9c <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#VoltaboxAG> <https://wikidata.org/entity/Q2481549> 'No pro forma'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <https://wikidata.org/entity/Q748250> 'The Management Board expects Voltabox Group’s revenue to grow fromapproximately14.5 million in the fiscal year 2016 (based on the Combined€Financial Statements (IFRS) for the 2016 fiscal year) to approximately25 million in the 2017 fiscal year and expects a positive EBIT (earnings€before interest and taxes) for the Voltabox Group.The Management Board further expects to invest approximately7 million€in the 2017 fiscal year, consisting of own work capitalized (€5 million) as wellas new and replacement investments in machinery (€2 million).'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/LoanProducts/WorkingCapitalPurpose> 'From the current perspective, the Company is of the opinionthat the Group is in a position to meet the payment obligations that becomedue within at least the next twelve months from the date of this Prospectus.'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N884ffdb5547d4d0faa0f16a3a47714c7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '128200000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N884ffdb5547d4d0faa0f16a3a47714c7 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N884ffdb5547d4d0faa0f16a3a47714c7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '128.2 million€'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:N884ffdb5547d4d0faa0f16a3a47714c7.
-_:N94f2bed9c0b24a2399de3cf3d3272ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '7700000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N94f2bed9c0b24a2399de3cf3d3272ffb <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N94f2bed9c0b24a2399de3cf3d3272ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '7.7 million€'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VoltaboxAG> <https://wikidata.org/entity/Q185142> _:N94f2bed9c0b24a2399de3cf3d3272ffb.
-_:N162b0a88014040e6b240588c3a59ee20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '120400000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N162b0a88014040e6b240588c3a59ee20 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N162b0a88014040e6b240588c3a59ee20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '120.4 million.€'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:N162b0a88014040e6b240588c3a59ee20.
+_:N8db1036b986748d99665810917fde9a5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '128200000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N8db1036b986748d99665810917fde9a5 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N8db1036b986748d99665810917fde9a5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '128.2 million€'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:N8db1036b986748d99665810917fde9a5.
+_:N43a56f16d38b459b8c006420713233b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '7700000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N43a56f16d38b459b8c006420713233b1 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N43a56f16d38b459b8c006420713233b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '7.7 million€'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#VoltaboxAG> <https://wikidata.org/entity/Q185142> _:N43a56f16d38b459b8c006420713233b1.
+_:N9e722ea3eef34569933e022da2de096a <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '120400000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N9e722ea3eef34569933e022da2de096a <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N9e722ea3eef34569933e022da2de096a <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '120.4 million.€'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:N9e722ea3eef34569933e022da2de096a.
 <http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/CIV/Funds/CIV/InvestmentStrategy> 'approximately25 million thereof for the ramp-up of research and€development and production capacity (including hiring of qualified R&Dpersonnel with expertise in batteries; further development of existing andnew products; investments in new production lines and new facilities,including in China);up to approximately16 million thereof for the repayment of the existing€shareholder loan to paragon AG; andthe remainder for strategic mergers & acquisitions (depending onavailability of suitable targets).'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
 <http://example.org/entity/#VoltaboxAG> <https://wikidata.org/entity/Q1337875> 'Cell suppliers or other established competitors such as OEMs with greater financial resourcesmay shift their business strategy and produce battery systems for sub-markets which arecurrently being addressed by our products and branch solutions or major customers mayinsource battery technologies.'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P6nM'^^<https://www.w3.org/2001/XMLSchema#duration>.
+<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P6M'^^<https://www.w3.org/2001/XMLSchema#duration>.
 <http://example.org/entity/#VoltaboxAG> <https://wikidata.org/entity/Q1166072> 'The Company will not receive any proceeds from the sale of the Sale Shares which will instead be received bythe Parent Company.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/ProfitObjective> 'To the extent and as long as the Net Proceeds are not used for the above-mentioned measures, the Companyintends to invest the funds in liquid short-term bank deposits, money market instruments, short-termgovernment bonds or similar instruments, so that the funds remain available as needed on short notice forgeneral corporate purposes of the Group.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/hasDividendPolicy> 'The Company does not expect to pay dividends for the fiscal year 2017. In the mid to long-term, however, theCompany expects that a certain portion of its distributable profits (i.e. the balance sheet profit as shown in itsannual financial statements in accordance with the German Commercial Code, HGB), up to approximately 25%thereof, will be distributed to its shareholders.'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -60,14 +60,14 @@ _:N162b0a88014040e6b240588c3a59ee20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/BusinessStrategy> 'Pursuing growth opportunities through selective acquisitions'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <https://wikidata.org/entity/Q192907> 'three business segments'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'Securities Act'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N48c5d72173f2415b92d366199e491781 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '3.50'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N48c5d72173f2415b92d366199e491781 <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
-_:N48c5d72173f2415b92d366199e491781 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '3.50%'.
-<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N48c5d72173f2415b92d366199e491781.
-_:Nb70e2f6301f042a5a29960e17e176dcf <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nb70e2f6301f042a5a29960e17e176dcf <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
-_:Nb70e2f6301f042a5a29960e17e176dcf <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'up to 1.00%'.
-<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:Nb70e2f6301f042a5a29960e17e176dcf.
-<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
+_:Nc99161924366497ca1ec21fdec891d9b <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '3.50'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Nc99161924366497ca1ec21fdec891d9b <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
+_:Nc99161924366497ca1ec21fdec891d9b <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '3.50%'.
+<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:Nc99161924366497ca1ec21fdec891d9b.
+_:N980df63dce974ef889678e49ef6b3186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N980df63dce974ef889678e49ef6b3186 <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
+_:N980df63dce974ef889678e49ef6b3186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'up to 1.00%'.
+<http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N980df63dce974ef889678e49ef6b3186.
 <http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> <http://www.wikidata.org/entity/Q183>.
+<http://www.wikidata.org/entity/Q183> <http://www.w3.org/2000/01/rdf-schema#label> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VoltaboxAG> <https://spec.edmcouncil.org/fibo/ontology/placeholder/emphasisOfMatter> 'Without modifying our opinion, we draw attention to the fact that, as described in Note 2 of the notes to thecombined financial statements, the Voltabox Business included in the combined financial statements has notoperated as a separate group of entities. These combined financial statements are, therefore, not necessarilyindicative of results that would have occurred if the Voltabox Business had been a separate stand-alone groupof entities during the years presented or future results of the Voltabox Business.'^^<http://www.w3.org/2001/XMLSchema#string>.

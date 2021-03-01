@@ -1,18 +1,18 @@
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'Koninklijke Reesink N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N4731c09894d84382a186bedbb073df75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '63.85'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N4731c09894d84382a186bedbb073df75 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N4731c09894d84382a186bedbb073df75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€63.85'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N4731c09894d84382a186bedbb073df75.
+_:Nb05f981f64c94a459724a9256dd0a11c <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '63.85'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Nb05f981f64c94a459724a9256dd0a11c <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Nb05f981f64c94a459724a9256dd0a11c <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€63.85'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nb05f981f64c94a459724a9256dd0a11c.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/Q1166072> 'public offering'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> 'NYSE Alternext inAmsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2013-11-12'^^<https://www.w3.org/2001/XMLSchema#date>.
-<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'The Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q55>.
+<http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#label> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> '(the Netherlands).'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/P452> 'equipmentindustry'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/P249> 'ALRRE'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/Q330153> 'EBITDA'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/Q330153> <http://www.wikidata.org/entity/Q720862>.
+<http://www.wikidata.org/entity/Q720862> <http://www.w3.org/2000/01/rdf-schema#label> 'earnings before interest and taxes'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/Q330153> '“EBITDA” is defined as group operating profit (“EBIT”) before depreciation of property, plant andequipment and before amortization of intangible assets.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/Q748250> 'the Company has not issued a profit forecast.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditReport> 'there are no qualifications'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -25,26 +25,29 @@ _:N4731c09894d84382a186bedbb073df75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/Q192907> 'unaudited consolidated condensed interim financial statementsas of and for the six-month periods ended 30 June 2013 and 30 June 2012,'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/Q740419> 'for the years ended 31 December 2012, 31December 2011 and 31 December 2010 '^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditedFinancialStatement> 'audited consolidated financial statements(including the notes and auditor’s report) of the Group as of and for the years ended 31 December 2012, 31December 2011 and 31 December 2010 a'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N43d4d9efcf4743e3b1e7d1ae57acb076 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '2820000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N43d4d9efcf4743e3b1e7d1ae57acb076 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N43d4d9efcf4743e3b1e7d1ae57acb076 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€2,820,000'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:N43d4d9efcf4743e3b1e7d1ae57acb076.
-_:Nb7df94db899e40338f225e0d7dd2f1aa <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '180000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nb7df94db899e40338f225e0d7dd2f1aa <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:Nb7df94db899e40338f225e0d7dd2f1aa <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€180,000'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/Q185142> _:Nb7df94db899e40338f225e0d7dd2f1aa.
-_:N0bf3a9e3a8464631851abe192c12f9fe <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '13000000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N0bf3a9e3a8464631851abe192c12f9fe <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N0bf3a9e3a8464631851abe192c12f9fe <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€13.0 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N0bf3a9e3a8464631851abe192c12f9fe.
-<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/Q192907> 'consolidated financial statements'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/Q192907> 'consolidated financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
+_:Ned4220db7a8f47aba4e2bdef46d1727b <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '2820000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Ned4220db7a8f47aba4e2bdef46d1727b <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Ned4220db7a8f47aba4e2bdef46d1727b <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€2,820,000'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:Ned4220db7a8f47aba4e2bdef46d1727b.
+_:N4f1b64df9dfe41388b1bdf308a3638f0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '180000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N4f1b64df9dfe41388b1bdf308a3638f0 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N4f1b64df9dfe41388b1bdf308a3638f0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€180,000'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/Q185142> _:N4f1b64df9dfe41388b1bdf308a3638f0.
+_:N14df0614f24d45f7a3ed797dcfe79f60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '13000000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N14df0614f24d45f7a3ed797dcfe79f60 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N14df0614f24d45f7a3ed797dcfe79f60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€13.0 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N14df0614f24d45f7a3ed797dcfe79f60.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/Q192907> <http://www.wikidata.org/entity/Q380559>.
+<http://www.wikidata.org/entity/Q380559> <http://www.w3.org/2000/01/rdf-schema#label> 'consolidated financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/Q192907> <http://www.wikidata.org/entity/Q380559>.
+<http://www.wikidata.org/entity/Q380559> <http://www.w3.org/2000/01/rdf-schema#label> 'consolidated financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/Q192907> <http://www.wikidata.org/entity/Q380559>.
+<http://www.wikidata.org/entity/Q380559> <http://www.w3.org/2000/01/rdf-schema#label> 'consolidated financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/Q2481549> 'pro forma financial information'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N538d6a045f9e46aa948f450020f2f43f <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '2500000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N538d6a045f9e46aa948f450020f2f43f <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N538d6a045f9e46aa948f450020f2f43f <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '(€2.5 million).'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:N538d6a045f9e46aa948f450020f2f43f.
+_:N600f31c49d9948baadb4efe808ef115e <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '2500000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N600f31c49d9948baadb4efe808ef115e <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N600f31c49d9948baadb4efe808ef115e <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '(€2.5 million).'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:N600f31c49d9948baadb4efe808ef115e.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/Q192907> 'acquisitionfacility fee'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <http://www.omg.org/techprocess/ab/SpecificationMetadata/hasDescription> 'The Group believes it is a leading distributor of strong brands and strong concepts in the equipmentindustry in the Netherlands, Belgium and parts of Germany. The Group is active in the agricultural, turf care,landscape maintenance (including golf course maintenance) and construction (including earth-moving) equipmentindustries. Since the Acquisition, the Group believes it is also a leading distributor in the material handlingequipment industry. To a lesser extent, the Group distributes cleaning equipment.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/BusinessStrategy> 'maintaining a small-scale holding company that incentivizes and encourages division or segmentmanagement to implement division or segment strategy. The Company supports and arranges financingfor its Operating Companies'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -67,10 +70,13 @@ _:N538d6a045f9e46aa948f450020f2f43f <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/isAffectedBy> 'Description of Line Items'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/Q243460> 'Net results:'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/LoanProducts/WorkingCapitalPurpose> 'The Group believes that its working capital is sufficient for its present requirements, that is for at leasttwelve months following the date of this Prospectus.'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> 'GAAP'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> 'GAAP'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> 'GAAP'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/MuniIssuance/hasFinancialAdvisor> 'De Brauw Blackstone Westbroek N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> <http://www.wikidata.org/entity/Q29168365>.
+<http://www.wikidata.org/entity/Q29168365> <http://www.w3.org/2000/01/rdf-schema#label> 'Generally Accepted Accounting Principles - US - 2017'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> <http://www.wikidata.org/entity/Q29168365>.
+<http://www.wikidata.org/entity/Q29168365> <http://www.w3.org/2000/01/rdf-schema#label> 'Generally Accepted Accounting Principles - US - 2017'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> <http://www.wikidata.org/entity/Q29168365>.
+<http://www.wikidata.org/entity/Q29168365> <http://www.w3.org/2000/01/rdf-schema#label> 'Generally Accepted Accounting Principles - US - 2017'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/MuniIssuance/hasFinancialAdvisor> <http://www.wikidata.org/entity/Q2262398>.
+<http://www.wikidata.org/entity/Q2262398> <http://www.w3.org/2000/01/rdf-schema#label> 'De Brauw Blackstone Westbroek'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'SNS Securities N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#KoninklijkeReesinkN.V.> <https://wikidata.org/entity/P8571> 'Deloitte Accountants B.V.'^^<http://www.w3.org/2001/XMLSchema#string>.

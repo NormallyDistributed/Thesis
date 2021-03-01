@@ -56,16 +56,16 @@ def _convert_config(config):
     return config_list
 
 
-def _yield_configs(arg_parser, args, verbose=True):
+def _yield_configs(arg_parser, args, verbose=False):
     _print = (lambda x: print(x)) if verbose else lambda x: x
 
     if args.config:
         config = _read_config(args.config)
 
         for run_repeat, run_config in config:
-            print("-" * 50)
-            print("Config:")
-            print(run_config)
+            #print("-" * 50)
+            #print("Config:")
+            #print(run_config)
 
             args_copy = copy.deepcopy(args)
             config_list = _convert_config(run_config)
@@ -77,8 +77,8 @@ def _yield_configs(arg_parser, args, verbose=True):
                 if v.lower() == 'false':
                     run_args_dict[k] = False
 
-            print("Repeat %s times" % run_repeat)
-            print("-" * 50)
+            #print("Repeat %s times" % run_repeat)
+            #print("-" * 50)
 
             for iteration in range(run_repeat):
                 _print("Iteration %s" % iteration)

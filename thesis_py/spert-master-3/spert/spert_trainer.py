@@ -270,6 +270,7 @@ class SpERTTrainer(BaseTrainer):
             # iterate batches
             total = math.ceil(dataset.document_count / self._args.eval_batch_size)
             for batch in tqdm(data_loader, total=total, desc='Predict'):
+            #for batch in data_loader:
                 # move batch to selected device
                 batch = util.to_device(batch, self._device)
 

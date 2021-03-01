@@ -1,51 +1,50 @@
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q1166072> 'public offering'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> 'Frankfurt StockExchange'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q151139>.
+<http://www.wikidata.org/entity/Q151139> <http://www.w3.org/2000/01/rdf-schema#label> 'Frankfurt Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <http://www.w3.org/2000/01/rdf-schema#label> 'Knorr-BremseAktiengesellschaft'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:Nb6c3bf284f674138a78fab3389b58b2b <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '72.0'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nb6c3bf284f674138a78fab3389b58b2b <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:Nb6c3bf284f674138a78fab3389b58b2b <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 72.0 to EUR 87.0'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nb6c3bf284f674138a78fab3389b58b2b.
-_:Nea3f8f1c26c94b22ac06c70c6af6e191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '87.0'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nea3f8f1c26c94b22ac06c70c6af6e191 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:Nea3f8f1c26c94b22ac06c70c6af6e191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 72.0 to EUR 87.0'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nea3f8f1c26c94b22ac06c70c6af6e191.
+_:Nb257ca2864304f8f94f8ed864f307b29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '72.0'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Nb257ca2864304f8f94f8ed864f307b29 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Nb257ca2864304f8f94f8ed864f307b29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 72.0 to EUR 87.0'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nb257ca2864304f8f94f8ed864f307b29.
+_:N78f27a575dd24bda970dea4fdc286152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '87.0'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N78f27a575dd24bda970dea4fdc286152 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N78f27a575dd24bda970dea4fdc286152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 72.0 to EUR 87.0'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N78f27a575dd24bda970dea4fdc286152.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/P946> 'DE000KBX1006'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/P946> <http://www.wikidata.org/entity/Q256290>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/P249> 'KBX'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'Deutsche Bank'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'J.P. Morgan'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'Morgan Stanley'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> <http://www.wikidata.org/entity/Q66048>.
+<http://www.wikidata.org/entity/Q66048> <http://www.w3.org/2000/01/rdf-schema#label> 'Deutsche Bank'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> <http://www.wikidata.org/entity/Q192314>.
+<http://www.wikidata.org/entity/Q192314> <http://www.w3.org/2000/01/rdf-schema#label> 'JPMorgan Chase'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> <http://www.wikidata.org/entity/Q334204>.
+<http://www.wikidata.org/entity/Q334204> <http://www.w3.org/2000/01/rdf-schema#label> 'Morgan Stanley'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2018-09-28'^^<https://www.w3.org/2001/XMLSchema#date>.
-<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q183>.
+<http://www.wikidata.org/entity/Q183> <http://www.w3.org/2000/01/rdf-schema#label> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q740419> 'for the fiscalyears ended December 31, 2017, December 31, 2016and December 31, 2015'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditedFinancialStatement> 'audited consolidated financial statementsprepared by the Company as of and for the fiscalyears ended December 31, 2017, December 31, 2016and December 31, 2015'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q192907> '2018-06-30'^^<https://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q192907> 'unaudited condensed consolidated interim financial statements ofthe Company as of and for the six-month period ended June 30, 2018,including comparative figures for the six-month period ended June 30, 2017'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
+<http://www.wikidata.org/entity/Q176831> <http://www.w3.org/2000/01/rdf-schema#label> 'International Financial Reporting Standards'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q2481549> 'No pro forma financial information'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q748250> 'No profit forecast or profit estimate'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditReport> 'without qualifications'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N69e8f52477154f09b3df95b1bb72f5a5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '73700000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N69e8f52477154f09b3df95b1bb72f5a5 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N69e8f52477154f09b3df95b1bb72f5a5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 73.7 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q185142> _:N69e8f52477154f09b3df95b1bb72f5a5.
-_:N1ccc356e117748f09895c0887e1653c0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '3844600'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N1ccc356e117748f09895c0887e1653c0 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N1ccc356e117748f09895c0887e1653c0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 3,844.6 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:N1ccc356e117748f09895c0887e1653c0.
-_:Naf1548e530b64775b521e73be397e26b <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '3771000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Naf1548e530b64775b521e73be397e26b <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:Naf1548e530b64775b521e73be397e26b <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 3,771.0 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:Naf1548e530b64775b521e73be397e26b.
+_:Nd5636ad252ee40ab906fe310232303d4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '73700000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Nd5636ad252ee40ab906fe310232303d4 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Nd5636ad252ee40ab906fe310232303d4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 73.7 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q185142> _:Nd5636ad252ee40ab906fe310232303d4.
+_:Nc12213e5dbeb4cb2b2826cebdf98ef65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '3844600'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Nc12213e5dbeb4cb2b2826cebdf98ef65 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Nc12213e5dbeb4cb2b2826cebdf98ef65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 3,844.6 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:Nc12213e5dbeb4cb2b2826cebdf98ef65.
+_:N0c59c51696bb4d2d93a776a6066716a7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '3771000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N0c59c51696bb4d2d93a776a6066716a7 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N0c59c51696bb4d2d93a776a6066716a7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 3,771.0 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:N0c59c51696bb4d2d93a776a6066716a7.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
-<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P6nM'^^<https://www.w3.org/2001/XMLSchema#duration>.
+<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P6M'^^<https://www.w3.org/2001/XMLSchema#duration>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q1337875> 'The proposed financial transaction tax could result in a substantial new tax burden in the secondarymarket for investors buying the Group’s shares and trading them in an EU member state whichimplements such a tax.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q330153> '“Aftermarket Sales”'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q330153> '“Aftermarket Sales Share”'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -61,8 +60,8 @@ _:Naf1548e530b64775b521e73be397e26b <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q330153> '“NetFinancial Cash”'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q330153> '“OrderIntake”'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q330153> '“OrderBook”'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q330153> '“Returnon Capital Employed”'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q330153> <http://www.wikidata.org/entity/Q1755687>.
+<http://www.wikidata.org/entity/Q1755687> <http://www.w3.org/2000/01/rdf-schema#label> 'Return on capital employed'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q330153> '“Aftermarket Sales” (secondary market) comprise all revenues of products and services (e.g., spare parts,overhaul) not related to a new original equipment market business products and are based on data derivedfrom German GAAP data and may therefore deviate from and not be comparable to data based on IFRSpresented elsewhere in the Prospectus.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q330153> '“Aftermarket Sales Share” is calculated, on a group level, as the percentage of total revenues (based onGerman GAAP data) and, on a segment level, as the percentage of revenues of the respective segment (basedon German GAAP data).'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q330153> '“CapitalExpenditures” are defined as payments made for the purchase of property, plant and equipmentand intangible assets.'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -99,16 +98,18 @@ _:Naf1548e530b64775b521e73be397e26b <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q243460> 'Net income/loss'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/hasCompetitiveStrength> 'Our management team is very experienced and has a clear vision for future value creation'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/BusinessStrategy> 'Continuing to strive for cost and process excellence'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> <http://www.wikidata.org/entity/Q183>.
+<http://www.wikidata.org/entity/Q183> <http://www.w3.org/2000/01/rdf-schema#label> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/P8571> 'KPMG AG Wirtschaftsprüfungsgesellschaft'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N01d57852ce714479a9c5de453c64081e <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1.0'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N01d57852ce714479a9c5de453c64081e <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
-_:N01d57852ce714479a9c5de453c64081e <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '1.0%'.
-<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N01d57852ce714479a9c5de453c64081e.
-_:N26717aac60c44e3c8b1ae593b42931a7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '0.5'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N26717aac60c44e3c8b1ae593b42931a7 <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
-_:N26717aac60c44e3c8b1ae593b42931a7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'up to 0.5%'.
-<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N26717aac60c44e3c8b1ae593b42931a7.
+_:Nb88f2bfdca7b4ff78241ffe68d463573 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1.0'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Nb88f2bfdca7b4ff78241ffe68d463573 <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
+_:Nb88f2bfdca7b4ff78241ffe68d463573 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '1.0%'.
+<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:Nb88f2bfdca7b4ff78241ffe68d463573.
+_:N3af0f261003c4ac481aa1e6e196d92c1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '0.5'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N3af0f261003c4ac481aa1e6e196d92c1 <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
+_:N3af0f261003c4ac481aa1e6e196d92c1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'up to 0.5%'.
+<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N3af0f261003c4ac481aa1e6e196d92c1.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://wikidata.org/entity/Q192907> 'two'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#Knorr-BremseAktiengesellschaft> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> 'German generally accepted standards for theaudit of financial statements'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <http://www.w3.org/2004/02/skos/core#altLabel> 'Knorr-Bremse'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#Knorr-BremseAktiengesellschaft> <http://www.w3.org/2004/02/skos/core#altLabel> 'Knorr-Bremse AG'^^<http://www.w3.org/2001/XMLSchema#string>.

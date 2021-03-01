@@ -5,7 +5,9 @@ from fuzzywuzzy import fuzz
 import re
 from SPARQLWrapper import SPARQLWrapper, JSON
 import os
+import sys
 import time
+from tqdm import tqdm
 import csv
 from operator import itemgetter
 from datetime import datetime
@@ -54,7 +56,6 @@ class KnowledgeGraphConstruction(object):
         pass
 
     def load_parsed_pdf(self):
-
         with open(self.dir) as json_file:
             self.data = json.load(json_file)
 
@@ -135,7 +136,7 @@ class KnowledgeGraphConstruction(object):
                 self.data[var] = [item.lower().replace("s", "") for item in self.data[var]]
                 self.data[var] = [
                     "P" +
-                    item.replace("day", "D").replace("month", "nM").replace("year", "Y").replace(" ", "") for item in
+                    item.replace("day", "D").replace("month", "M").replace("year", "Y").replace(" ", "") for item in
                     self.data[var]]
                 for item in self.data[var]:
                     if item == "P" or len(item) > 7:  # replace with sequence
@@ -173,6 +174,7 @@ class KnowledgeGraphConstruction(object):
                             cache.append([item, str(Price.fromstring(item).amount),
                                           currency_mapper(Price.fromstring(item).currency)])
                             self.data[key_value] = cache
+                print(self.data[key_value])
                 return self.data[key_value]
             except KeyError:
                 pass
@@ -189,14 +191,14 @@ class KnowledgeGraphConstruction(object):
             "USD": "\u0024",
         }
         currency_map = {
-            "GBP": "<https://www.wikidata.org/entity/Q25224>",
-            "CNY": "<https://www.wikidata.org/entity/Q39099>",
-            "EUR": "<https://www.wikidata.org/entity/Q4916>",
-            "INR": "<https://www.wikidata.org/entity/Q80524>",
-            "JPY": "<https://www.wikidata.org/entity/Q8146>",
-            "PLN": "<https://www.wikidata.org/entity/Q123213>",
-            "RUB": "<https://www.wikidata.org/entity/Q41044>",
-            "USD": "<https://www.wikidata.org/entity/Q4917>",
+            "GBP": "https://www.wikidata.org/entity/Q25224",
+            "CNY": "https://www.wikidata.org/entity/Q39099",
+            "EUR": "https://www.wikidata.org/entity/Q4916",
+            "INR": "https://www.wikidata.org/entity/Q80524",
+            "JPY": "https://www.wikidata.org/entity/Q8146",
+            "PLN": "https://www.wikidata.org/entity/Q123213",
+            "RUB": "https://www.wikidata.org/entity/Q41044",
+            "USD": "https://www.wikidata.org/entity/Q4917",
         }
 
         def currency_mapper(symbol):
@@ -237,15 +239,16 @@ class KnowledgeGraphConstruction(object):
         def accounting_categorization(var):
             try:
                 for item in self.data[var]:
-                    for element in item.lower().replace(" ", "").split():
-                        if "ifrs" in element:
-                            self.data[var][self.data[var].index(item)] = "IFRS"
-                            break
-                        if "gaap" in element:
-                            self.data[var][self.data[var].index(item)] = "GAAP"
-                            break
-                        else:
-                            pass
+                    if isinstance(item, str):
+                        for element in item.lower().replace(" ", "").split():
+                            if "ifrs" in element:
+                                self.data[var][self.data[var].index(item)] = "IFRS"
+                                break
+                            if "gaap" in element:
+                                self.data[var][self.data[var].index(item)] = "GAAP"
+                                break
+                            else:
+                                pass
             except KeyError:
                 pass
 
@@ -357,8 +360,8 @@ class KnowledgeGraphConstruction(object):
                 self.results_list.append({self.output: item})
 
         with open(os.path.join(self.location,
-                               "queries/query_{}.json").format(self.output.replace("/", "")), 'w') as outfile:
-            json.dump(self.results_list, outfile)
+                               "queries/query_{}.json").format(self.output.replace("/", "")), 'w') as outfile_:
+            json.dump(self.results_list, outfile_)
 
     def run_query(self):
         for item in self.input_list:
@@ -373,7 +376,6 @@ class KnowledgeGraphConstruction(object):
                 except HTTPError:
                     time.sleep(8)
                 KnowledgeGraphConstruction.fuzzy_matching(self)
-        print(self.data)
 
     def fuzzy_matching(self):
         # link extracted values to wikidata database
@@ -405,26 +407,33 @@ class KnowledgeGraphConstruction(object):
         #       (ii) else: pass
         try:
             for item in [self.data[self.output][entry_] for entry_ in range(0, len(self.data[self.output]))]:
-                # cache = [{"label": item}]
                 match = next((x for x in placeholder_list if norm(item) in norm(x[form]) or
                               norm(item) in norm(x["altlabel"])), None)
-                if match is not None:
-                    if match["value"] not in self.data[self.output]:
-                        self.data[self.output].append(match["value"])
-                else:
-                    if self.output != "isin":
-                        threshold = 85
-                        for element in self.data[self.output]:
-                            for x in placeholder_list:
-                                if (fuzz.ratio(norm(x["label"]),
-                                               norm(element)) or fuzz.ratio(norm(x["altlabel"]),
-                                                                            norm(element))) > threshold:
-                                    threshold = max(fuzz.ratio(norm(x["label"]),
-                                                               norm(element)),
-                                                    fuzz.ratio(norm(x["altlabel"]), norm(element)))
-                                    closest_match = x
-                                    if closest_match.get("value") not in self.data[self.output]:
-                                        self.data[self.output].append(closest_match.get("value"))
+                if match is not None:   # direct match
+                    if self.output == "isin":
+                        self.data["altlabel"] = [match["label"], match["altlabel"]]
+                    elif match["value"] not in self.data[self.output]:  # add match to dataset
+                        self.data[self.output].append({match["value"]: match["label"]})
+                        if item in self.data[self.output]:  # remove duplicates
+                            self.data[self.output].remove(item)
+                else:   # approximate match
+                    threshold = 85
+                    for element in [elem for elem in self.data[self.output] if self.output != "isin"]:
+                        closest_match = str()
+                        for x in placeholder_list:
+                            if (fuzz.ratio(norm(x["label"]),
+                                           norm(element)) or fuzz.ratio(norm(x["altlabel"]),
+                                                                        norm(element))) > threshold:
+                                threshold = max(fuzz.ratio(norm(x["label"]),
+                                                           norm(element)),
+                                                fuzz.ratio(norm(x["altlabel"]), norm(element)))
+                                closest_match = x
+                        if (closest_match != str()) and (closest_match.get("value") not in self.data[self.output]):
+                            self.data[self.output].append({closest_match.get("value"):
+                                                           closest_match.get("label")})
+                            self.data[self.output].remove(element)
+                        else:  # no match
+                            pass
 
         except KeyError:
             pass
@@ -452,7 +461,7 @@ class KnowledgeGraphConstruction(object):
         prefix_dict = {**fibo_prefixes, **prefixes}
 
         mapping_dict = {"accounting_standards": [{"fibo-be-le-lei": "hasAccountingStandard"}, {"datatype": "string"}],
-                        "alternative_label": [{"skos": "altLabel"}, {"datatype": "string"}],
+                        "altlabel": [{"skos": "altLabel"}, {"datatype": "string"}],
                         "audit_report": [{"fibo-sec-sec-lst": "hasAuditReport"}, {"datatype": "string"}],
                         "audited_financial_statements": [{"fibo-sec-sec-lst": "hasAuditedFinancialStatement"},
                                                          {"datatype": "string"}],
@@ -493,7 +502,7 @@ class KnowledgeGraphConstruction(object):
                                                                     {"datatype": "string"}],  # placeholder
                         "periods_of_pffi": [{"wd": "Q1166072"}, {"datatype": "date"}],  # placeholder
                         "periods_of_unaudited_financial_statements": [{"wd": "Q192907"},
-                                                                      {"datatype": "string"}],  # placeholder
+                                                                      {"datatype": "date"}],  # placeholder
                         "periods_of_unaudited_interim_fs": [{"wd": "Q192907"}, {"datatype": "date"}],  # placeholder
                         "pro_forma_financial_information": [{"wd": "Q2481549"}, {"datatype": "string"}],  # placeholder
                         "profit_forecast": [{"wd": "Q748250"}, {"datatype": "string"}],  # placeholder
@@ -543,7 +552,7 @@ class KnowledgeGraphConstruction(object):
         if not os.path.exists(os.path.realpath(os.path.join(os.getcwd(), "output"))):
             os.makedirs(os.path.realpath(os.path.join(os.getcwd(), "output")))
 
-        def object_(item_):
+        def object_(item_):  # _item: "isin", "headquarter_location", ...
             subject = triple_subject()
             predicate = triple_predicate(item_)
             output_path = "/Users/mlcb/PycharmProjects/Thesis/thesis_py/output/output_{}.nt".format(''.join(
@@ -551,53 +560,69 @@ class KnowledgeGraphConstruction(object):
             f = open(output_path, "a")
             if item_ in mapping_dict:
                 for element in [item for item in self.data[item_]]:
-                    if "date" in mapping_dict[item_][1].values():
-                        object_value = "'{}'{}".format(element[0], xsd_type("date"))
-                    elif "http" in element:
-                        object_value = triple_format(element) + "."
-                    elif "decimal" in mapping_dict[item_][1].values():
-                        if "%" == element[0] or element[2] == "percentage":
-                            object_value = BNode().n3() + "."
-                            print(object_value.replace(".", ""), "<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>",
-                                  "'{}'^^<https://www.w3.org/2001/XMLSchema#decimal>.".format(element[1]), file=f)
-                            print(object_value.replace(".", ""), "<http://www.w3.org/2000/01/rdf-schema#property>",
-                                  "<https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.",
-                                  file=f)
-                            print(object_value.replace(".", ""), "<http://www.w3.org/1999/02/22-rdf-syntax-ns#comment>",
-                                  "'{}'.".format(element[0]),
-                                  file=f)
-                        else:
-                            object_value = BNode().n3() + "."
-                            print(object_value.replace(".", ""), "<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>",
-                                  "'{}'^^<https://www.w3.org/2001/XMLSchema#decimal>.".format(element[1]),
-                                  file=f)
-                            if element[2] is not None and element[2] != "None":
-                                print(object_value.replace(".", ""),
-                                      "<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/" +
-                                      "FinancialInstruments/isDenominatedIn>",
-                                      "{}.".format(element[2]), file=f)
-                            print(object_value.replace(".", ""), "<http://www.w3.org/1999/02/22-rdf-syntax-ns#comment>",
-                                  "'{}'^^<http://www.w3.org/2001/XMLSchema#string>.".format(
-                                      element[0].replace("'", "").replace('"', "")),
-                                  file=f)
-                            if element[2] == 'None':
-                                pass
-                    elif "duration" in mapping_dict[item_][1].values():
-                        object_value = "'{}'{}".format(element, xsd_type("duration"))
-                    elif element in [str(True), str(False)]:
-                        object_value = "'{}'{}".format(element, xsd_type("boolean"))
+                    if isinstance(element, dict):
+                        object_value = "<{}>.".format(next(iter(element)))
+                        print(subject, predicate, object_value, file=f)
+                        subject_label = "<{}>".format(next(iter(element)))
+                        predicate_label = "<http://www.w3.org/2000/01/rdf-schema#label>"
+                        object_value = "'{}'^^<http://www.w3.org/2001/XMLSchema#string>.".format(next(
+                            iter(element.values())))
+                        print(subject_label, predicate_label, object_value, file=f)
                     else:
-                        try:
-                            object_value = "'{}'^^<http://www.w3.org/2001/XMLSchema#string>.".format(
-                                element.replace("'", "").replace('"', ""))
-                        except AttributeError:
-                            object_value = "'{}'^^<http://www.w3.org/2001/XMLSchema#string>.".format(
-                                [elem.replace("'", "").replace('"', "") for elem in element])
-                    print(subject, predicate, object_value.replace("['", "").replace("']", ""), file=f)
-            f.close()
+
+                        if "date" in mapping_dict[item_][1].values():
+                            object_value = "'{}'{}".format(element[0], xsd_type("date"))
+                        elif "http" in element:
+                            object_value = triple_format(element) + "."
+                        elif "decimal" in mapping_dict[item_][1].values():
+                            if "%" == element[0] or element[2] == "percentage":
+                                object_value = BNode().n3() + "."
+                                print(object_value.replace(".", ""),
+                                      "<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>",
+                                      "'{}'^^<https://www.w3.org/2001/XMLSchema#decimal>.".format(element[1]), file=f)
+                                print(object_value.replace(".", ""), "<http://www.w3.org/2000/01/rdf-schema#property>",
+                                      "<https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.",
+                                      file=f)
+                                print(object_value.replace(".", ""),
+                                      "<http://www.w3.org/1999/02/22-rdf-syntax-ns#comment>",
+                                      "'{}'.".format(element[0]),
+                                      file=f)
+                            else:
+                                object_value = BNode().n3() + "."
+                                print(object_value.replace(".", ""),
+                                      "<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>",
+                                      "'{}'^^<https://www.w3.org/2001/XMLSchema#decimal>.".format(element[1]),
+                                      file=f)
+                                if element[2] is not None and element[2] != "None":
+                                    print(object_value.replace(".", ""),
+                                          "<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/" +
+                                          "FinancialInstruments/isDenominatedIn>",
+                                          "{}.".format("<{}>".format(element[2])), file=f)
+                                print(object_value.replace(".", ""),
+                                      "<http://www.w3.org/1999/02/22-rdf-syntax-ns#comment>",
+                                      "'{}'^^<http://www.w3.org/2001/XMLSchema#string>.".format(
+                                          element[0].replace("'", "").replace('"', "")),
+                                      file=f)
+                                if element[2] == 'None':
+                                    pass
+                        elif "duration" in mapping_dict[item_][1].values():
+                            object_value = "'{}'{}".format(element, xsd_type("duration"))
+                        elif element in [str(True), str(False)]:
+                            object_value = "'{}'{}".format(element, xsd_type("boolean"))
+                        else:
+                            try:
+                                object_value = "'{}'^^<http://www.w3.org/2001/XMLSchema#string>.".format(
+                                    element.replace("'", "").replace('"', ""))
+                            except AttributeError:
+                                object_value = "'{}'^^<http://www.w3.org/2001/XMLSchema#string>.".format(
+                                    [elem.replace("'", "").replace('"', "") for elem in element])
+                        print(subject, predicate, object_value.replace("['", "").replace("']", ""), file=f)
+                f.close()
 
         for instance in self.data:
             object_(instance)
+
+        print(self.data)
 
     def runall(self):
         if __name__ == '__main__':
@@ -609,7 +634,13 @@ class KnowledgeGraphConstruction(object):
 
 if __name__ == "__main__":
     path = os.path.realpath(os.path.join(os.getcwd(), "data"))
-    with os.scandir(path) as it:
-        for entry in it:
+    with tqdm(total=len([entry for entry in os.scandir(path)]), file=sys.stdout) as pbar:
+        for entry in os.scandir(path):
             if entry.name.endswith(".json") and entry.is_file():
                 KnowledgeGraphConstruction(entry.path).runall()
+            pbar.update(1)
+        with open('KnowledgeBaseUpdate.nt', 'w') as outfile:
+            for entry in os.scandir(os.path.realpath(os.path.join(os.getcwd(), "output"))):
+                if entry.name.endswith(".nt") and entry.is_file():
+                    with open(entry) as infile:
+                        outfile.write(infile.read())

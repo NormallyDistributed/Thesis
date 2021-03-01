@@ -4,13 +4,12 @@
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2011-04-11'^^<https://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://wikidata.org/entity/P452> 'The Company operates in the global transportation industry'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://wikidata.org/entity/P946> 'NL0009739424'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#TNTEXPRESSN.V.> <https://wikidata.org/entity/P946> <http://www.wikidata.org/entity/Q973060>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://wikidata.org/entity/P249> 'TNTE'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://wikidata.org/entity/Q1337875> 'US investors may have difficulty enforcing their rights against the Company and its directors andofficers.'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'ING BANK N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> <http://www.wikidata.org/entity/Q645708>.
-<http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.wikidata.org/entity/Q645708> <http://www.w3.org/2000/01/rdf-schema#label> 'ING Group'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
+<http://www.wikidata.org/entity/Q176831> <http://www.w3.org/2000/01/rdf-schema#label> 'International Financial Reporting Standards'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://wikidata.org/entity/Q7378915> 'The Ordinary Shares have not been and will not be registered under the US Securities'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://wikidata.org/entity/P8571> 'PwC is the independent auditor of both TNT N.V. and of TNT Express.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/hasDividendPolicy> 'If Preference Shares are outstanding, the Company must first pay a dividend on those Preference Shares.The dividend is based on 12-month EURIBOR plus a margin of 1 to 3% and will be calculated on thepaid-up part of the nominal value of the Preference Shares.'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -25,9 +24,9 @@
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/isAffectedBy> 'Foreign currency exchange differences which impact the translation of Express results outside theeuro zone.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://wikidata.org/entity/Q330153> 'EBITDA3'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/LoanProducts/WorkingCapitalPurpose> 'The Company believes that its working capital is sufficient for its present requirements; that is, for at least12 months following the date of this Prospectus.'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'the Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q55>.
-<http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P6nM'^^<https://www.w3.org/2001/XMLSchema#duration>.
+<http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#label> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P6M'^^<https://www.w3.org/2001/XMLSchema#duration>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://wikidata.org/entity/Q330153> 'EBITDAEarnings Before Interest, Taxation, Depreciation andAmortization (not in conformity with IFRS)'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://wikidata.org/entity/Q2481549> 'Pro forma profit and loss accounts of TNT N.V. and of TNT Express for the financial year 2010(as if the Demerger took place in 2010) are attached to this proposal as Annex C.1 and Annex C.2respectively'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://wikidata.org/entity/Q1166072> 'As a result of the Merger (in conjunction with the Demerger), the issued and outstanding sharecapital of TNT Express will amount to EUR 43,362,654.48, divided into 542,033,181 ordinaryshares with a nominal value of EUR 0.08 each. TNT N.V. will have a stake of 29.9%.'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -39,5 +38,7 @@
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditReport> 'Independent auditors reporton combined financial statements Express business'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> 'in accordance withInternational Financial Reporting Standards as adopted by the European Union.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/placeholder/emphasisOfMatter> 'stand-alone entity during the years presented or of future results of the Express business. Our opinion is notqualified in respect of this matter.'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/MuniIssuance/hasFinancialAdvisor> 'Allen & Overy LLP'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/MuniIssuance/hasFinancialAdvisor> <http://www.wikidata.org/entity/Q2120145>.
+<http://www.wikidata.org/entity/Q2120145> <http://www.w3.org/2000/01/rdf-schema#label> 'Allen & Overy'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TNTEXPRESSN.V.> <http://www.w3.org/2004/02/skos/core#altLabel> 'TNT N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TNTEXPRESSN.V.> <http://www.w3.org/2004/02/skos/core#altLabel> 'Thomas Nationwide Transport'^^<http://www.w3.org/2001/XMLSchema#string>.

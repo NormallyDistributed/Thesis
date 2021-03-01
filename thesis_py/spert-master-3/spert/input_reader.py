@@ -125,11 +125,13 @@ class JsonInputReader(BaseInputReader):
 
     def _parse_dataset(self, dataset_path, dataset):
         documents = json.load(open(dataset_path))
-        for document in tqdm(documents, desc="Parse dataset '%s'" % dataset.label):
+        # for document in tqdm(documents, desc="Parse dataset '%s'" % dataset.label):
+        for document in documents:
             self._parse_document(document, dataset)
 
     def _parse_document(self, doc, dataset) -> Document:
         jtokens = doc['tokens']
+
         jrelations = doc['relations']
         jentities = doc['entities']
 
@@ -204,16 +206,25 @@ class JsonPredictionInputReader(BaseInputReader):
 
     def _parse_dataset(self, dataset_path, dataset):
         documents = json.load(open(dataset_path))
-        for document in tqdm(documents, desc="Parse dataset '%s'" % dataset.label):
-            self._parse_document(document, dataset)
+
+        stopwords = ["the", "of", "is", "are", "have", "has", "me", "us", "of", "can", "you", "?", "do", "does"]
+        #for document in tqdm(documents, desc="Parse dataset '%s'" % dataset.label):
+        for document in documents:
+            document_ = {"tokens": ' '.join([item for item in document["tokens"] if item not in stopwords]).split()}
+            #print(document_)
+            self._parse_document(document_, dataset)
 
     def _parse_document(self, document, dataset) -> Document:
         if type(document) == list:
             jtokens = document
+
         elif type(document) == dict:
             jtokens = document['tokens']
+
+
         else:
             jtokens = [t.text for t in self._nlp(document)]
+
 
         # parse tokens
         doc_tokens, doc_encoding = _parse_tokens(jtokens, dataset, self._tokenizer)
@@ -243,3 +254,4 @@ def _parse_tokens(jtokens, dataset, tokenizer):
     doc_encoding += [tokenizer.convert_tokens_to_ids('[SEP]')]
 
     return doc_tokens, doc_encoding
+

@@ -1,12 +1,12 @@
 <http://example.org/entity/#CuretisN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'Curetis N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
 <http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/P249> 'CURE'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> 'Euronext Amsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> 'EuronextBrussels'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q478720>.
+<http://www.wikidata.org/entity/Q478720> <http://www.w3.org/2000/01/rdf-schema#label> 'Euronext Amsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q1146518>.
-<http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.wikidata.org/entity/Q1146518> <http://www.w3.org/2000/01/rdf-schema#label> 'Euronext Brussels'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q55>.
+<http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#label> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/Q748250> 'not issued a profit forecast.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/P946> 'NL0011509294'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/Q1166072> 'public offering'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -15,9 +15,8 @@
 <http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/Q192907> '2015-06-30'^^<https://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/Q192907> 'Curetis AGs unaudited interim condensed financial statementsas of 30 June 2015 and for the six months ended 30 June 2015 and 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
-<http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/P452> 'pharmaceutical'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/P452> <http://www.wikidata.org/entity/Q7180753>.
+<http://www.wikidata.org/entity/Q7180753> <http://www.w3.org/2000/01/rdf-schema#label> 'Pharmaceutical industry in China'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#CuretisN.V.> <https://wikidata.org/entity/Q740419> 'for the years ended 31 December2014, 2013 and 2012;'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditedFinancialStatement> 'the audited financial statements of Curetis AG under IFRS as of and for the years ended 31 December2014, 2013 and 2012;'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#CuretisN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.

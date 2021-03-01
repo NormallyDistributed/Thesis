@@ -1,49 +1,48 @@
 <http://example.org/entity/#VapianoSE> <https://wikidata.org/entity/Q1166072> 'public offering'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> 'Frankfurt StockExchange'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q151139>.
+<http://www.wikidata.org/entity/Q151139> <http://www.w3.org/2000/01/rdf-schema#label> 'Frankfurt Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <http://www.w3.org/2000/01/rdf-schema#label> 'Vapiano SE'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N02b4df0d98904e7b9e7534f36c9067c5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '21.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N02b4df0d98904e7b9e7534f36c9067c5 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N02b4df0d98904e7b9e7534f36c9067c5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '21.00 and €27.00€€'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N02b4df0d98904e7b9e7534f36c9067c5.
-_:N46b06f5a13a541918f6db26110b827f1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '27.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N46b06f5a13a541918f6db26110b827f1 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N46b06f5a13a541918f6db26110b827f1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '21.00 and €27.00€€'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N46b06f5a13a541918f6db26110b827f1.
+_:N71ec22ed32124971a1de13d3e272732e <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '21.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N71ec22ed32124971a1de13d3e272732e <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N71ec22ed32124971a1de13d3e272732e <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '21.00 and €27.00€€'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N71ec22ed32124971a1de13d3e272732e.
+_:Nbfd5da1ee0e34f0a9343a97a5778da05 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '27.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Nbfd5da1ee0e34f0a9343a97a5778da05 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Nbfd5da1ee0e34f0a9343a97a5778da05 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '21.00 and €27.00€€'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nbfd5da1ee0e34f0a9343a97a5778da05.
 <http://example.org/entity/#VapianoSE> <https://wikidata.org/entity/P946> 'DE000A0WMNK9'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VapianoSE> <https://wikidata.org/entity/P946> <http://www.wikidata.org/entity/Q506252>.
 <http://example.org/entity/#VapianoSE> <https://wikidata.org/entity/P249> 'VAO'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2017-06-14'^^<https://www.w3.org/2001/XMLSchema#date>.
-<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'Jefferies'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> <http://www.wikidata.org/entity/Q325789>.
-<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.wikidata.org/entity/Q325789> <http://www.w3.org/2000/01/rdf-schema#label> 'Jefferies & Company'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q183>.
+<http://www.wikidata.org/entity/Q183> <http://www.w3.org/2000/01/rdf-schema#label> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://wikidata.org/entity/Q192907> 'unaudited interim condensed consolidated financialstatements of Vapiano SE as of and for the three months ended March 31, 2017 (with comparative figures forthe three-month period ended March 31, 2016)'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://wikidata.org/entity/Q192907> '2017-03-31'^^<https://www.w3.org/2001/XMLSchema#date>.
-<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
+<http://www.wikidata.org/entity/Q176831> <http://www.w3.org/2000/01/rdf-schema#label> 'International Financial Reporting Standards'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://wikidata.org/entity/Q740419> 'for the financial yearsended December 31, 2016, December 31, 2015 (as restated) and December 31, 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VapianoSE> <https://wikidata.org/entity/Q330153> 'EBITDA'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://wikidata.org/entity/Q330153> <http://www.wikidata.org/entity/Q720862>.
+<http://www.wikidata.org/entity/Q720862> <http://www.w3.org/2000/01/rdf-schema#label> 'earnings before interest and taxes'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://wikidata.org/entity/Q330153> 'as net income before interest expense, interest income, provision (benefit) for income taxesas well as depreciation and amortization.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditReport> 'withoutqualifications'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/LoanProducts/WorkingCapitalPurpose> 'In the Company’s opinion the Group’s working capital is sufficient for the Group’s present requirements, i.e.,for a minimum of 12 months following the date of the Prospectus.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://wikidata.org/entity/Q2481549> 'No pro forma financial information has been preparedby the Company.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://wikidata.org/entity/Q748250> 'No profit forecast or profit estimate is being presentedby the Company.'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N2e06390e749548eea581c4d227ca2893 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '90100000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N2e06390e749548eea581c4d227ca2893 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N2e06390e749548eea581c4d227ca2893 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '90.1 million€'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:N2e06390e749548eea581c4d227ca2893.
-_:Ne79a64063ef743ad93850d6fa8c0b900 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '11400000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Ne79a64063ef743ad93850d6fa8c0b900 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:Ne79a64063ef743ad93850d6fa8c0b900 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '11.4 million€'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VapianoSE> <https://wikidata.org/entity/Q185142> _:Ne79a64063ef743ad93850d6fa8c0b900.
-_:Nc842c902a22f46088f5a7a7effdd7f60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '79800000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nc842c902a22f46088f5a7a7effdd7f60 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:Nc842c902a22f46088f5a7a7effdd7f60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '79.8 million€'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:Nc842c902a22f46088f5a7a7effdd7f60.
+_:N41623a408d8c455c890931cf212ef1b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '90100000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N41623a408d8c455c890931cf212ef1b6 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N41623a408d8c455c890931cf212ef1b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '90.1 million€'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:N41623a408d8c455c890931cf212ef1b6.
+_:N50db9a2dce0a4ae2becb00cea6d1318c <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '11400000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N50db9a2dce0a4ae2becb00cea6d1318c <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N50db9a2dce0a4ae2becb00cea6d1318c <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '11.4 million€'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#VapianoSE> <https://wikidata.org/entity/Q185142> _:N50db9a2dce0a4ae2becb00cea6d1318c.
+_:Nab69ab1930a14fe8989fa5d31b426230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '79800000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Nab69ab1930a14fe8989fa5d31b426230 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Nab69ab1930a14fe8989fa5d31b426230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '79.8 million€'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:Nab69ab1930a14fe8989fa5d31b426230.
 <http://example.org/entity/#VapianoSE> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
-<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P6nM'^^<https://www.w3.org/2001/XMLSchema#duration>.
+<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P6M'^^<https://www.w3.org/2001/XMLSchema#duration>.
 <http://example.org/entity/#VapianoSE> <https://wikidata.org/entity/Q1337875> 'A proposed financial transaction tax could result in a substantial new tax burden in thesecondary market for investors buying the Group’s shares and trading them in a EUmember state which implements such a tax.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://wikidata.org/entity/P8571> 'PricewaterhouseCoopers GmbHWirtschaftsprüfungsgesellschaft'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> 'German generally accepted standards for the audit of financial statements'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -66,13 +65,15 @@ _:Nc842c902a22f46088f5a7a7effdd7f60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#VapianoSE> <https://wikidata.org/entity/P452> 'restaurant industry'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/hasCompetitiveStrength> 'Impressive financial track record driven by strong international unit growth, sales andEBITDA growth'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/BusinessStrategy> 'New format differentiation'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> <http://www.wikidata.org/entity/Q183>.
-_:Nae1524cf41414ae986ac01c5efa49b61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '2.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nae1524cf41414ae986ac01c5efa49b61 <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
-_:Nae1524cf41414ae986ac01c5efa49b61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '2.00%'.
-<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:Nae1524cf41414ae986ac01c5efa49b61.
-_:N00f00eb632e3453e8467d896d4564052 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1.50'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N00f00eb632e3453e8467d896d4564052 <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
-_:N00f00eb632e3453e8467d896d4564052 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'up to 1.50%'.
-<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N00f00eb632e3453e8467d896d4564052.
+<http://www.wikidata.org/entity/Q183> <http://www.w3.org/2000/01/rdf-schema#label> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
+_:Ndf6dc28f728b4f078fde5c244a7e282b <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '2.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:Ndf6dc28f728b4f078fde5c244a7e282b <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
+_:Ndf6dc28f728b4f078fde5c244a7e282b <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '2.00%'.
+<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:Ndf6dc28f728b4f078fde5c244a7e282b.
+_:N2ae756e5e6684a6fa886dc57fe146dfc <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1.50'^^<https://www.w3.org/2001/XMLSchema#decimal>.
+_:N2ae756e5e6684a6fa886dc57fe146dfc <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
+_:N2ae756e5e6684a6fa886dc57fe146dfc <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'up to 1.50%'.
+<http://example.org/entity/#VapianoSE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N2ae756e5e6684a6fa886dc57fe146dfc.
+<http://example.org/entity/#VapianoSE> <http://www.w3.org/2004/02/skos/core#altLabel> 'Vapiano SE'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#VapianoSE> <http://www.w3.org/2004/02/skos/core#altLabel> 'شركة فابيانو'^^<http://www.w3.org/2001/XMLSchema#string>.
