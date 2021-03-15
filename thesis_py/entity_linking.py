@@ -1,21 +1,27 @@
-import argparse
-from threading import Thread
-from fuzzywuzzy import fuzz
 import json
 import os
 import csv
+import rdflib
 import rdflib.graph as g
 from spacy.lang.en import English
-import subprocess
 import time
-import rdflib
 import isodate
+from rich.console import Console
+from rich.progress import track
+from urllib.error import HTTPError
 from SPARQLWrapper import SPARQLWrapper, JSON
+from rich import print, pretty
+from spert.spert_predict import *
+from threading import Thread
+from fuzzywuzzy import fuzz
+pretty.install()
+console = Console()
 
 
 class EntityLinking(object):
 
     def __init__(self, dir_prediction: str, initial_threshold: int, question: str):
+        self.answer_list = list()
         self.dir_prediction = dir_prediction
         self.threshold = initial_threshold
         self.question = question
@@ -37,16 +43,12 @@ class EntityLinking(object):
         tokenizer = nlp.tokenizer
         with open('/Users/mlcb/PycharmProjects/Thesis/thesis_py/question.json', 'w') as fp:
             json.dump([{"tokens": ["{}".format(i) for i in tokenizer(self.question)]}], fp)
-        subprocess.call(["python",
-                         "/Users/mlcb/PycharmProjects/Thesis/thesis_py/spert-master-3/spert.py",
-                         "predict",
-                         "--config",
-                         "/Users/mlcb/PycharmProjects/Thesis/thesis_py/spert-master-3/configs/example_predict.conf"])
+        predict()
 
     def load_prediction(self):
         with open(self.dir_prediction) as json_file:
             self.prediction = json.load(json_file)
-        print(self.prediction)
+        # print(self.prediction)
 
     def extract_relation(self):
         # import relations
@@ -180,14 +182,17 @@ class EntityLinking(object):
                 pass
             return predicate
 
-        for i in self.prediction:
+        for i in track(self.prediction, description="Extract relation ... "):
             for j in range(0, len(i["relations"])):
                 self.relation = i["relations"][0]["type"]
                 self.relation_uri = triple_predicate(self.relation.replace(" ", "_"))
 
         if self.relation_uri is None:
-            print("Answer unknown. Reason: The mentioned relation is not present in the database.")
+            console.print("Answer unknown. Reason: The mentioned relation is not present in the database.",
+                          style="bold red")
             exit()
+
+        console.print(">>> {}".format(self.relation.replace("_", " ")), style="bold red")
 
     def extract_entity(self):
         start_end = None
@@ -233,35 +238,56 @@ class EntityLinking(object):
             candidate_list.append([str(row.asdict()["o"].toPython()), str(row.asdict()["s"].toPython())])
 
         threshold: int = self.threshold
+        candidate = None
 
-        for entity_candidate in candidate_list:
+        for entity_candidate in track(candidate_list, description="Entity extraction ..."):
             if fuzz.token_set_ratio(self.entity, entity_candidate[0]) > threshold:
                 threshold = fuzz.token_set_ratio(self.entity, entity_candidate)
                 self.best_candidate = entity_candidate
 
         if self.best_candidate != "No Match":
             self.entity_uri = self.best_candidate[1]
-        if self.operator is None and self.best_candidate == "No Match":
-            print("Answer unknown. Reason: The mentioned company is not present in the database.")
-            exit()
+
+        else:
+            with open("wiki_companies.json") as json_file:
+                wiki_companies = json.load(json_file)
+            for entry in wiki_companies:
+                if "altlabel" not in entry:
+                    entry["altlabel"] = None
+            if self.operator is None and self.best_candidate == "No Match":
+                for entry in wiki_companies:
+                    if (fuzz.token_set_ratio(self.entity,
+                                             entry["label"]) or fuzz.token_set_ratio(self.entity,
+                                                                                     entry["altlabel"])) > threshold:
+                        threshold = fuzz.token_set_ratio(self.entity, entry["altlabel"])
+                        candidate = [entry["label"], entry["item"], threshold]
+            if candidate is not None:
+                self.entity_uri = candidate[1]
+                self.best_candidate = candidate[0]
+            else:
+                console.print("Answer unknown. Reason: The mentioned company is not present in the database.",
+                              style="bold red")
+                exit()
+        console.print(f">>> {self.entity}", style="bold red")
 
     def get_missing_object(self, graphs, predicate_uri, subject_uri, operator):
 
-        answer_list = list()
         arg = None
         query_command = None
 
         if operator is None:
             arg = "c"
             query_command = """
-            PREFIX xsd: <https://www.w3.org/2001/XMLSchema#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             PREFIX fibo: <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/>
             SELECT ?c ?e
             WHERE {
             {?s ?p ?o. FILTER (datatype(?o) = xsd:string ||
             datatype(?o) = xsd:decimal ||
             datatype(?o) = xsd:date ||
-            datatype(?o) = xsd:duration) BIND(?o as ?c)}
+            datatype(?o) = xsd:duration ||
+            datatype(?o) = xsd:boolean
+            ) BIND(?o as ?c)}
             UNION {?s ?p ?o. ?o ?label ?d. BIND(?d as ?c)}
             UNION{?s ?p ?o. ?o ?value ?d. BIND(?d as ?c) OPTIONAL{?o fibo:isDenominatedIn ?e.}}
             } ORDER BY ASC(?c)
@@ -276,6 +302,7 @@ class EntityLinking(object):
               ?s ?p ?o .
             }
             """
+
         output = graphs.query(query_command, initBindings={'p': predicate_uri,
                                                            's': subject_uri,
                                                            'label': self.label,
@@ -283,53 +310,99 @@ class EntityLinking(object):
                                                            })
 
         if operator is None:
-            for row in output:
-                if "https://www.w3.org/2001/XMLSchema#duration" in str(row):
-                    answer_list.append(str(isodate.parse_duration(row[arg])).split(",")[0])
+            for row in track(output, description="Execute query ...    "):
+                if "http://www.w3.org/2001/XMLSchema#duration" in str(row):
+                    self.answer_list.append(str(isodate.parse_duration(row[arg])).split(",")[0])
+                    break
+                if "http://www.w3.org/2001/XMLSchema#boolean" in str(row):
+                    self.operator = "boolean"
+                    self.answer_list.append(row.asdict()[arg].toPython())
                 elif "wikidata" in str(row):
                     sparql_cache = row["e"].split("/entity/")[1].split("/")[0]
-                    answer_list.append(row["c"]+" "+self.wiki_query(sparql_cache))
+                    self.answer_list.append(row["c"] + " " + self.wikidata_query(subject=sparql_cache,
+                                                                                 predicate=None,
+                                                                                 condition=False))
                     continue
                 else:
-                    answer_list.append(row.asdict()[arg].toPython())
-            answer_list = ", ".join(answer_list)
+                    self.answer_list.append(row.asdict()[arg].toPython())
+            self.answer_list = ", ".join(str(v) for v in self.answer_list)
 
-        if operator == "count":
+        if self.operator == "count":
             for row in output:
-                answer_list = row.asdict()[arg].toPython()
+                self.answer_list = row.asdict()[arg].toPython()
 
-        if not answer_list:
-            return print("This information is not in the database.")
+    def wikidata_query(self, subject, predicate, condition):
+        if condition is True:
+            entity = subject.split("/entity/")[1].split("/")[0]
+            relation = "wdt:{}".format(predicate.split("/entity/")[1].split("/")[0].replace(">", ""))
         else:
-            return print("The {} of {} is: {}.".format(self.relation.replace("_", " "),
-                                                       self.best_candidate[0],
-                                                       answer_list))
+            entity = subject
+            relation = "rdfs:label"
+
+        sparql = SPARQLWrapper("https://query.wikidata.org/sparql")
+        sparql.setQuery("""
+        SELECT ?item ?itemLabel
+        WHERE {
+        SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+          """ + "wd:{} {} ?item.".format(entity, relation) + """
+          BIND(?item as ?itemLabel)
+        OPTIONAL{FILTER(lang(?itemLabel)="en")}
+        } """)
+        try:
+            sparql.setReturnFormat(JSON)
+        except HTTPError:
+            time.sleep(4)
+        sparql.setReturnFormat(JSON)
+        answer = list()
+
+        if condition is False:
+            return sparql.query().convert()["results"]["bindings"][0]["itemLabel"]["value"]
+        else:
+            if len(sparql.query().convert()["results"]["bindings"]) != 0:
+                for row in range(len(sparql.query().convert())):
+                    answer.append(sparql.query().convert()["results"]["bindings"][0]["itemLabel"]["value"])
+                return console.print("The {} of {} is: {}.".format(self.relation.replace("_", " "), self.best_candidate,
+                                                                   *list(set(answer))), style="bold cyan")
+            else:
+                return console.print("This information is not in the database.", style="bold red")
 
     def query(self):
 
         def strip(irl):
             return irl.replace("<", "").replace(">", "")
 
-        if self.operator is None:
-            self.get_missing_object(self.graph, subject_uri=rdflib.URIRef(self.entity_uri),
-                                    predicate_uri=rdflib.URIRef(strip(self.relation_uri)), operator=None)
+        if "wikidata" in self.entity_uri:
+            self.wikidata_query(subject=self.entity_uri, predicate=self.relation_uri, condition=True)
+        else:
+            if self.operator is None:
+                self.get_missing_object(self.graph, subject_uri=rdflib.URIRef(self.entity_uri),
+                                        predicate_uri=rdflib.URIRef(strip(self.relation_uri)), operator=None)
+            elif self.operator == "count":
+                self.get_missing_object(self.graph, subject_uri=rdflib.URIRef(self.entity_uri),
+                                        predicate_uri=rdflib.URIRef(strip(self.relation_uri)), operator="count")
 
-        elif self.operator == "count":
-            self.get_missing_object(self.graph, subject_uri=rdflib.URIRef(self.entity_uri),
-                                    predicate_uri=rdflib.URIRef(strip(self.relation_uri)), operator="count")
+        Thread(target=self.output_text()).start()
 
-    def wiki_query(self, sparql_output):
-        sparql = SPARQLWrapper("https://query.wikidata.org/sparql")
-        sparql.setQuery("""
-        SELECT ?item ?itemLabel
-        WHERE {
-          wd:""" + sparql_output + """ rdfs:label ?item.
-          FILTER (lang(?item) = 'en')
-          SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-        }
-        """)
-        sparql.setReturnFormat(JSON)
-        return sparql.query().convert()["results"]["bindings"][0]["itemLabel"]["value"]
+    def output_text(self):
+        print(self.answer_list)
+        if not self.answer_list:
+            return console.print("This information is not in the database.", style="bold red")
+        else:
+            if self.operator == "count":
+                return console.print("The number of {}'s {}s is {}.".format(
+                                                               self.best_candidate[0],
+                                                               self.relation.replace("_", " "),
+                                                               self.answer_list), style="bold green")
+            if self.operator == "boolean":
+                return console.print("The statement that {} to {} is {}.".format(
+                    self.relation.replace("_", " "),
+                    self.best_candidate[0],
+                    self.answer_list.lower()), style="bold green")
+            else:
+                return console.print("The {} of {} is: {}.".format(self.relation.replace("_", " "),
+                                                                   self.best_candidate[0],
+                                                                   self.answer_list).replace("..", "."),
+                                     style="bold green")
 
     def runall(self):
         if __name__ == '__main__':
@@ -340,6 +413,8 @@ class EntityLinking(object):
             Thread(target=self.extract_entity()).start()
             Thread(target=self.entity_matching()).start()
             Thread(target=self.query()).start()
+
+#  listing venue: P414
 
 
 if __name__ == "__main__":
@@ -352,4 +427,4 @@ if __name__ == "__main__":
     prediction_dir = "/Users/mlcb/PycharmProjects/Thesis/thesis_py/prediction.json"
     threshold_value = 85
     EntityLinking(prediction_dir, threshold_value, args.question).runall()
-    print("--- %s seconds ---" % (time.time() - start_time))
+    console.print("runtime: %s seconds" % (round(time.time() - start_time, 2)), style="bold blue")

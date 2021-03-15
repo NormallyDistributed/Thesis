@@ -1,4 +1,4 @@
-<http://example.org/entity/#NederlandseFinancierings-MaatschappijvoorOntwikkelingslandenN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2017-06-16'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#NederlandseFinancierings-MaatschappijvoorOntwikkelingslandenN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2017-06-16'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#NederlandseFinancierings-MaatschappijvoorOntwikkelingslandenN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'Nederlandse Financierings-Maatschappij voorOntwikkelingslanden N.V. '^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#NederlandseFinancierings-MaatschappijvoorOntwikkelingslandenN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q55>.
 <http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#label> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -11,7 +11,7 @@
 <http://www.wikidata.org/entity/Q74662> <http://www.w3.org/2000/01/rdf-schema#label> 'Luxembourg Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#NederlandseFinancierings-MaatschappijvoorOntwikkelingslandenN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q171240>.
 <http://www.wikidata.org/entity/Q171240> <http://www.w3.org/2000/01/rdf-schema#label> 'London Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#NederlandseFinancierings-MaatschappijvoorOntwikkelingslandenN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#NederlandseFinancierings-MaatschappijvoorOntwikkelingslandenN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<http://www.w3.org/2001/XMLSchema#boolean>.
 <http://example.org/entity/#NederlandseFinancierings-MaatschappijvoorOntwikkelingslandenN.V.> <https://wikidata.org/entity/Q1337875> 'Sustainability notes'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#NederlandseFinancierings-MaatschappijvoorOntwikkelingslandenN.V.> <https://wikidata.org/entity/Q740419> 'for the financial years ended 31December 2015 and 31 December 2016'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#NederlandseFinancierings-MaatschappijvoorOntwikkelingslandenN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditedFinancialStatement> 'audited annual financial statements of the Issuer for the financial years ended 31December 2015 and 31 December 2016'^^<http://www.w3.org/2001/XMLSchema#string>.

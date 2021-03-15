@@ -6,9 +6,9 @@ from typing import List
 from tqdm import tqdm
 from transformers import BertTokenizer
 
-from spert import util
-from spert.entities import Dataset, EntityType, RelationType, Entity, Relation, Document
-from spert.opt import spacy
+from spert.spert import util
+from spert.spert.entities import Dataset, EntityType, RelationType, Entity, Relation, Document
+from spert.spert.opt import spacy
 
 
 class BaseInputReader(ABC):
@@ -208,10 +208,9 @@ class JsonPredictionInputReader(BaseInputReader):
         documents = json.load(open(dataset_path))
 
         stopwords = ["the", "of", "is", "are", "have", "has", "me", "us", "of", "can", "you", "?", "do", "does"]
-        #for document in tqdm(documents, desc="Parse dataset '%s'" % dataset.label):
+
         for document in documents:
             document_ = {"tokens": ' '.join([item for item in document["tokens"] if item not in stopwords]).split()}
-            #print(document_)
             self._parse_document(document_, dataset)
 
     def _parse_document(self, document, dataset) -> Document:

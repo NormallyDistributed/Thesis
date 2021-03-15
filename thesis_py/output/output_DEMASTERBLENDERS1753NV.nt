@@ -5,7 +5,7 @@
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'D.E MASTER BLENDERS 1753 N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://wikidata.org/entity/Q1166072> 'first admission to listing and trading'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://wikidata.org/entity/Q7378915> 'US Securities Act'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2012-06-01'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2012-06-01'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://wikidata.org/entity/Q192907> 'combined financial statements'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://wikidata.org/entity/Q192907> 'combined financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://wikidata.org/entity/P452> 'coffee and tea industry'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -15,7 +15,7 @@
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://wikidata.org/entity/P249> 'DE,'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditedFinancialStatement> 'The summary financial information as of July 2, 2011, July 3, 2010 and June 27, 2009 and for the years then ended have beenderived from our audited combined financial statements'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://wikidata.org/entity/Q192907> 'The summary financial information as of December 31, 2011 and for the periods from July 3, 2011 to December 31, 2011 andJuly 4, 2010 to January 1, 2011 have been derived from our unaudited condensed combined financial statements'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://wikidata.org/entity/Q192907> '2011-12-31'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://wikidata.org/entity/Q192907> '2011-12-31'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://wikidata.org/entity/Q1337875> 'You may be unable to enforce judgments obtained against us in U.S. courts.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/hasDividendPolicy> 'In making this determination, the board will consider our ability to declare and paydividends in light of our future operations and earnings, capital expenditure requirements, general financial conditions, legal andcontractual restrictions and other factors that it may deem relevant.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#D.EMASTERBLENDERS1753N.V.> <https://wikidata.org/entity/Q243460> 'Sales'^^<http://www.w3.org/2001/XMLSchema#string>.

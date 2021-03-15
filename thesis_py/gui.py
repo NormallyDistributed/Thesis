@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 import subprocess
+
 # Define the window's contents
 layout = [[sg.Text("What would you like to know?")],
           [sg.Input(key='-INPUT-')],
@@ -21,6 +22,7 @@ while True:
                                       values['-INPUT-']])
 
     window['-OUTPUT-'].update(output.decode("utf-8"))
+
 
 # Finish up by removing from the screen
 window.close()

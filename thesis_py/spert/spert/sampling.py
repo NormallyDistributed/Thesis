@@ -1,8 +1,6 @@
 import random
-
 import torch
-
-from spert import util
+from spert.spert import util
 
 
 def create_train_sample(doc, neg_entity_count: int, neg_rel_count: int, max_span_size: int, rel_type_count: int):

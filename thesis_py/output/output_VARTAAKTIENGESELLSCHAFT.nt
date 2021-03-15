@@ -1,12 +1,12 @@
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://wikidata.org/entity/Q1166072> 'public offering'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2017-10-10'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2017-10-10'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <http://www.w3.org/2000/01/rdf-schema#label> 'VARTA AKTIENGESELLSCHAFT'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:Nebf6030fde634cb6ad5f2f097c2edea8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '15.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nebf6030fde634cb6ad5f2f097c2edea8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'E15.00 to E17.50'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nebf6030fde634cb6ad5f2f097c2edea8.
-_:N9dd934244459420e809b2b3b55df215e <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '17.50'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N9dd934244459420e809b2b3b55df215e <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'E15.00 to E17.50'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N9dd934244459420e809b2b3b55df215e.
+_:N5a407fb10e674e199edf0480affeb8f9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '15.00'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N5a407fb10e674e199edf0480affeb8f9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'E15.00 to E17.50'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N5a407fb10e674e199edf0480affeb8f9.
+_:N3ffe3c0e9aaf4eacb3ad209de285fa06 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '17.50'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N3ffe3c0e9aaf4eacb3ad209de285fa06 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'E15.00 to E17.50'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N3ffe3c0e9aaf4eacb3ad209de285fa06.
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://wikidata.org/entity/P946> 'DE000A0TGJ55'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://wikidata.org/entity/P249> 'VAR1'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> <http://www.wikidata.org/entity/Q670792>.
@@ -16,7 +16,7 @@ _:N9dd934244459420e809b2b3b55df215e <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditedFinancialStatement> 'audited combinedfinancial statements of the Company as of and for the financial years ended December 31, 2015, 2014 and2013 (together, the ‘‘Combined Financial Statements’’)'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditedFinancialStatement> 'audited consolidated financial statementsof the Company as of and for the financial year ended December 31, 2016 (the ‘‘Consolidated FinancialStatements’’)'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditReport> 'unqualified audit opinion'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://wikidata.org/entity/Q192907> '2016-06-30'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://wikidata.org/entity/Q192907> '2016-06-30'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://wikidata.org/entity/Q192907> 'unauditedcondensed consolidated interim financial statements of the Company as ofand for the six months ended June 30, 2016 and 2017 (the ‘‘UnauditedCondensed Consolidated Interim Financial Statements’’)'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
 <http://www.wikidata.org/entity/Q176831> <http://www.w3.org/2000/01/rdf-schema#label> 'International Financial Reporting Standards'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -26,25 +26,25 @@ _:N9dd934244459420e809b2b3b55df215e <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://wikidata.org/entity/Q748250> 'The Company has not published any profit forecasts'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q151139>.
 <http://www.wikidata.org/entity/Q151139> <http://www.w3.org/2000/01/rdf-schema#label> 'Frankfurt Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N1d2180caa5414d26b436b4c7574dd9b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '74300000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N1d2180caa5414d26b436b4c7574dd9b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> ' A74.3 million and A82.9 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:N1d2180caa5414d26b436b4c7574dd9b6.
-_:Nff8ff4c2e69544fe858e8d4007836b82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '82900000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nff8ff4c2e69544fe858e8d4007836b82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> ' A74.3 million and A82.9 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:Nff8ff4c2e69544fe858e8d4007836b82.
-_:Nede15c5b7ac242668c20677bd28172a6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '7400000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nede15c5b7ac242668c20677bd28172a6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'A7.4 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://wikidata.org/entity/Q185142> _:Nede15c5b7ac242668c20677bd28172a6.
-_:N406ce76eed7942108964cdad2a347385 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '142600000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N406ce76eed7942108964cdad2a347385 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'A142.6 million andA142.6 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:N406ce76eed7942108964cdad2a347385.
-_:Ne07c30be550244ea95b9025eb0f7b849 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '142600000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Ne07c30be550244ea95b9025eb0f7b849 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'A142.6 million andA142.6 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:Ne07c30be550244ea95b9025eb0f7b849.
+_:Nf80ab8a4e9554eca84f7324e10496dc4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '74300000'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Nf80ab8a4e9554eca84f7324e10496dc4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> ' A74.3 million and A82.9 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:Nf80ab8a4e9554eca84f7324e10496dc4.
+_:Na0627cd5062747349441fcbe8160f0aa <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '82900000'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Na0627cd5062747349441fcbe8160f0aa <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> ' A74.3 million and A82.9 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:Na0627cd5062747349441fcbe8160f0aa.
+_:Nbeeba13167df4defaef2ec8b881e0b45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '7400000'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Nbeeba13167df4defaef2ec8b881e0b45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'A7.4 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://wikidata.org/entity/Q185142> _:Nbeeba13167df4defaef2ec8b881e0b45.
+_:N3b61770fbc0d4af190ba2a5e3154adf1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '142600000'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N3b61770fbc0d4af190ba2a5e3154adf1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'A142.6 million andA142.6 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:N3b61770fbc0d4af190ba2a5e3154adf1.
+_:Nfda3a631d8dd440b8518b4863c9473c7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '142600000'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Nfda3a631d8dd440b8518b4863c9473c7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'A142.6 million andA142.6 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:Nfda3a631d8dd440b8518b4863c9473c7.
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://wikidata.org/entity/Q1166072> 'VGG GmbH intends to sell the Offered Existing Share in order to partlyrealize its investment in the Company and to ensure sufficient free floatand trading liquidity in the Company’s shares.'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://wikidata.org/entity/Q7378915> 'True'^^<http://www.w3.org/2001/XMLSchema#boolean>.
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'U.S. Securities Act'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P12M'^^<https://www.w3.org/2001/XMLSchema#duration>.
+<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P12M'^^<http://www.w3.org/2001/XMLSchema#duration>.
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://wikidata.org/entity/Q1337875> 'If analysts do not publish research or reports about the Group’s business or if they downgrade theirrecommendation with regard to the shares, the share price or trading volume could decline.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://wikidata.org/entity/Q192907> 'Companyprepared combined financial statements'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://wikidata.org/entity/Q192907> 'combined financial statement'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -97,14 +97,14 @@ _:Ne07c30be550244ea95b9025eb0f7b849 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/BusinessStrategy> 'Pursue further growth through internal investments to increase production capacity and selectiveacquisitions'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q183>.
 <http://www.wikidata.org/entity/Q183> <http://www.w3.org/2000/01/rdf-schema#label> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N73fe29470ddf497ea9e9f2b83c3983fb <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '2.5'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N73fe29470ddf497ea9e9f2b83c3983fb <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
-_:N73fe29470ddf497ea9e9f2b83c3983fb <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '2.5%'.
-<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N73fe29470ddf497ea9e9f2b83c3983fb.
-_:N73a42b9a87d64f2da3934710185573a5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1.25'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N73a42b9a87d64f2da3934710185573a5 <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
-_:N73a42b9a87d64f2da3934710185573a5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'up to 1.25%'.
-<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N73a42b9a87d64f2da3934710185573a5.
+_:Na262ee9a736e447d84ffd59bb4aa2ec7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '2.5'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Na262ee9a736e447d84ffd59bb4aa2ec7 <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
+_:Na262ee9a736e447d84ffd59bb4aa2ec7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '2.5%'.
+<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:Na262ee9a736e447d84ffd59bb4aa2ec7.
+_:N0b586f5515ed4e15b23f534efd71d6c9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1.25'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N0b586f5515ed4e15b23f534efd71d6c9 <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
+_:N0b586f5515ed4e15b23f534efd71d6c9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'up to 1.25%'.
+<http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N0b586f5515ed4e15b23f534efd71d6c9.
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> <http://www.wikidata.org/entity/Q183>.
 <http://www.wikidata.org/entity/Q183> <http://www.w3.org/2000/01/rdf-schema#label> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#VARTAAKTIENGESELLSCHAFT> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> 'International Standards on Auditing'^^<http://www.w3.org/2001/XMLSchema#string>.

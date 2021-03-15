@@ -3,8 +3,8 @@
 <http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#label> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q478720>.
 <http://www.wikidata.org/entity/Q478720> <http://www.w3.org/2000/01/rdf-schema#label> 'Euronext Amsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
-<http://example.org/entity/#ADYENN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2018-06-04'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q7378915> 'True'^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#ADYENN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2018-06-04'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/P452> 'thepaymentsindustry'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/P946> 'NL0012969182'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/P249> 'ADYEN'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -19,5 +19,5 @@
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q330153> 'Net revenue for a period, as revenue less costs incurred from financial institutions and cost ofinventory.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q740419> 'as at and for the years ended 31 December 2015, 31December 2016 and 2017'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ADYENN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditedFinancialStatement> 'audited annual consolidatedfinancial statements of theCompany as at and for the years ended 31 December 2015, 31December 2016 and 2017'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q192907> '2018-03-31'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q192907> '2018-03-31'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#ADYENN.V.> <https://wikidata.org/entity/Q192907> 'unaudited condensed consolidated interim financial statementsof the Company as of and for the three months ended 31 March2018 and for the three months ended 31 March 2017'^^<http://www.w3.org/2001/XMLSchema#string>.

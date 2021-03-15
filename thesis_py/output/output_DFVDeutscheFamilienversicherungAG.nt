@@ -1,16 +1,16 @@
-<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2018-10-29'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2018-10-29'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://wikidata.org/entity/Q1166072> 'public offering'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q151139>.
 <http://www.wikidata.org/entity/Q151139> <http://www.w3.org/2000/01/rdf-schema#label> 'Frankfurt Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <http://www.w3.org/2000/01/rdf-schema#label> 'DFVDeutsche Familienversicherung AG'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N71198e68b2014d2da7f1c484836d3239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '17.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N71198e68b2014d2da7f1c484836d3239 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N71198e68b2014d2da7f1c484836d3239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€17.00 to €23.00'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N71198e68b2014d2da7f1c484836d3239.
-_:N0213108b394d4c22acedc2826d31fe13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '23.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N0213108b394d4c22acedc2826d31fe13 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N0213108b394d4c22acedc2826d31fe13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€17.00 to €23.00'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N0213108b394d4c22acedc2826d31fe13.
+_:Nad951c2375474e129688ff04298a95dd <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '17.00'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Nad951c2375474e129688ff04298a95dd <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Nad951c2375474e129688ff04298a95dd <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€17.00 to €23.00'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nad951c2375474e129688ff04298a95dd.
+_:Nfe13f50cae5a4a8285c03e96e3818196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '23.00'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Nfe13f50cae5a4a8285c03e96e3818196 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Nfe13f50cae5a4a8285c03e96e3818196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€17.00 to €23.00'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nfe13f50cae5a4a8285c03e96e3818196.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://wikidata.org/entity/P946> 'DE000A2NBVD5'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://wikidata.org/entity/P249> ' DFV'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> 'Hauck & Aufhäuser Privatbankiers Aktiengesellschaft'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -23,29 +23,29 @@ _:N0213108b394d4c22acedc2826d31fe13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
 <http://www.wikidata.org/entity/Q176831> <http://www.w3.org/2000/01/rdf-schema#label> 'International Financial Reporting Standards'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://wikidata.org/entity/Q740419> 'for the fiscal years ended December 31, 2017, 2016 and 2015'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://wikidata.org/entity/Q192907> '2018-06-30'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://wikidata.org/entity/Q192907> '2018-06-30'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://wikidata.org/entity/Q192907> 'two'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://wikidata.org/entity/Q748250> 'The Company has not prepared a profit forecast or profit estimate.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditReport> 'without qualification'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/LoanProducts/WorkingCapitalPurpose> 'The Company is of the opinion that the Group is in a position to meet at leastthose payment obligations that become due within at least the next twelve months.'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:Nde74b26362a74c82a7e1200f611fa6cd <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '69400000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nde74b26362a74c82a7e1200f611fa6cd <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:Nde74b26362a74c82a7e1200f611fa6cd <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€69.4 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:Nde74b26362a74c82a7e1200f611fa6cd.
-_:N27fea0b480184039b1390994a5605772 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '65000000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N27fea0b480184039b1390994a5605772 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N27fea0b480184039b1390994a5605772 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€65.0 million.'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:N27fea0b480184039b1390994a5605772.
-_:Nd247bdfa3dc04213bfdade334115364e <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '4400000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nd247bdfa3dc04213bfdade334115364e <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:Nd247bdfa3dc04213bfdade334115364e <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€4.4 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://wikidata.org/entity/Q185142> _:Nd247bdfa3dc04213bfdade334115364e.
+_:N0bb100da8e1e408498c6d00fbaaaa4cf <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '69400000'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N0bb100da8e1e408498c6d00fbaaaa4cf <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N0bb100da8e1e408498c6d00fbaaaa4cf <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€69.4 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:N0bb100da8e1e408498c6d00fbaaaa4cf.
+_:N23573333d80b45cd8fd1305a877d5207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '65000000'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N23573333d80b45cd8fd1305a877d5207 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N23573333d80b45cd8fd1305a877d5207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€65.0 million.'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:N23573333d80b45cd8fd1305a877d5207.
+_:Nc9faeeeedecd46a89ce3a5e20b96e684 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '4400000'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Nc9faeeeedecd46a89ce3a5e20b96e684 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Nc9faeeeedecd46a89ce3a5e20b96e684 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€4.4 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://wikidata.org/entity/Q185142> _:Nc9faeeeedecd46a89ce3a5e20b96e684.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/ProfitObjective> 'The Company intends to pursue the Offering and list its shares on the regulated market(regulierter Markt) of the Frankfurt Stock Exchange (Frankfurter Wertpapierbörse) and,simultaneously, on the sub-segment with additional post admission obligations (PrimeStandard) of the Frankfurt Stock Exchange (Frankfurter Wertpapierbörse) to receive the netproceeds from the Offering and to gain access to the capital markets.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/CIV/Funds/CIV/InvestmentStrategy> 'approximately €46.4 million to fund additional spending for sales and market-ing purposes, in particular by increasing advertising budgets for Google, Bing,as well as state of the art TV channels and by financing offline campaigns withleading German magazines;'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/CIV/Funds/CIV/InvestmentStrategy> 'approximately €9.4 million to introduce new insurance products and bundles(such as the reinvention of our property and accident insurance products onthe basis of our 16 matrix) as well as to internationalize our business, startingin Benelux, France and/or Spain;'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/CIV/Funds/CIV/InvestmentStrategy> 'approximately €4.6 million for investing in our IT infrastructure, in particularby adding functionality to our core insurance platform, and refining our AI in-telligence processes; and'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/CIV/Funds/CIV/InvestmentStrategy> 'approximately €4.6 million for safeguarding and matching Solvency II levels'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P6M'^^<https://www.w3.org/2001/XMLSchema#duration>.
+<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P6M'^^<http://www.w3.org/2001/XMLSchema#duration>.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://wikidata.org/entity/Q1337875> 'An investment in the Companys shares by an investor whose principal currency is not the Euro may be affected byexchange rate fluctuations.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> <http://www.wikidata.org/entity/Q183>.
 <http://www.wikidata.org/entity/Q183> <http://www.w3.org/2000/01/rdf-schema#label> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -60,11 +60,11 @@ _:Nd247bdfa3dc04213bfdade334115364e <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/hasCompetitiveStrength> 'We have a lean, profitable and scalable business model.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/BusinessStrategy> 'We want to grow our business internationally.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://wikidata.org/entity/Q1166072> 'SK Beteiligungen GmbH, Frankfurt am Main, Germany, will act as Lending Shareholder and provide the Stabilization Managerwith up to 525,000 Over-Allotment Shares in the form of a securities loan, provided that the total number of Over-Allotment Shareswill not exceed 15.0% of the New Shares actually placed in the Offering.'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N4014f130bd5e445db36cc1fd24e9866e <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '4000000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N4014f130bd5e445db36cc1fd24e9866e <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N4014f130bd5e445db36cc1fd24e9866e <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€4.0 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N4014f130bd5e445db36cc1fd24e9866e.
-_:Nbc2ddb841b4641f8913bf5fe7ca1fb53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> 'None'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nbc2ddb841b4641f8913bf5fe7ca1fb53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'The Company will decide whether to grantthe discretionary fee'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:Nbc2ddb841b4641f8913bf5fe7ca1fb53.
+_:Na64b2b060e004b7987bc943a99454ea1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '4000000'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Na64b2b060e004b7987bc943a99454ea1 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Na64b2b060e004b7987bc943a99454ea1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€4.0 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:Na64b2b060e004b7987bc943a99454ea1.
+_:N79014ed288f641f09c0473198c47273e <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> 'None'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N79014ed288f641f09c0473198c47273e <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'The Company will decide whether to grantthe discretionary fee'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N79014ed288f641f09c0473198c47273e.
 <http://example.org/entity/#DFVDeutscheFamilienversicherungAG> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework> 'generally accepted German audit standards'^^<http://www.w3.org/2001/XMLSchema#string>.

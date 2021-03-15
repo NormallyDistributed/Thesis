@@ -4,8 +4,8 @@ from transformers import BertConfig
 from transformers import BertModel
 from transformers import BertPreTrainedModel
 
-from spert import sampling
-from spert import util
+from spert.spert import sampling
+from spert.spert import util
 
 import warnings
 warnings.filterwarnings("ignore")

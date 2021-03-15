@@ -3,8 +3,8 @@ from typing import Tuple
 
 import torch
 
-from spert import util
-from spert.input_reader import BaseInputReader
+from spert.spert import util
+from spert.spert.input_reader import BaseInputReader
 
 
 def convert_predictions(batch_entity_clf: torch.tensor, batch_rel_clf: torch.tensor,

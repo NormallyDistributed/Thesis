@@ -1,19 +1,19 @@
-<http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2016-05-12'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2016-05-12'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#MyBucksS.A.> <http://www.w3.org/2000/01/rdf-schema#label> 'MyBucks S.A.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#MyBucksS.A.> <https://wikidata.org/entity/Q1166072> 'offer to the public'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<http://www.w3.org/2001/XMLSchema#boolean>.
 <http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q151139>.
 <http://www.wikidata.org/entity/Q151139> <http://www.w3.org/2000/01/rdf-schema#label> 'Frankfurt Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#MyBucksS.A.> <https://wikidata.org/entity/P946> 'LU1404975507'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#MyBucksS.A.> <https://wikidata.org/entity/P249> ' MBC'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N6d7cd49953094fbeab3eab366ea0711f <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '13.50'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N6d7cd49953094fbeab3eab366ea0711f <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N6d7cd49953094fbeab3eab366ea0711f <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€13.50 to €16.50'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N6d7cd49953094fbeab3eab366ea0711f.
-_:Nd9c584b5ca2c4830b61a2d48f6d5d0a0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '16.50'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nd9c584b5ca2c4830b61a2d48f6d5d0a0 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:Nd9c584b5ca2c4830b61a2d48f6d5d0a0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€13.50 to €16.50'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nd9c584b5ca2c4830b61a2d48f6d5d0a0.
+_:Ndf65fd6323c7469f9ebc8a5b6a4f9b9b <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '13.50'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Ndf65fd6323c7469f9ebc8a5b6a4f9b9b <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Ndf65fd6323c7469f9ebc8a5b6a4f9b9b <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€13.50 to €16.50'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Ndf65fd6323c7469f9ebc8a5b6a4f9b9b.
+_:Nad9664f8aec34e1ea476886be10ff548 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '16.50'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Nad9664f8aec34e1ea476886be10ff548 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Nad9664f8aec34e1ea476886be10ff548 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€13.50 to €16.50'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nad9664f8aec34e1ea476886be10ff548.
 <http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'Luxembourg'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> 'Luxembourg'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#MyBucksS.A.> <https://wikidata.org/entity/Q740419> 'for the years ended 30 June 2015, 2014, and 2013'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -43,25 +43,25 @@ _:Nd9c584b5ca2c4830b61a2d48f6d5d0a0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#MyBucksS.A.> <https://wikidata.org/entity/Q330153> 'Year-on-year disbursement growth represents the increase in total loan disbursements for the period indicated compared to the same period inthe preceding year.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#MyBucksS.A.> <https://wikidata.org/entity/Q192907> 'three reportable segments'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#MyBucksS.A.> <https://wikidata.org/entity/Q2481549> 'pro forma financial information of the Company as of and for the twelve-month period ended31 December 2015'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#MyBucksS.A.> <https://wikidata.org/entity/Q1166072> '2015-12-31'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#MyBucksS.A.> <https://wikidata.org/entity/Q1166072> '2015-12-31'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#MyBucksS.A.> <https://wikidata.org/entity/Q748250> 'No profit forecast or estimate is being presented'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditReport> 'without qualification'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/CIV/Funds/CIV/InvestmentStrategy> 'We intend to use the net proceeds we receive from the Offering tofinance the Acquisition and recapitalize the OpportunityBanks with an amount of about €13.0 million;refinance existing debt, in particular loans from shareholdersand related parties with an amount of about €14.0 million;andrealize growth opportunities, in particular to increase our loanbook and enter into new markets with any remainder of thenet proceeds.'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P6M'^^<https://www.w3.org/2001/XMLSchema#duration>.
+<http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P6M'^^<http://www.w3.org/2001/XMLSchema#duration>.
 <http://example.org/entity/#MyBucksS.A.> <https://wikidata.org/entity/Q1337875> 'Fluctuation of market interest rates may have an adverse effect on the value of the Shares.'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N1cc15e2c9e70403ba254f5840e6c6f32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '34500000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N1cc15e2c9e70403ba254f5840e6c6f32 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N1cc15e2c9e70403ba254f5840e6c6f32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€34.5 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:N1cc15e2c9e70403ba254f5840e6c6f32.
-_:Nace300e97f8c4ff8988766e51cd4b3a9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '3400000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nace300e97f8c4ff8988766e51cd4b3a9 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:Nace300e97f8c4ff8988766e51cd4b3a9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€3.4 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#MyBucksS.A.> <https://wikidata.org/entity/Q185142> _:Nace300e97f8c4ff8988766e51cd4b3a9.
+_:Ncced2364309d494a90f5c30b62154297 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '34500000'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Ncced2364309d494a90f5c30b62154297 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Ncced2364309d494a90f5c30b62154297 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€34.5 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:Ncced2364309d494a90f5c30b62154297.
+_:N14a5d3f488704149b56a07c036527a4c <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '3400000'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N14a5d3f488704149b56a07c036527a4c <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N14a5d3f488704149b56a07c036527a4c <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€3.4 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#MyBucksS.A.> <https://wikidata.org/entity/Q185142> _:N14a5d3f488704149b56a07c036527a4c.
 <http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/ProfitObjective> 'We are conducting the Offering in order to gain better access to the capital markets and fund future growth. Afterthe Offering, we intend to admit the Shares to trading on the regulated market segment (regulierter Markt) of the Frank-furt Stock Exchange (Frankfurter Wertpapierbörse) (General Standard).'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N94423aa306a749069ec259d0531904eb <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '31100000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N94423aa306a749069ec259d0531904eb <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N94423aa306a749069ec259d0531904eb <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€31.1 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:N94423aa306a749069ec259d0531904eb.
+_:N0d69012c83df4b5a807339581ef8e155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '31100000'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N0d69012c83df4b5a807339581ef8e155 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N0d69012c83df4b5a807339581ef8e155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€31.1 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:N0d69012c83df4b5a807339581ef8e155.
 <http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/hasDividendPolicy> 'There are no fixed dates on which a shareholder is entitled to receive a dividend. The Company may declare andpay dividends in accordance with the Luxembourg law of 10 August 1915 on commercial companies, as amended (the“Luxembourg Company Law”). Dividends may be declared by the General Meeting upon approval of the annual ac-counts for the immediately preceding financial year.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/LoanProducts/WorkingCapitalPurpose> 'The Company is of the opinion that the Group is in a position to meet the payment obligations that become duewithin at least the next twelve months from the date of the Prospectus.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#MyBucksS.A.> <http://www.omg.org/techprocess/ab/SpecificationMetadata/hasDescription> 'We are a FinTech company based in Luxembourg that embraces technology as a means to provide small unse-cured short-term consumer loans and other financial products and services to the low and middle-income consumer seg-ment, predominantly in emerging markets of Sub-Saharan Africa. We aim to ensure that our Group offers fast, simpleand trustworthy products and services through technology – when compared to traditional non-technology driven meth-ods – to our customers and we seek to work towards enhancing our customers’ experience with our innovative financialproducts and services. Founded in 2011, we have expanded our operations to now include nine Sub-Saharan Africancountries, namely Botswana, Kenya, Malawi, Namibia, South Africa, Swaziland, Uganda, Zambia and Zimbabwe, aswell as more recently, two European countries, namely Poland and Spain. From our inception up until 31 December2015, we disbursed in excess of 600,000 loans in an aggregated volume of €140 million, and since the deployment of ouradvanced credit decisioning and scoring model in November 2015 until today, our self-learning algorithms have mademore than 1,500,000 predictions, utilising a large number of traditional and alternative data points. This is why we con-sider ourselves to be an innovative provider of online and mobile financial consumer products and services.'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -75,11 +75,11 @@ _:N94423aa306a749069ec259d0531904eb <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/BusinessStrategy> 'Diversify our product offering and intensify cross-selling.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#MyBucksS.A.> <https://wikidata.org/entity/P8571> <http://www.wikidata.org/entity/Q493751>.
 <http://www.wikidata.org/entity/Q493751> <http://www.w3.org/2000/01/rdf-schema#label> 'KPMG'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N9a53b890b6394f2ca1318cf0079ae7bc <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '4'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N9a53b890b6394f2ca1318cf0079ae7bc <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
-_:N9a53b890b6394f2ca1318cf0079ae7bc <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '4%'.
-<http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N9a53b890b6394f2ca1318cf0079ae7bc.
-_:N64b75e84b21047778388ea51bbaf4496 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N64b75e84b21047778388ea51bbaf4496 <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
-_:N64b75e84b21047778388ea51bbaf4496 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '1%'.
-<http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N64b75e84b21047778388ea51bbaf4496.
+_:Nf4eab9645323415ab8ca78c39008a68f <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '4'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Nf4eab9645323415ab8ca78c39008a68f <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
+_:Nf4eab9645323415ab8ca78c39008a68f <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '4%'.
+<http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:Nf4eab9645323415ab8ca78c39008a68f.
+_:Ndca056950fdb495f8bef6e07468e3629 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Ndca056950fdb495f8bef6e07468e3629 <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
+_:Ndca056950fdb495f8bef6e07468e3629 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '1%'.
+<http://example.org/entity/#MyBucksS.A.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:Ndca056950fdb495f8bef6e07468e3629.

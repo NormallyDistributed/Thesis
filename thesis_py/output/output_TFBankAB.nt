@@ -1,15 +1,15 @@
 <http://example.org/entity/#TFBankAB> <http://www.w3.org/2000/01/rdf-schema#label> 'TF Bank AB'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> 'Sweden'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TFBankAB> <https://wikidata.org/entity/Q1166072> 'Offering'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N727d477eaa2f425dbe6af91bcd7ca773 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '15'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N727d477eaa2f425dbe6af91bcd7ca773 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N727d477eaa2f425dbe6af91bcd7ca773 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€15 to €19'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N727d477eaa2f425dbe6af91bcd7ca773.
-_:N365890bd74a643998b4e1a4cb239ab30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '19'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N365890bd74a643998b4e1a4cb239ab30 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N365890bd74a643998b4e1a4cb239ab30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€15 to €19'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N365890bd74a643998b4e1a4cb239ab30.
-<http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+_:Nf945ae1f871543999a5bdf59c231aecd <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '15'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Nf945ae1f871543999a5bdf59c231aecd <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Nf945ae1f871543999a5bdf59c231aecd <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€15 to €19'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nf945ae1f871543999a5bdf59c231aecd.
+_:N3b089fb0055e4bc0b7729b786899d19e <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '19'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N3b089fb0055e4bc0b7729b786899d19e <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N3b089fb0055e4bc0b7729b786899d19e <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€15 to €19'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N3b089fb0055e4bc0b7729b786899d19e.
+<http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<http://www.w3.org/2001/XMLSchema#boolean>.
 <http://example.org/entity/#TFBankAB> <https://wikidata.org/entity/P249> '6TF'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q151139>.
 <http://www.wikidata.org/entity/Q151139> <http://www.w3.org/2000/01/rdf-schema#label> 'Frankfurt Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -19,26 +19,26 @@ _:N365890bd74a643998b4e1a4cb239ab30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://www.wikidata.org/entity/Q176831> <http://www.w3.org/2000/01/rdf-schema#label> 'International Financial Reporting Standards'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditedFinancialStatement> 'audited consolidated financial statements'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TFBankAB> <https://wikidata.org/entity/Q192907> 'unaudited consolidated financial information for the six months ended30 June 2015 and 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#TFBankAB> <https://wikidata.org/entity/Q192907> '2015-06-30'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#TFBankAB> <https://wikidata.org/entity/Q192907> '2015-06-30'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#TFBankAB> <https://wikidata.org/entity/Q2481549> 'does not contain pro-forma financial information'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TFBankAB> <https://wikidata.org/entity/Q748250> 'does not contain profit forecasts or estimates'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditReport> 'no qualifications'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/hasDividendPolicy> 'The Company does not intend to pay out dividends in the short-term due to its growth focused strategy;however, it aims to pay out dividends in the mid-term. The Company and the Companys controllingshareholders may change its dividend policy at any time.'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N4bcde13ffaf2463d9690f9c86e2f7607 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '47900000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N4bcde13ffaf2463d9690f9c86e2f7607 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N4bcde13ffaf2463d9690f9c86e2f7607 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€47.9 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:N4bcde13ffaf2463d9690f9c86e2f7607.
-_:Nbcfd6484a50b42e8878193b898527a3b <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '3100000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nbcfd6484a50b42e8878193b898527a3b <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:Nbcfd6484a50b42e8878193b898527a3b <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€3.1 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#TFBankAB> <https://wikidata.org/entity/Q185142> _:Nbcfd6484a50b42e8878193b898527a3b.
-_:N85b86a80a8434a66bf8ef23addba46c2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '51000000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N85b86a80a8434a66bf8ef23addba46c2 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N85b86a80a8434a66bf8ef23addba46c2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€51million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:N85b86a80a8434a66bf8ef23addba46c2.
+_:N8ff996a6c41a4d958f13e8c75502b171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '47900000'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N8ff996a6c41a4d958f13e8c75502b171 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N8ff996a6c41a4d958f13e8c75502b171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€47.9 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:N8ff996a6c41a4d958f13e8c75502b171.
+_:N67d67db8b65344a5aff2bc4d849eb5b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '3100000'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N67d67db8b65344a5aff2bc4d849eb5b7 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N67d67db8b65344a5aff2bc4d849eb5b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€3.1 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TFBankAB> <https://wikidata.org/entity/Q185142> _:N67d67db8b65344a5aff2bc4d849eb5b7.
+_:N63eb875dfb334f599164f40ea6390515 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '51000000'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N63eb875dfb334f599164f40ea6390515 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N63eb875dfb334f599164f40ea6390515 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '€51million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:N63eb875dfb334f599164f40ea6390515.
 <http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/CIV/Funds/CIV/InvestmentStrategy> 'The Company has not yet adopted any resolutions on the potential use of the proceeds received byconducting the public offering. The timing to implement the potential uses above, as well as their costs,cannot be firmly established at this time.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/ProfitObjective> 'The Group plans to utilize the net proceeds to (i) support the Groups organic growth in the markets wherethe Group is already present, (ii) fund the further geographic expansion into new markets as part of theGroups strategy to become a pan-European online and mobile bank, (iii) support the Groups productexpansion, such as its credit card offering, (iv) leverage the Groups existing partnering relationships andinvest in new partnerships, and (v) for general corporate purposes.'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P24M'^^<https://www.w3.org/2001/XMLSchema#duration>.
+<http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P24M'^^<http://www.w3.org/2001/XMLSchema#duration>.
 <http://example.org/entity/#TFBankAB> <https://wikidata.org/entity/Q1337875> 'The Offering may not be fully subscribed for or the listing of the Shares on the Frankfurt StockExchange may not occur in the contemplated time schedule or at all.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/LoanProducts/WorkingCapitalPurpose> 'In the opinion of the Company, the presently available working capital is sufficient to cover the currentneeds of the Group for at least the next twelve months following the date of this Prospectus.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TFBankAB> <https://wikidata.org/entity/Q740419> '31 December 2014, 2013and 2012'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -60,7 +60,7 @@ _:N85b86a80a8434a66bf8ef23addba46c2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#TFBankAB> <https://wikidata.org/entity/Q192907> 'two separate segments'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/hasCompetitiveStrength> 'The Group has an experienced management team'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/BusinessStrategy> 'Switching from a Dividend-Focused Company to a Growth Company'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N5c2f819af3c54d399a699907048eee9c <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '3.25'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N5c2f819af3c54d399a699907048eee9c <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
-_:N5c2f819af3c54d399a699907048eee9c <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '3.25%'.
-<http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N5c2f819af3c54d399a699907048eee9c.
+_:N31c778570f57480882d5db532694825a <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '3.25'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N31c778570f57480882d5db532694825a <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
+_:N31c778570f57480882d5db532694825a <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '3.25%'.
+<http://example.org/entity/#TFBankAB> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N31c778570f57480882d5db532694825a.

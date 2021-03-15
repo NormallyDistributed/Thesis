@@ -4,11 +4,11 @@
 <http://www.wikidata.org/entity/Q151139> <http://www.w3.org/2000/01/rdf-schema#label> 'Frankfurt Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RNTSMediaN.V.> <https://wikidata.org/entity/P946> 'NL0010315453'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RNTSMediaN.V.> <https://wikidata.org/entity/P249> 'RNM'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#RNTSMediaN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2015-08-10'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#RNTSMediaN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2015-08-10'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#RNTSMediaN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q55>.
 <http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#label> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RNTSMediaN.V.> <https://wikidata.org/entity/Q192907> 'unaudited condensed consolidated interimfinancial information of RNTS Media as at and for the three months ended 31March 2015 and 31 March 2014 '^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#RNTSMediaN.V.> <https://wikidata.org/entity/Q192907> '2015-03-31'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#RNTSMediaN.V.> <https://wikidata.org/entity/Q192907> '2015-03-31'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#RNTSMediaN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditedFinancialStatement> 'audited consolidatedfinancial statements of RNTS Media as at and for the financial years ended 31December 2014, 2013 and 2012'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RNTSMediaN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
 <http://www.wikidata.org/entity/Q176831> <http://www.w3.org/2000/01/rdf-schema#label> 'International Financial Reporting Standards'^^<http://www.w3.org/2001/XMLSchema#string>.

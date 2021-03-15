@@ -1,4 +1,4 @@
-<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2017-11-17'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2017-11-17'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#PostNLN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'PostNL N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q55>.
 <http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#label> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -16,8 +16,7 @@
 <http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/BusinessStrategy> 'nternational'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q192907> 'EBITDAoperationalleaseadjustment'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q192907> 'EBITDAoperationalleaseadjustment'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
-<http://www.wikidata.org/entity/Q176831> <http://www.w3.org/2000/01/rdf-schema#label> 'International Financial Reporting Standards'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#PostNLN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q330153> 'EBIT – Operating income'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q330153> 'EBITDA margin – EBITDA / Revenue'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q330153> 'Leverage ratio - Adjusted Net debt / EBITDA'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -37,4 +36,4 @@
 <http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q740419> 'for the year ended 31 December 2016'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/P8571> 'Ernst & Young Accountants LLP'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q192907> 'the unaudited consolidated financialinformation of the Issuer'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q192907> '2017-09-30'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#PostNLN.V.> <https://wikidata.org/entity/Q192907> '2017-09-30'^^<http://www.w3.org/2001/XMLSchema#date>.

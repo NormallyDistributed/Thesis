@@ -7,7 +7,7 @@ import shutil
 import numpy as np
 import torch
 
-from spert.entities import TokenSpan
+from spert.spert.entities import TokenSpan
 
 CSV_DELIMETER = ';'
 

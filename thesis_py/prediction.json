@@ -1,1 +1,1 @@
-[{"tokens": ["What", "initial", "price", "range", "Frequentis", "AG"], "entities": [{"type": "interrogative_word", "start": 0, "end": 1}, {"type": "company", "start": 4, "end": 6}], "relations": [{"type": "initial_price_range", "head": 1, "tail": 0}]}]
+[{"tokens": ["identification", "number", "HelloFresh", "SE"], "entities": [{"type": "interrogative_word", "start": 0, "end": 1}, {"type": "company", "start": 2, "end": 4}], "relations": [{"type": "isin", "head": 1, "tail": 0}]}]

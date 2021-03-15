@@ -1,9 +1,9 @@
 <http://example.org/entity/#DPEurasiaN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'DP Eurasia N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DPEurasiaN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2017-06-28'^^<https://www.w3.org/2001/XMLSchema#date>.
-<http://example.org/entity/#DPEurasiaN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2017-06-28'^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<http://www.w3.org/2001/XMLSchema#boolean>.
 <http://example.org/entity/#DPEurasiaN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q55>.
 <http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#label> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q7378915> 'True'^^<http://www.w3.org/2001/XMLSchema#boolean>.
 <http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P946> 'NL0012328801'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/P249> 'DPEU'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DPEurasiaN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q171240>.
@@ -26,4 +26,4 @@
 <http://example.org/entity/#DPEurasiaN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditedFinancialStatement> 'COMBINED AND CONSOLIDATEDFINANCIAL INFORMATIONAS AT AND FOR THE YEARS ENDED 31 DECEMBER 2016, 2015 AND 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DPEurasiaN.V.> <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/FilingDetails> 'The combined financial information isbased on the aggregation of the consolidated financial information of Fidesrus and Fides Food. These twosubsidiaries of the Group have been under common control throughout the period presented as combinedfinancial information. Subsidiaries are fully consolidated from when control is transferred to the Company (the“Acquisition”).'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> 'UNAUDITED CONDENSED COMBINED AND CONSOLIDATED INTERIMFINANCIAL INFORMATION'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> '2017-03-31'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#DPEurasiaN.V.> <https://wikidata.org/entity/Q192907> '2017-03-31'^^<http://www.w3.org/2001/XMLSchema#date>.

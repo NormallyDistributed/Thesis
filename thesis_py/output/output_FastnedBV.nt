@@ -1,4 +1,4 @@
-<http://example.org/entity/#FastnedB.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2017-05-22'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#FastnedB.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2017-05-22'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#FastnedB.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'Fastned B.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FastnedB.V.> <https://wikidata.org/entity/Q1166072> '€10,000,000 Bond Programme'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FastnedB.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
@@ -11,4 +11,4 @@
 <http://example.org/entity/#FastnedB.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditedFinancialStatement> 'audited annual financialstatements for the financial years ended 31 December 2016 and 2015'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FastnedB.V.> <https://wikidata.org/entity/P8571> 'Ernst & Young Accountants LLP'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#FastnedB.V.> <https://wikidata.org/entity/P452> 'The car industry'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#FastnedB.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#FastnedB.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<http://www.w3.org/2001/XMLSchema#boolean>.

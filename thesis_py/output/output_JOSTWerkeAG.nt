@@ -4,19 +4,19 @@
 <http://example.org/entity/#JOSTWerkeAG> <http://www.w3.org/2000/01/rdf-schema#label> 'JOST Werke AG'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/P946> 'DE000JST4000'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/P249> 'JST'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#JOSTWerkeAG> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2017-07-14'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#JOSTWerkeAG> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2017-07-14'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#JOSTWerkeAG> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q183>.
 <http://www.wikidata.org/entity/Q183> <http://www.w3.org/2000/01/rdf-schema#label> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/P452> 'the truck and trailer industry'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q740419> 'as of and for the years ended December 31, 2016, December 31, 2015 andDecember 31, 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#JOSTWerkeAG> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditedFinancialStatement> 'audited consolidatedfinancial statements as of and for the years ended December 31, 2016, December 31, 2015 andDecember 31, 2014'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q192907> '2017-03-31'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q192907> '2017-03-31'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q192907> 'unaudited condensed consolidated interim financial statements as of and for thethree-month period ended March 31, 2017 (including comparative financial information as of and for thethree-month period ended March 31, 2016)'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#JOSTWerkeAG> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> <http://www.wikidata.org/entity/Q176831>.
 <http://www.wikidata.org/entity/Q176831> <http://www.w3.org/2000/01/rdf-schema#label> 'International Financial Reporting Standards'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q748250> 'No profit forecast or estimate is being presentedby the Company.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q1337875> 'The Company will incur additional costs as a listed company.'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q7378915> 'True'^^<http://www.w3.org/2001/XMLSchema#boolean>.
 <http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q330153> 'Adjusted EBITDA Margin'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q330153> 'Adjusted Interest Expense'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#JOSTWerkeAG> <https://wikidata.org/entity/Q330153> 'Net Financial Debt'^^<http://www.w3.org/2001/XMLSchema#string>.

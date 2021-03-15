@@ -547,7 +547,7 @@ class KnowledgeGraphConstruction(object):
             return "<{}>".format(item)
 
         def xsd_type(input_value):
-            return "^^<https://www.w3.org/2001/XMLSchema#{}>.".format(input_value)
+            return "^^<http://www.w3.org/2001/XMLSchema#{}>.".format(input_value)
 
         if not os.path.exists(os.path.realpath(os.path.join(os.getcwd(), "output"))):
             os.makedirs(os.path.realpath(os.path.join(os.getcwd(), "output")))
@@ -579,7 +579,7 @@ class KnowledgeGraphConstruction(object):
                                 object_value = BNode().n3() + "."
                                 print(object_value.replace(".", ""),
                                       "<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>",
-                                      "'{}'^^<https://www.w3.org/2001/XMLSchema#decimal>.".format(element[1]), file=f)
+                                      "'{}'^^<http://www.w3.org/2001/XMLSchema#decimal>.".format(element[1]), file=f)
                                 print(object_value.replace(".", ""), "<http://www.w3.org/2000/01/rdf-schema#property>",
                                       "<https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.",
                                       file=f)
@@ -591,7 +591,7 @@ class KnowledgeGraphConstruction(object):
                                 object_value = BNode().n3() + "."
                                 print(object_value.replace(".", ""),
                                       "<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>",
-                                      "'{}'^^<https://www.w3.org/2001/XMLSchema#decimal>.".format(element[1]),
+                                      "'{}'^^<http://www.w3.org/2001/XMLSchema#decimal>.".format(element[1]),
                                       file=f)
                                 if element[2] is not None and element[2] != "None":
                                     print(object_value.replace(".", ""),
@@ -622,8 +622,6 @@ class KnowledgeGraphConstruction(object):
         for instance in self.data:
             object_(instance)
 
-        print(self.data)
-
     def runall(self):
         if __name__ == '__main__':
             Thread(target=self.load_parsed_pdf()).start()
@@ -633,13 +631,13 @@ class KnowledgeGraphConstruction(object):
 
 
 if __name__ == "__main__":
-    path = os.path.realpath(os.path.join(os.getcwd(), "data"))
+    path = os.path.realpath(os.path.join(os.getcwd(), "data_new"))
     with tqdm(total=len([entry for entry in os.scandir(path)]), file=sys.stdout) as pbar:
         for entry in os.scandir(path):
             if entry.name.endswith(".json") and entry.is_file():
                 KnowledgeGraphConstruction(entry.path).runall()
             pbar.update(1)
-        with open('KnowledgeBaseUpdate.nt', 'w') as outfile:
+        with open('KnowledgeBaseUpdate_new2.nt', 'w') as outfile:
             for entry in os.scandir(os.path.realpath(os.path.join(os.getcwd(), "output"))):
                 if entry.name.endswith(".nt") and entry.is_file():
                     with open(entry) as infile:

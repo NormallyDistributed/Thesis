@@ -149,7 +149,6 @@ class SpERTTrainer(BaseTrainer):
 
     def _load_model(self, input_reader):
         model_class = models.get_model(self._args.model_type)
-
         config = BertConfig.from_pretrained(self._args.model_path, cache_dir=self._args.cache_path)
         util.check_version(config, model_class, self._args.model_path)
 

@@ -6,7 +6,7 @@
 <http://example.org/entity/#ASMLHoldingN.V.> <https://wikidata.org/entity/Q1166072> 'admission to listing and trading'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ASMLHoldingN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q478720>.
 <http://www.wikidata.org/entity/Q478720> <http://www.w3.org/2000/01/rdf-schema#label> 'Euronext Amsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#ASMLHoldingN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2012-12-07'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#ASMLHoldingN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2012-12-07'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#ASMLHoldingN.V.> <http://www.omg.org/techprocess/ab/SpecificationMetadata/hasDescription> 'ASML is one of the world’s leading providers (measured in revenues) of advanced technology systems for the semiconductor industry.ASML offers an integrated portfolio of lithography systems mainly for manufacturing complex integrated circuits (“ICs”), also known assemiconductors or chips. ASML supplies lithography systems to IC manufacturers throughout Asia, the United States and Europe and alsoprovides its customers with a full range of support services from advanced process and product applications knowledge to completeround-the-clock service support.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ASMLHoldingN.V.> <https://wikidata.org/entity/P452> <http://www.wikidata.org/entity/Q2986369>.
 <http://www.wikidata.org/entity/Q2986369> <http://www.w3.org/2000/01/rdf-schema#label> 'semiconductor industry'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -15,17 +15,17 @@
 <http://example.org/entity/#ASMLHoldingN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditReport> 'unqualified'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ASMLHoldingN.V.> <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/LoanProducts/WorkingCapitalPurpose> 'Not applicable. ASML believes that its working capital is sufficient for its present requirements; that is, for at least 12 months followingthe date of this Prospectus.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ASMLHoldingN.V.> <https://wikidata.org/entity/P946> 'NL0010273215'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#ASMLHoldingN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P6M'^^<https://www.w3.org/2001/XMLSchema#duration>.
+<http://example.org/entity/#ASMLHoldingN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P6M'^^<http://www.w3.org/2001/XMLSchema#duration>.
 <http://example.org/entity/#ASMLHoldingN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/hasDividendPolicy> 'As part of its financing policy, ASML aims to pay an annual dividend that will be stable or growing overtime. Annually, the Board of Management will, upon prior approval from the Supervisory Board, submit aproposal to the annual General Meeting with respect to the amount of dividend to be declared with respect to theprior year.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ASMLHoldingN.V.> <https://wikidata.org/entity/P249> 'ASML'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ASMLHoldingN.V.> <https://wikidata.org/entity/P249> 'ASML'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:Nf083faed88a64a20ae811c627d0359b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '3853952133'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nf083faed88a64a20ae811c627d0359b7 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:Nf083faed88a64a20ae811c627d0359b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 3,853,952,133'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#ASMLHoldingN.V.> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:Nf083faed88a64a20ae811c627d0359b7.
-_:N225c8d68c6904618a5cde2b3fc278223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> 'None'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N225c8d68c6904618a5cde2b3fc278223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'Not applicable'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#ASMLHoldingN.V.> <https://wikidata.org/entity/Q185142> _:N225c8d68c6904618a5cde2b3fc278223.
+_:N3a34ac6af568435db48f4bfd01ccadc8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '3853952133'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N3a34ac6af568435db48f4bfd01ccadc8 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N3a34ac6af568435db48f4bfd01ccadc8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 3,853,952,133'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#ASMLHoldingN.V.> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:N3a34ac6af568435db48f4bfd01ccadc8.
+_:Nec72016bee6e44c48dfab931aa689c8c <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> 'None'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Nec72016bee6e44c48dfab931aa689c8c <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'Not applicable'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#ASMLHoldingN.V.> <https://wikidata.org/entity/Q185142> _:Nec72016bee6e44c48dfab931aa689c8c.
 <http://example.org/entity/#ASMLHoldingN.V.> <https://wikidata.org/entity/Q1337875> 'The Participating Customers together own a significant amount of the Ordinary Shares'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ASMLHoldingN.V.> <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> 'IFRS'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ASMLHoldingN.V.> <https://spec.edmcouncil.org/fibo/ontology/CIV/Funds/CIV/InvestmentStrategy> 'The net proceeds of the Issue are EUR 3,853,952,133. ASML has used the net proceeds from the Issue tomake a capital re-payment through the Synthetic Share Buyback on all of the Issued Ordinary Shares except forthe Ordinary Shares held by the Customer Stichtingen. See “Material Contracts – Customer Co-InvestmentProgram – Synthetic Share Buyback”.'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -34,8 +34,8 @@ _:N225c8d68c6904618a5cde2b3fc278223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#ASMLHoldingN.V.> <https://wikidata.org/entity/Q192907> 'one reportable segment'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ASMLHoldingN.V.> <https://wikidata.org/entity/Q192907> 'unaudited consolidatedcondensed interim financial statements for the six-month periods ended July 1, 2012 and June 26, 2011'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ASMLHoldingN.V.> <https://wikidata.org/entity/Q192907> 'unaudited summaryIFRS consolidated financial statements for the nine-month periods ended September 30, 2012 andSeptember 25, 2011 as attached to the press releases dated October 17, 2012 and October 12, 2011'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#ASMLHoldingN.V.> <https://wikidata.org/entity/Q192907> '2012-07-01'^^<https://www.w3.org/2001/XMLSchema#date>.
-<http://example.org/entity/#ASMLHoldingN.V.> <https://wikidata.org/entity/Q192907> '2012-09-30'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#ASMLHoldingN.V.> <https://wikidata.org/entity/Q192907> '2012-07-01'^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#ASMLHoldingN.V.> <https://wikidata.org/entity/Q192907> '2012-09-30'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#ASMLHoldingN.V.> <https://wikidata.org/entity/Q740419> 'years 2011, 2010 and 2009'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ASMLHoldingN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditedFinancialStatement> 'audited consolidated financialstatements for the years 2011, 2010 and 2009 as contained in the statutory annual reports 2011, 2010 and2009 respectively;'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#ASMLHoldingN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/BusinessStrategy> 'Sustainability Strategy'^^<http://www.w3.org/2001/XMLSchema#string>.

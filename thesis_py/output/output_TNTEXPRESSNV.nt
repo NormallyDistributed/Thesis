@@ -1,7 +1,7 @@
 <http://example.org/entity/#TNTEXPRESSN.V.> <http://www.w3.org/2000/01/rdf-schema#label> 'TNT EXPRESS N.V.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://wikidata.org/entity/Q1166072> 'first admission to listing and trading (the Listing) of542,033,181 ordinary shares'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> 'NYSE Euronext in Amsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2011-04-11'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2011-04-11'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://wikidata.org/entity/P452> 'The Company operates in the global transportation industry'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://wikidata.org/entity/P946> 'NL0009739424'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://wikidata.org/entity/P249> 'TNTE'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -26,7 +26,7 @@
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/LoanProducts/WorkingCapitalPurpose> 'The Company believes that its working capital is sufficient for its present requirements; that is, for at least12 months following the date of this Prospectus.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q55>.
 <http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#label> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P6M'^^<https://www.w3.org/2001/XMLSchema#duration>.
+<http://example.org/entity/#TNTEXPRESSN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P6M'^^<http://www.w3.org/2001/XMLSchema#duration>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://wikidata.org/entity/Q330153> 'EBITDAEarnings Before Interest, Taxation, Depreciation andAmortization (not in conformity with IFRS)'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://wikidata.org/entity/Q2481549> 'Pro forma profit and loss accounts of TNT N.V. and of TNT Express for the financial year 2010(as if the Demerger took place in 2010) are attached to this proposal as Annex C.1 and Annex C.2respectively'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#TNTEXPRESSN.V.> <https://wikidata.org/entity/Q1166072> 'As a result of the Merger (in conjunction with the Demerger), the issued and outstanding sharecapital of TNT Express will amount to EUR 43,362,654.48, divided into 542,033,181 ordinaryshares with a nominal value of EUR 0.08 each. TNT N.V. will have a stake of 29.9%.'^^<http://www.w3.org/2001/XMLSchema#string>.

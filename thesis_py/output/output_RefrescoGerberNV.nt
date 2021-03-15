@@ -4,10 +4,10 @@
 <http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#label> 'Netherlands'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q478720>.
 <http://www.wikidata.org/entity/Q478720> <http://www.w3.org/2000/01/rdf-schema#label> 'Euronext Amsterdam'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q7378915> 'True'^^<http://www.w3.org/2001/XMLSchema#boolean>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/P249> 'RFRG'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#RefrescoGerberN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
-<http://example.org/entity/#RefrescoGerberN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2015-03-17'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#RefrescoGerberN.V.> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#RefrescoGerberN.V.> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2015-03-17'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q748250> 'Not applicable. The Company has not issued a profit forecast.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/P946> 'NL0011214010'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#RefrescoGerberN.V.> <https://wikidata.org/entity/Q1337875> 'Investors with a reference currency other than the euro will become subject to certain foreign exchange riskswhen investing in the Shares.'^^<http://www.w3.org/2001/XMLSchema#string>.

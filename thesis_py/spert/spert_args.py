@@ -2,7 +2,7 @@ import argparse
 
 
 def _add_common_args(arg_parser):
-    arg_parser.add_argument('--config', type=str)
+    arg_parser.add_argument('--config', type=str, default="/Users/mlcb/PycharmProjects/Thesis/thesis_py/spert/configs/example_predict.conf")
 
     # Input
     arg_parser.add_argument('--types_path', type=str, help="Path to type specifications")

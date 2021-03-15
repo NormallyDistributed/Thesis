@@ -1,5 +1,4 @@
 import os
-import os
 import warnings
 from typing import List, Tuple, Dict
 
@@ -7,10 +6,10 @@ import torch
 from sklearn.metrics import precision_recall_fscore_support as prfs
 from transformers import BertTokenizer
 
-from spert import prediction
-from spert.entities import Document, Dataset, EntityType
-from spert.input_reader import BaseInputReader
-from spert.opt import jinja2
+from spert.spert import prediction
+from spert.spert.entities import Document, Dataset, EntityType
+from spert.spert.input_reader import BaseInputReader
+from spert.spert.opt import jinja2
 
 SCRIPT_PATH = os.path.dirname(os.path.realpath(__file__))
 

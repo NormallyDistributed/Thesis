@@ -1,14 +1,14 @@
 <http://example.org/entity/#innogySE> <https://wikidata.org/entity/Q1166072> 'public offering'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn> <http://www.wikidata.org/entity/Q151139>.
 <http://www.wikidata.org/entity/Q151139> <http://www.w3.org/2000/01/rdf-schema#label> 'Frankfurt Stock Exchange'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:Nfe0442ddf95044bbbda4d4ac4909cb4c <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '32.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Nfe0442ddf95044bbbda4d4ac4909cb4c <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:Nfe0442ddf95044bbbda4d4ac4909cb4c <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 32.00 to EUR 36.00'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nfe0442ddf95044bbbda4d4ac4909cb4c.
-_:N086393096694473d990e8d1e2384508e <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '36.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N086393096694473d990e8d1e2384508e <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N086393096694473d990e8d1e2384508e <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 32.00 to EUR 36.00'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:N086393096694473d990e8d1e2384508e.
+_:Nbc05d9e3137e465a900afc6a4e70253a <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '32.00'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Nbc05d9e3137e465a900afc6a4e70253a <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Nbc05d9e3137e465a900afc6a4e70253a <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 32.00 to EUR 36.00'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Nbc05d9e3137e465a900afc6a4e70253a.
+_:Na18ca0a7bed6452b8c5eca0c99bc14ee <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '36.00'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Na18ca0a7bed6452b8c5eca0c99bc14ee <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:Na18ca0a7bed6452b8c5eca0c99bc14ee <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 32.00 to EUR 36.00'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOfferingPrice> _:Na18ca0a7bed6452b8c5eca0c99bc14ee.
 <http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/isDomiciledIn> <http://www.wikidata.org/entity/Q183>.
 <http://www.wikidata.org/entity/Q183> <http://www.w3.org/2000/01/rdf-schema#label> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#innogySE> <https://wikidata.org/entity/P946> 'DE000A2AADD2'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -17,7 +17,7 @@ _:N086393096694473d990e8d1e2384508e <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://www.wikidata.org/entity/Q66048> <http://www.w3.org/2000/01/rdf-schema#label> 'Deutsche Bank'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/InvestmentBank> <http://www.wikidata.org/entity/Q193326>.
 <http://www.wikidata.org/entity/Q193326> <http://www.w3.org/2000/01/rdf-schema#label> 'Goldman Sachs'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2016-09-23'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasExecutionDate> '2016-09-23'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#innogySE> <http://www.w3.org/2000/01/rdf-schema#label> 'innogy SE'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/operatesInCountry> <http://www.wikidata.org/entity/Q183>.
 <http://www.wikidata.org/entity/Q183> <http://www.w3.org/2000/01/rdf-schema#label> 'Germany'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -27,26 +27,26 @@ _:N086393096694473d990e8d1e2384508e <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://www.wikidata.org/entity/Q176831> <http://www.w3.org/2000/01/rdf-schema#label> 'International Financial Reporting Standards'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#innogySE> <https://wikidata.org/entity/P8571> 'PricewaterhouseCoopersAktiengesellschaftWirtschafts-prüfungsgesellschaft'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#innogySE> <https://wikidata.org/entity/Q192907> 'unauditedinterimconsolidatedfinancialstatements (condensed) of the Company as of and forthe six-month period ended June 30, 2016'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#innogySE> <https://wikidata.org/entity/Q192907> '2016-06-30'^^<https://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/entity/#innogySE> <https://wikidata.org/entity/Q192907> '2016-06-30'^^<http://www.w3.org/2001/XMLSchema#date>.
 <http://example.org/entity/#innogySE> <https://wikidata.org/entity/Q2481549> 'No pro forma financial information isrequired'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#innogySE> <https://wikidata.org/entity/Q748250> 'EUR 4.3 billion and EUR 4.7 billion'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditReport> 'without qualifications'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:Ndfc2441f5ff341f081638ec9e2134b6d <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1889000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:Ndfc2441f5ff341f081638ec9e2134b6d <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:Ndfc2441f5ff341f081638ec9e2134b6d <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 1,889 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:Ndfc2441f5ff341f081638ec9e2134b6d.
-_:N16f481b989174bc7adcf43140a26acbe <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '42000000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N16f481b989174bc7adcf43140a26acbe <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N16f481b989174bc7adcf43140a26acbe <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 42 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#innogySE> <https://wikidata.org/entity/Q185142> _:N16f481b989174bc7adcf43140a26acbe.
-_:N941644ced052431d8b941272a055f925 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1847000'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N941644ced052431d8b941272a055f925 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
-_:N941644ced052431d8b941272a055f925 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 1,847 million'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:N941644ced052431d8b941272a055f925.
+_:N15c785db84f0467887742365aabad05c <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1889000'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N15c785db84f0467887742365aabad05c <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N15c785db84f0467887742365aabad05c <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 1,889 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedGrossProceeds> _:N15c785db84f0467887742365aabad05c.
+_:N3502e7173fa04163aecc1bd951e6d8e5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '42000000'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N3502e7173fa04163aecc1bd951e6d8e5 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N3502e7173fa04163aecc1bd951e6d8e5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 42 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#innogySE> <https://wikidata.org/entity/Q185142> _:N3502e7173fa04163aecc1bd951e6d8e5.
+_:N3b1066ef96684d1b9ebc6bc5ab5acb68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1847000'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N3b1066ef96684d1b9ebc6bc5ab5acb68 <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn> <https://www.wikidata.org/entity/Q4916>.
+_:N3b1066ef96684d1b9ebc6bc5ab5acb68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> 'EUR 1,847 million'^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/placeholder/hasExpectedNetProceeds> _:N3b1066ef96684d1b9ebc6bc5ab5acb68.
 <http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/CIV/Funds/CIV/InvestmentStrategy> 'The Company intends to use the estimated netproceeds from the offering of the New Shares (asdefinedbelowunderE.3)intheamountofapproximately EUR 1,847 million (assuming an OfferPrice – as defined below under E.3 – at the mid-pointof the price range and assuming full placement of theSecondary Shares as well as the full exercise of theGreenshoe Option (as defined below under E.3)) forgeneral corporate purposes. In addition, the Companyintends to achieve better access to the capital marketsdue to the planned listing of its shares on theregulated market segment of the Frankfurt StockExchange and, simultaneously, on the sub-segmentthereof with additional post-admission obligations(Prime Standard).'^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/entity/#innogySE> <https://wikidata.org/entity/Q7378915> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
-<http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<https://www.w3.org/2001/XMLSchema#boolean>.
-<http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P6M'^^<https://www.w3.org/2001/XMLSchema#duration>.
+<http://example.org/entity/#innogySE> <https://wikidata.org/entity/Q7378915> 'True'^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/RegulationS> 'True'^^<http://www.w3.org/2001/XMLSchema#boolean>.
+<http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasLockoutPeriod> 'P6M'^^<http://www.w3.org/2001/XMLSchema#duration>.
 <http://example.org/entity/#innogySE> <https://wikidata.org/entity/Q1337875> 'The proposed financial transaction tax could result in a substantial new tax burdenin the secondary market for investors buying the Group’s shares and trading them ina European Union member state which implements such a tax.'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#innogySE> <https://wikidata.org/entity/Q330153> 'Net Debt'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#innogySE> <https://wikidata.org/entity/Q330153> 'Non-operating result'^^<http://www.w3.org/2001/XMLSchema#string>.
@@ -64,13 +64,13 @@ _:N941644ced052431d8b941272a055f925 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/isAffectedBy> 'Fair Value ‘Step-Up’ and Amortization Resulting from the Carve-Out Debt Transfer'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/hasCompetitiveStrength> 'Resilient Financial Profile – Strong Cash Generation and Solid Capital Structure'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/BusinessStrategy> 'Focus on Value Creation – Well Defined and Disciplined Investment Strategy forProfitable Growth'^^<http://www.w3.org/2001/XMLSchema#string>.
-_:N6574d0bbc3e34bbb9c517919e08b7a8e <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '0.75'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N6574d0bbc3e34bbb9c517919e08b7a8e <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
-_:N6574d0bbc3e34bbb9c517919e08b7a8e <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '0.75%'.
-<http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N6574d0bbc3e34bbb9c517919e08b7a8e.
-_:N7fd8bb7baaa54e0a9600c6a60d9c726f <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1.00'^^<https://www.w3.org/2001/XMLSchema#decimal>.
-_:N7fd8bb7baaa54e0a9600c6a60d9c726f <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
-_:N7fd8bb7baaa54e0a9600c6a60d9c726f <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '1.00%'.
-<http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N7fd8bb7baaa54e0a9600c6a60d9c726f.
+_:N446c696831ab4d65b0e7ad0ad2e6122f <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '0.75'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:N446c696831ab4d65b0e7ad0ad2e6122f <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
+_:N446c696831ab4d65b0e7ad0ad2e6122f <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '0.75%'.
+<http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:N446c696831ab4d65b0e7ad0ad2e6122f.
+_:Nee801be1890c41178d798009fdea5657 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> '1.00'^^<http://www.w3.org/2001/XMLSchema#decimal>.
+_:Nee801be1890c41178d798009fdea5657 <http://www.w3.org/2000/01/rdf-schema#property> <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Percentage>.
+_:Nee801be1890c41178d798009fdea5657 <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> '1.00%'.
+<http://example.org/entity/#innogySE> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnderwritingArrangement> _:Nee801be1890c41178d798009fdea5657.
 <http://example.org/entity/#innogySE> <http://www.w3.org/2004/02/skos/core#altLabel> 'Innogy'^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://example.org/entity/#innogySE> <http://www.w3.org/2004/02/skos/core#altLabel> 'innogy SE'^^<http://www.w3.org/2001/XMLSchema#string>.
