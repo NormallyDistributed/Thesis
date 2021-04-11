@@ -90,8 +90,8 @@ class SpERTTrainer(BaseTrainer):
         # SpERT is currently optimized on a single GPU and not thoroughly tested in a multi GPU setup
         # If you still want to train SpERT on multiple GPUs, uncomment the following lines
         # # parallelize model
-        if self._device.type != 'cpu':
-            model = torch.nn.DataParallel(model)
+        #if self._device.type != 'cpu':
+        #    model = torch.nn.DataParallel(model)
 
         model.to(self._device)
 
