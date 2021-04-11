@@ -10,12 +10,13 @@ from rich.console import Console
 from rich.progress import track
 from urllib.error import HTTPError
 from SPARQLWrapper import SPARQLWrapper, JSON
-from rich import print, pretty
+from rich import pretty
 from spert.spert_predict import *
 from threading import Thread
 from fuzzywuzzy import fuzz
 pretty.install()
 console = Console()
+from decomposition.rule_based.run_model import *
 
 
 class EntityLinking(object):
@@ -37,6 +38,14 @@ class EntityLinking(object):
         self.best_candidate = "No Match"
         self.graph = None
         self.location = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
+
+#    def decomposition(self):
+#        decomposed_questions = main(self.question)
+#        print(decomposed_questions)
+#        if len(decomposed_questions) > 1:
+#            print("Complex Question")
+#        else:
+#            print("Simple Question")
 
     def questions(self):
         nlp = English()
@@ -380,11 +389,10 @@ class EntityLinking(object):
             elif self.operator == "count":
                 self.get_missing_object(self.graph, subject_uri=rdflib.URIRef(self.entity_uri),
                                         predicate_uri=rdflib.URIRef(strip(self.relation_uri)), operator="count")
-
-        Thread(target=self.output_text()).start()
+            Thread(target=self.output_text()).start()
 
     def output_text(self):
-        print(self.answer_list)
+
         if not self.answer_list:
             return console.print("This information is not in the database.", style="bold red")
         else:

@@ -1,0 +1,10 @@
+# Fdb version 3
+["pdflatex"] 1616262052 "approach.tex" "approach.pdf" "approach" 1616262052
+  "/usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf" 1598393674 39451 15a3ebee027466ecb89701aa91dfebaf ""
+  "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1598926028 2440539 9cdc2b2dde5b6f686ce0313211042191 ""
+  "/usr/local/texlive/2020/texmf.cnf" 1598925976 577 d60164b4589a341208aff7a667fbbdcb ""
+  "approach.aux" 1616262052 8 a94a2480d3289e625eea47cd1b285758 ""
+  "approach.tex" 1616262051 5090 6ad20c07bec25419f1796b8aab9045ea ""
+  (generated)
+  "approach.pdf"
+  "approach.log"

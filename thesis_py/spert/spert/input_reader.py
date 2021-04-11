@@ -207,8 +207,8 @@ class JsonPredictionInputReader(BaseInputReader):
     def _parse_dataset(self, dataset_path, dataset):
         documents = json.load(open(dataset_path))
 
-        stopwords = ["the", "of", "is", "are", "have", "has", "me", "us", "of", "can", "you", "?", "do", "does"]
-
+        stopwords = ["the", "is", "are", "have", "has", "me", "us", "can", "you", "?", "do", "does"]
+        #stopwords = ["?", "."]
         for document in documents:
             document_ = {"tokens": ' '.join([item for item in document["tokens"] if item not in stopwords]).split()}
             self._parse_document(document_, dataset)

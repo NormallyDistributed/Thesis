@@ -1,0 +1,6 @@
+PWD /Users/mlcb/PycharmProjects/Thesis/thesis_tex/tex/approach
+INPUT /usr/local/texlive/2020/texmf.cnf
+INPUT /usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT approach.tex
+OUTPUT approach.log

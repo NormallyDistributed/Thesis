@@ -104,7 +104,7 @@ class GenerateQuestions(object):
                        # "types_": types_dict}
 
         for key, value in output_dict.items():
-            with open('train_dev/{}.json'.format(key), 'w') as fp:
+            with open('/Users/mlcb/PycharmProjects/Thesis/thesis_py/train_dev/{}.json'.format(key), 'w') as fp:
                 json.dump(value, fp)
 
     def runall(self):
@@ -115,8 +115,8 @@ class GenerateQuestions(object):
 
 
 if __name__ == "__main__":
-    relations_dict = os.path.realpath(os.path.join(os.getcwd(), "question_generation/input/relations_dict.json"))
-    entities_dict = os.path.realpath(os.path.join(os.getcwd(), "question_generation/input/entities_dict.json"))
-    commands_dict = os.path.realpath(os.path.join(os.getcwd(), "question_generation/input/commands_dict.json"))
-    operators_dict = os.path.realpath(os.path.join(os.getcwd(), "question_generation/input/operators_dict.json"))
+    relations_dict = os.path.realpath(os.path.join(os.getcwd(), "input/relations_dict.json"))
+    entities_dict = os.path.realpath(os.path.join(os.getcwd(), "input/entities_dict.json"))
+    commands_dict = os.path.realpath(os.path.join(os.getcwd(), "input/commands_dict.json"))
+    operators_dict = os.path.realpath(os.path.join(os.getcwd(), "input/operators_dict.json"))
     GenerateQuestions(relations_dict, entities_dict, commands_dict, operators_dict).runall()
