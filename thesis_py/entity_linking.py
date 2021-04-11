@@ -16,7 +16,7 @@ from threading import Thread
 from fuzzywuzzy import fuzz
 pretty.install()
 console = Console()
-from decomposition.rule_based.run_model import *
+#from decomposition.rule_based.run_model import *
 
 
 class EntityLinking(object):
