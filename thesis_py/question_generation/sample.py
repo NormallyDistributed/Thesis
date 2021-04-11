@@ -16,5 +16,3 @@ with open('/Users/mlcb/PycharmProjects/Thesis/thesis_py/train_dev/train_sample.j
 with open('/Users/mlcb/PycharmProjects/Thesis/thesis_py/train_dev/dev_sample.json', 'w') as fp:
     json.dump(dev_sample, fp)
 
-
-python ./spert.py train --config configs/example_train.conf
