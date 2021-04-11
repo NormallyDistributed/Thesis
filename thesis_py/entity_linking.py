@@ -1,22 +1,26 @@
 import json
 import os
+from threading import Thread
+import time
+from urllib.error import HTTPError
+
 import csv
+from fuzzywuzzy import fuzz
+import isodate
 import rdflib
 import rdflib.graph as g
-from spacy.lang.en import English
-import time
-import isodate
+from rich import pretty
 from rich.console import Console
 from rich.progress import track
-from urllib.error import HTTPError
+from spacy.lang.en import English
 from SPARQLWrapper import SPARQLWrapper, JSON
-from rich import pretty
 from spert.spert_predict import *
-from threading import Thread
-from fuzzywuzzy import fuzz
+
+from thesis_py import package_path
+
+
 pretty.install()
 console = Console()
-#from decomposition.rule_based.run_model import *
 
 
 class EntityLinking(object):
@@ -39,18 +43,10 @@ class EntityLinking(object):
         self.graph = None
         self.location = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
-#    def decomposition(self):
-#        decomposed_questions = main(self.question)
-#        print(decomposed_questions)
-#        if len(decomposed_questions) > 1:
-#            print("Complex Question")
-#        else:
-#            print("Simple Question")
-
     def questions(self):
         nlp = English()
         tokenizer = nlp.tokenizer
-        with open('/Users/mlcb/PycharmProjects/Thesis/thesis_py/question.json', 'w') as fp:
+        with open(os.path.join(package_path, 'question.json'), 'w') as fp:
             json.dump([{"tokens": ["{}".format(i) for i in tokenizer(self.question)]}], fp)
         predict()
 
@@ -223,7 +219,7 @@ class EntityLinking(object):
 
     def graph_init(self):
         self.graph = g.Graph()
-        self.graph.parse('KnowledgeBaseUpdate.nt', format='ttl')
+        self.graph.parse(os.path.join(package_path,'KnowledgeBaseUpdate.nt'), format='ttl')
 
     def entity_matching(self):
 
@@ -258,7 +254,7 @@ class EntityLinking(object):
             self.entity_uri = self.best_candidate[1]
 
         else:
-            with open("wiki_companies.json") as json_file:
+            with open(os.path.join(package_path,"wiki_companies.json")) as json_file:
                 wiki_companies = json.load(json_file)
             for entry in wiki_companies:
                 if "altlabel" not in entry:
@@ -428,11 +424,15 @@ class EntityLinking(object):
 if __name__ == "__main__":
     start_time = time.time()
     parser = argparse.ArgumentParser()
-    parser.add_argument("question",
-                        help="Ask a question. For instance: What is the ticker symbol of Hello Fresh?",
-                        type=str)
+    parser.add_argument("-q",
+                        "--question",
+                        type=str,
+                        default='What is the isin of hello fresh?',
+                        help="Ask a question. For instance: What is the ticker symbol of Hello Fresh?")
     args = parser.parse_args()
-    prediction_dir = "/Users/mlcb/PycharmProjects/Thesis/thesis_py/prediction.json"
+
+    prediction_dir = os.path.join(package_path, "prediction.json")
     threshold_value = 85
     EntityLinking(prediction_dir, threshold_value, args.question).runall()
     console.print("runtime: %s seconds" % (round(time.time() - start_time, 2)), style="bold blue")
+

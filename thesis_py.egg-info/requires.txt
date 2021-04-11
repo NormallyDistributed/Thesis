@@ -1,0 +1,12 @@
+fuzzywuzzy
+isodate
+jinja2
+numpy
+rdflib
+rich
+scikit-learn
+spacy
+sparqlwrapper
+torch
+tqdm
+transformers

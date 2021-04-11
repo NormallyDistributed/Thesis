@@ -111,3 +111,6 @@ tmp/
 runs/
 *.state
 checkpoint
+
+# Mac stuff
+.DS_Store
