@@ -1,5 +1,6 @@
 import argparse
 import datetime
+import json
 import logging
 import os
 import sys
@@ -33,6 +34,9 @@ class BaseTrainer:
             self._save_path = os.path.join(self.args.save_path, self.args.label, name)
             util.create_directories_dir(self._save_path)
 
+        # save config
+        json.dump(self.args.__dict__, open(os.path.join(self._log_path, 'config.json'), 'w'))
+
         self._log_paths = dict()
 
         # file + console logging
@@ -60,7 +64,7 @@ class BaseTrainer:
         self._log_arguments()
 
         # CUDA devices
-        self._device = torch.device("cuda" if torch.cuda.is_available() and not args.cpu else "cpu")
+        self._device = torch.device(f"cuda:{args.device}" if torch.cuda.is_available() and not args.cpu else "cpu")
         self._gpu_count = torch.cuda.device_count()
 
         # set seed

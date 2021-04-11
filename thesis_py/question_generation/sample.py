@@ -1,10 +1,10 @@
 import json
 import random
 
-with open("/Users/mlcb/PycharmProjects/Thesis/thesis_py/train_dev/questions_train.json") as json_file:
+with open("/Users/mlcb/PycharmProjects/Thesis/thesis_py/train_dev/questions_train_small.json") as json_file:
     train = json.load(json_file)
 
-with open("/Users/mlcb/PycharmProjects/Thesis/thesis_py/train_dev/questions_dev.json") as json_file:
+with open("/Users/mlcb/PycharmProjects/Thesis/thesis_py/train_dev/questions_dev_small.json") as json_file:
     dev = json.load(json_file)
 
 train_sample = random.sample(train, 1000)

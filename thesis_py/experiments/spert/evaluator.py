@@ -18,7 +18,8 @@ SCRIPT_PATH = os.path.dirname(os.path.realpath(__file__))
 class Evaluator:
     def __init__(self, dataset: Dataset, input_reader: JsonInputReader, text_encoder: BertTokenizer,
                  rel_filter_threshold: float, no_overlapping: bool,
-                 predictions_path: str, examples_path: str, example_count: int, epoch: int, dataset_label: str):
+                 predictions_path: str, examples_path: str, example_count: int, epoch: int, dataset_label: str,
+                 logger):
         self._text_encoder = text_encoder
         self._input_reader = input_reader
         self._dataset = dataset
@@ -32,6 +33,8 @@ class Evaluator:
 
         self._examples_path = examples_path
         self._example_count = example_count
+
+        self._logger = logger
 
         # relations
         self._gt_relations = []  # ground truth
@@ -105,30 +108,43 @@ class Evaluator:
             self._pred_relations.append(sample_pred_relations)
 
     def compute_scores(self):
-        print("Evaluation")
+        self._logger.info("Evaluation\n"
+                          "\n"
+                          "--- Entities (named entity recognition (NER)) ---\n"
+                          "An entity is considered correct if the entity type and span is predicted correctly\n"
+                          "\n")
 
-        print("")
-        print("--- Entities (named entity recognition (NER)) ---")
-        print("An entity is considered correct if the entity type and span is predicted correctly")
-        print("")
+        # print("")
+        # print("--- Entities (named entity recognition (NER)) ---")
+        # print("An entity is considered correct if the entity type and span is predicted correctly")
+        # print("")
         gt, pred = self._convert_by_setting(self._gt_entities, self._pred_entities, include_entity_types=True)
         ner_eval = self._score(gt, pred, print_results=True)
 
-        print("")
-        print("--- Relations ---")
-        print("")
-        print("Without named entity classification (NEC)")
-        print("A relation is considered correct if the relation type and the spans of the two "
-              "related entities are predicted correctly (entity type is not considered)")
-        print("")
+        self._logger.info("--- Relations ---\n"
+                          "Without named entity classification (NEC)\n"
+                          "A relation is considered correct if the relation type and the spans of the two "
+                          "related entities are predicted correctly (entity type is not considered)\n"
+                          )
+        # print("")
+        # print("--- Relations ---")
+        # print("")
+        # print("Without named entity classification (NEC)")
+        # print("A relation is considered correct if the relation type and the spans of the two "
+        #       "related entities are predicted correctly (entity type is not considered)")
+        # print("")
         gt, pred = self._convert_by_setting(self._gt_relations, self._pred_relations, include_entity_types=False)
         rel_eval = self._score(gt, pred, print_results=True)
 
-        print("")
-        print("With named entity classification (NEC)")
-        print("A relation is considered correct if the relation type and the two "
-              "related entities are predicted correctly (in span and entity type)")
-        print("")
+        self._logger.info("With named entity classification (NEC)\n"
+                          "A relation is considered correct if the relation type and the two "
+                          "related entities are predicted correctly (in span and entity type)\n"
+                          )
+        # print("")
+        # print("With named entity classification (NEC)")
+        # print("A relation is considered correct if the relation type and the two "
+        #       "related entities are predicted correctly (in span and entity type)")
+        # print("")
         gt, pred = self._convert_by_setting(self._gt_relations, self._pred_relations, include_entity_types=True)
         rel_nec_eval = self._score(gt, pred, print_results=True)
 
@@ -423,7 +439,7 @@ class Evaluator:
             metrics_per_type.append(metrics)
 
         for m, t in zip(metrics_per_type, types):
-            results.append(row_fmt % self._get_row(m, t.short_name))
+            results.append(row_fmt % self._get_row(m, t.short_name[:20]))
             results.append('\n')
 
         results.append('\n')
@@ -436,7 +452,8 @@ class Evaluator:
         results.append(row_fmt % self._get_row(macro, 'macro'))
 
         results_str = ''.join(results)
-        print(results_str)
+        self._logger.info(f'\n{results_str}')
+        # print(results_str)
 
     def _get_row(self, data, label):
         row = [label]

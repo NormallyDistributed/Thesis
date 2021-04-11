@@ -41,6 +41,8 @@ class SpERTTrainer(BaseTrainer):
         # path to export relation extraction examples to
         self._examples_path = os.path.join(self._log_path, 'examples_%s_%s_epoch_%s.html')
 
+        self._best_valid_macro_f1_nec_rel = 0.
+
     def train(self, train_path: str, valid_path: str, types_path: str, input_reader_cls: BaseInputReader):
         args = self.args
         train_label, valid_label = 'train', 'valid'
@@ -90,22 +92,22 @@ class SpERTTrainer(BaseTrainer):
         # SpERT is currently optimized on a single GPU and not thoroughly tested in a multi GPU setup
         # If you still want to train SpERT on multiple GPUs, uncomment the following lines
         # # parallelize model
-        if self._device.type != 'cpu':
-            model = torch.nn.DataParallel(model)
+        # if self._device.type != 'cpu':
+        #     model = torch.nn.DataParallel(model)
 
         model.to(self._device)
 
         # create optimizer
         optimizer_params = self._get_optimizer_params(model)
-        optimizer = AdamW(optimizer_params, lr=args.lr, weight_decay=args.weight_decay, correct_bias=False)
+        self.optimizer = AdamW(optimizer_params, lr=args.lr, weight_decay=args.weight_decay, correct_bias=False)
         # create scheduler
-        scheduler = transformers.get_linear_schedule_with_warmup(optimizer,
+        scheduler = transformers.get_linear_schedule_with_warmup(self.optimizer,
                                                                  num_warmup_steps=args.lr_warmup * updates_total,
                                                                  num_training_steps=updates_total)
         # create loss function
         rel_criterion = torch.nn.BCEWithLogitsLoss(reduction='none')
         entity_criterion = torch.nn.CrossEntropyLoss(reduction='none')
-        compute_loss = SpERTLoss(rel_criterion, entity_criterion, model, optimizer, scheduler, args.max_grad_norm)
+        compute_loss = SpERTLoss(rel_criterion, entity_criterion, model, self.optimizer, scheduler, args.max_grad_norm)
 
         # eval validation set
         if args.init_eval:
@@ -114,7 +116,7 @@ class SpERTTrainer(BaseTrainer):
         # train
         for epoch in range(args.epochs):
             # train epoch
-            self._train_epoch(model, compute_loss, optimizer, train_dataset, updates_epoch, epoch)
+            self._train_epoch(model, compute_loss, self.optimizer, train_dataset, updates_epoch, epoch)
 
             # eval validation sets
             if not args.final_eval or (epoch == args.epochs - 1):
@@ -124,7 +126,7 @@ class SpERTTrainer(BaseTrainer):
         extra = dict(epoch=args.epochs, updates_epoch=updates_epoch, epoch_iteration=0)
         global_iteration = args.epochs * updates_epoch
         self._save_model(self._save_path, model, self._tokenizer, global_iteration,
-                         optimizer=optimizer if self.args.save_optimizer else None, extra=extra,
+                         optimizer=self.optimizer if self.args.save_optimizer else None, extra=extra,
                          include_iteration=False, name='final_model')
 
         self._logger.info("Logged in: %s" % self._log_path)
@@ -204,6 +206,8 @@ class SpERTTrainer(BaseTrainer):
             iteration += 1
             global_iteration = epoch * updates_epoch + iteration
 
+            torch.cuda.empty_cache()
+
             if global_iteration % self.args.train_log_iter == 0:
                 self._log_train(optimizer, batch_loss, epoch, iteration, global_iteration, dataset.label)
 
@@ -220,7 +224,8 @@ class SpERTTrainer(BaseTrainer):
         # create evaluator
         evaluator = Evaluator(dataset, input_reader, self._tokenizer,
                               self.args.rel_filter_threshold, self.args.no_overlapping, self._predictions_path,
-                              self._examples_path, self.args.example_count, epoch, dataset.label)
+                              self._examples_path, self.args.example_count, epoch, dataset.label,
+                              self._logger)
 
         # create data loader
         dataset.switch_mode(Dataset.EVAL_MODE)
@@ -251,10 +256,17 @@ class SpERTTrainer(BaseTrainer):
         self._log_eval(*ner_eval, *rel_eval, *rel_nec_eval,
                        epoch, iteration, global_iteration, dataset.label)
 
+        if rel_nec_eval[-1] > self._best_valid_macro_f1_nec_rel:
+            self._best_valid_macro_f1_nec_rel = rel_nec_eval[-1]
+            self._save_model(self._save_path, model, self._tokenizer, global_iteration,
+                             optimizer=self.optimizer if self.args.save_optimizer else None, extra={},
+                             include_iteration=False, name='best_model')
+            self._logger.info('Saved new best model.')
+
         if self.args.store_predictions and not self.args.no_overlapping:
             evaluator.store_predictions()
 
-        if self.args.store_examples:
+        if self.args.store_examples and self.args.epochs == epoch:
             evaluator.store_examples()
 
     def _get_optimizer_params(self, model):

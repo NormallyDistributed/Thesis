@@ -44,7 +44,7 @@ def _add_common_args(arg_parser):
                                  "and relations with overlapping entities")
 
     # Misc
-    arg_parser.add_argument('--seed', type=int, default=None, help="Seed")
+    arg_parser.add_argument('--seed', type=int, default=42, help="Seed")
     arg_parser.add_argument('--cache_path', type=str, default=None,
                             help="Path to cache transformer models (for HuggingFace transformers library)")
 
@@ -78,6 +78,7 @@ def train_argparser():
                             help="Proportion of total train iterations to warmup in linear increase/decrease schedule")
     arg_parser.add_argument('--weight_decay', type=float, default=0.01, help="Weight decay to apply")
     arg_parser.add_argument('--max_grad_norm', type=float, default=1.0, help="Maximum gradient norm")
+    arg_parser.add_argument('--device', type=int, default=0, help="Cuda device")
 
     _add_common_args(arg_parser)
 
