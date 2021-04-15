@@ -48,7 +48,7 @@ def __train(run_cfg, device):
 
 
 def _train():
-    gs_config = json.load(open('configs/train_cfg.json', 'r'))
+    gs_config = json.load(open('configs/train_cfg_new.json', 'r'))
     run_configs = split_gs_config(gs_config)
     num_workers = 4
 
