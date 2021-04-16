@@ -4,9 +4,11 @@ The semantic question answering system can either be accessed via Terminal or us
 
 ## Run:
 
+Define paths in framework/
+
 ### Terminal:
 
-* Usage: python entity_linking.py "NATURAL LANGUAGE QUESTION"
+* Usage: python entity_linking.py -q "NATURAL LANGUAGE QUESTION"
 * Example: python entity_linking.py "What is the ticker symbol of Post NL?"
 
 ### GUI:
