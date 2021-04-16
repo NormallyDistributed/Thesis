@@ -1,0 +1,241 @@
+@prefix : <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix Analytics: <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/> .
+@prefix AnnotationVocabulary: <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/> .
+@prefix SpecificationMetadata: <http://www.omg.org/techprocess/ab/SpecificationMetadata/> .
+@base <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd> .
+
+<https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd> rdf:type owl:Ontology ;
+                                                                        owl:imports <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/Corporations/Corporations/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/FunctionalEntities/FunctionalEntities/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/FunctionalEntities/Publishers/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/GovernmentEntities/EuropeanJurisdiction/EUGovernmentEntitiesAndJurisdictions/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/GovernmentEntities/EuropeanJurisdiction/UKGovernmentEntitiesAndJurisdictions/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/GovernmentEntities/GovernmentEntities/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/GovernmentEntities/NorthAmericanJurisdiction/CAGovernmentEntitiesAndJurisdictions/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/LegalEntities/CorporateBodies/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/LegalEntities/FormalBusinessOrganizations/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/LegalEntities/LEIEntities/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/LegalEntities/LegalPersons/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/LegalEntities/NorthAmericanEntities/USExampleEntities/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/OwnershipAndControl/ControlParties/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/OwnershipAndControl/CorporateControl/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/OwnershipAndControl/CorporateOwnership/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/OwnershipAndControl/Executives/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/OwnershipAndControl/OwnershipParties/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/Partnerships/Partnerships/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/PrivateLimitedCompanies/PrivateLimitedCompanies/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/SoleProprietorships/SoleProprietorships/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/BE/Trusts/Trusts/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/DER/DerivativesContracts/DerivativesBasics/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/DER/DerivativesContracts/Swaps/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/DER/DerivativesContracts/SwapsIndividuals/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/DER/RateDerivatives/IRSwapExampleIndividuals/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/DER/RateDerivatives/IRSwaps/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/DER/RateDerivatives/RateDerivatives/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/DebtAndEquities/Debt/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/DebtAndEquities/Guaranty/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FinancialInstruments/FinancialInstruments/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FinancialInstruments/InstrumentPricing/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/BusinessCenters/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/BusinessCentersIndividuals/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/BusinessRegistries/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/EuropeanEntities/EUFinancialServicesEntities/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/EuropeanEntities/EURegulatoryAgencies/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/FinancialServicesEntities/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/InternationalRegistriesAndAuthorities/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/Markets/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/MarketsIndividuals/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/NorthAmericanEntities/CAFinancialServicesEntities/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/NorthAmericanEntities/CARegulatoryAgencies/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/NorthAmericanEntities/USExampleIndividuals/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntitiesIndividuals/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/RegistrationAuthorities/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/FunctionalEntities/RegulatoryAgencies/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/ProductsAndServices/ClientsAndAccounts/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FBC/ProductsAndServices/FinancialProductsAndServices/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Accounting/AccountingEquity/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Accounting/CurrencyAmount/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Accounting/ISO4217-CurrencyCodes/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/AgentsAndPeople/Agents/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/AgentsAndPeople/People/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Agreements/Agreements/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Agreements/Contracts/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Arrangements/Arrangements/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Arrangements/Assessments/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Arrangements/ClassificationSchemes/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Arrangements/Documents/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Arrangements/IdentifiersAndIndices/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Arrangements/Lifecycles/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Arrangements/Ratings/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Arrangements/Reporting/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/DatesAndTimes/BusinessDates/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/DatesAndTimes/FinancialDates/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/DatesAndTimes/Occurrences/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/GoalsAndObjectives/Goals/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/GoalsAndObjectives/Objectives/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Law/Jurisdiction/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Law/LegalCapacity/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Law/LegalCore/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Organizations/FormalOrganizations/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Organizations/Organizations/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/OwnershipAndControl/Control/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/OwnershipAndControl/Ownership/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/OwnershipAndControl/OwnershipAndControl/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Parties/Parties/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Parties/Roles/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Places/Addresses/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Places/Facilities/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Places/Locations/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Places/NorthAmerica/USPostalServiceAddresses/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Places/VirtualPlaces/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/ProductsAndServices/PaymentsAndSchedules/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/ProductsAndServices/ProductsAndServices/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Quantities/QuantitiesAndUnits/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Relations/Relations/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Utilities/Analytics/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/FND/Utilities/AnnotationVocabulary/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/IND/EconomicIndicators/EconomicIndicatorPublishers/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/IND/EconomicIndicators/EconomicIndicators/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/IND/EconomicIndicators/NorthAmericanIndicators/CAEconomicIndicators/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/IND/EconomicIndicators/NorthAmericanIndicators/USEconomicIndicators/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/IND/ForeignExchange/ForeignExchange/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/IND/Indicators/Indicators/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/IND/InterestRates/CommonInterestRates/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/IND/InterestRates/InterestRates/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/IND/InterestRates/MarketDataProviders/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/SEC/Debt/Bonds/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/SEC/Debt/DebtInstruments/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/SEC/Debt/ExerciseConventions/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/SEC/Debt/TradedShortTermDebt/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/SEC/Equities/EquitiesExampleIndividuals/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/SEC/Equities/EquityCFIClassificationIndividuals/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/SEC/Equities/EquityInstruments/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/SEC/Securities/Baskets/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/SEC/Securities/ParametricSchedules/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/SEC/Securities/Pools/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/SEC/Securities/SecuritiesClassification/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/SEC/Securities/SecuritiesIdentification/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/SEC/Securities/SecuritiesIdentificationIndividuals/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/SEC/Securities/SecuritiesIssuance/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/SEC/Securities/SecuritiesListings/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/SEC/Securities/SecuritiesRestrictions/> ,
+                                                                                    <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/SEC/Securities/SecurityAssets/> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard
+<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasAccountingStandard> rdf:type owl:ObjectProperty ;
+                                                                                               rdfs:comment "QName: fibo-be-le-lei:hasAccountingStandard" ;
+                                                                                               rdfs:isDefinedBy "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/AccountingFramework/" ;
+                                                                                               rdfs:label "has accounting standard"@en ;
+                                                                                               skos:definition "indicates the accounting standard used by the company"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd/OWLObjectProperty_aa55d6fc_a1c7_42b8_a034_f64d8c73a7aa
+<https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd/OWLObjectProperty_aa55d6fc_a1c7_42b8_a034_f64d8c73a7aa> rdf:type owl:ObjectProperty ;
+                                                                                                                              rdfs:label "complex financials"@de .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd/OWLObjectProperty_e779451b_4e89_4f63_9732_b0b29bd59d57
+<https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd/OWLObjectProperty_e779451b_4e89_4f63_9732_b0b29bd59d57> rdf:type owl:ObjectProperty ;
+                                                                                                                              rdfs:isDefinedBy <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd> ;
+                                                                                                                              rdfs:label "has audited financial statements"@de .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd/https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditReport
+<https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd/https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditReport> rdf:type owl:ObjectProperty ;
+                                                                                                                                                                  rdfs:comment "QName: fibo-sec-sec-lst:hasAuditReport" ;
+                                                                                                                                                                  rdfs:isDefinedBy <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/> ;
+                                                                                                                                                                  rdfs:label "has audit report"@de ;
+                                                                                                                                                                  skos:definition "a formal opinion, or disclaimer thereof, issued by either an internal auditor or an independent external auditor as a result of an internal or external audit, as an assurance service in order for the user to make decisions based on the results of the audit"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd/https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasAuditReport> ;
+   owl:annotatedProperty skos:definition ;
+   owl:annotatedTarget "a formal opinion, or disclaimer thereof, issued by either an internal auditor or an independent external auditor as a result of an internal or external audit, as an assurance service in order for the user to make decisions based on the results of the audit"@en ;
+   terms:source "Wikipedia contributors. (2020, July 27). Auditor's report. In Wikipedia, The Free Encyclopedia. Retrieved 16:48, December 8, 2020, from https://en.wikipedia.org/w/index.php?title=Auditor%27s_report&oldid=969784931"@en
+ ] .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/hasCompetitiveStrength
+<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/hasCompetitiveStrength> rdf:type owl:DatatypeProperty ;
+                                                                                            rdfs:range xsd:string ;
+                                                                                            rdfs:comment "QName: fibo-fnd-arr-rt:hasCompetitiveStrength"@en ;
+                                                                                            rdfs:isDefinedBy <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/> ;
+                                                                                            rdfs:label "has competitive strength"@de ;
+                                                                                            skos:definition "indicates competitive strengths of the company"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/hasRegulationS
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/hasRegulationS> rdf:type owl:DatatypeProperty ,
+                                                                                                          owl:FunctionalProperty ;
+                                                                                                 rdfs:domain <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/ListedSecurity> ;
+                                                                                                 rdfs:range xsd:boolean ;
+                                                                                                 rdfs:comment "QName: fibo-sec-sec-rst:hasRegulationS" ;
+                                                                                                 rdfs:isDefinedBy <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/> ;
+                                                                                                 rdfs:label "has regulation s"@en ;
+                                                                                                 skos:definition "exhibits an SEC regulation that permits company to not register stock they sell outside the United States to foreign investors"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd/OWLDataProperty_243b7171_1eec_4b3f_9a59_d6bf95859acc
+<https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd/OWLDataProperty_243b7171_1eec_4b3f_9a59_d6bf95859acc> rdf:type owl:DatatypeProperty ;
+                                                                                                                            rdfs:comment "QName: fibo-ph:hasExpectedNetProceeds" ;
+                                                                                                                            rdfs:isDefinedBy ""@en ;
+                                                                                                                            rdfs:label "has expected net proceeds"@en ;
+                                                                                                                            skos:definition "projected proceeds before deductions"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd/OWLDataProperty_4c191160_71c5_463e_8604_526101afef61
+<https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd/OWLDataProperty_4c191160_71c5_463e_8604_526101afef61> rdf:type owl:DatatypeProperty ;
+                                                                                                                            rdfs:comment "QName: fibo-sec-sec-lst:hasAuditedFinancialStatement" ;
+                                                                                                                            rdfs:isDefinedBy ""@en ;
+                                                                                                                            rdfs:label "audited financial statements"@en ;
+                                                                                                                            skos:definition "thorough and comprehensive examination of a company's financial records and internal controls by an independent auditor"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd/OWLDataProperty_8516563f_7636_409f_967c_66cf1acd6333
+<https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd/OWLDataProperty_8516563f_7636_409f_967c_66cf1acd6333> rdf:type owl:DatatypeProperty ;
+                                                                                                                            rdfs:range xsd:string ;
+                                                                                                                            rdfs:comment "QName: fibo-sec-eq-eq:hasDividendPolicy"@en ;
+                                                                                                                            rdfs:isDefinedBy <https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/> ;
+                                                                                                                            rdfs:label "has dividend policy"@en ;
+                                                                                                                            skos:definition "description of the company's policy regarding the commitment to distribute a portion of earnings to shareholders, prorated by class of security"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd/OWLDataProperty_be901f8c_9e1b_48f2_85e0_59a9857068e8
+<https://spec.edmcouncil.org/fibo/ontology/master/2020Q2/LoadFIBOProd/OWLDataProperty_be901f8c_9e1b_48f2_85e0_59a9857068e8> rdf:type owl:DatatypeProperty ;
+                                                                                                                            rdfs:range xsd:decimal ;
+                                                                                                                            rdfs:comment "QName: fibo-ph:hasExpectedGrossProceeds" ;
+                                                                                                                            rdfs:isDefinedBy ""@en ;
+                                                                                                                            rdfs:label "has expected gross proceeds"@de ;
+                                                                                                                            skos:definition "projected proceeds before deductions"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/placeholder/emphasisOfMatter
+<https://spec.edmcouncil.org/fibo/ontology/placeholder/emphasisOfMatter> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:comment "QName: fibo-ph:emphasisOfMatter" ;
+                                                                         rdfs:isDefinedBy ""@en ;
+                                                                         rdfs:label "emphasis of matter"@de ;
+                                                                         skos:definition "indicates a matter which is disclosed appropriately in the notes forming part of the financial statements that the auditor considers is fundamental to the users' understanding of the financial statements"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
