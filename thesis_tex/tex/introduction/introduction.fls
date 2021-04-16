@@ -1,6 +1,0 @@
-PWD C:/Users/mlcbu/Documents/GitHub/Thesis/thesis_tex/tex/introduction
-INPUT c:/texlive/2016/texmf.cnf
-INPUT c:/texlive/2016/texmf-dist/web2c/texmf.cnf
-INPUT c:/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT ./introduction.tex
-OUTPUT introduction.log
