@@ -1,7 +1,5 @@
 # Master Thesis: Knowledge Graph Based Question Answering System for Financial Securities
 
-For a description of the model and experiments, see TBA.
-
 The semantic question answering system can either be accessed via Terminal or using a simple GUI.
 
 ## Run:
@@ -15,6 +13,4 @@ The semantic question answering system can either be accessed via Terminal or us
 
 * Usage: execute gui.py
 
-## Setup:
 
-### Requirements:
