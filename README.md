@@ -4,7 +4,7 @@ The semantic question answering system can either be accessed via Terminal or us
 
 ## Run:
 
-Define paths in framework/
+Define paths in framework/spert/configs/example_predict.conf
 
 ### Terminal:
 
