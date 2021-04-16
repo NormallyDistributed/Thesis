@@ -9,7 +9,7 @@ Define paths in framework/spert/configs/example_predict.conf
 ### Terminal:
 
 * Usage: python kgqa.py -q "NATURAL LANGUAGE QUESTION"
-* Example: python kgqa.py "What is the ticker symbol of Post NL?"
+* Example: python kgqa.py -q "What is the ticker symbol of Post NL?"
 
 ### GUI:
 
