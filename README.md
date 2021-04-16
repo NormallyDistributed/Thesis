@@ -8,8 +8,8 @@ Define paths in framework/spert/configs/example_predict.conf
 
 ### Terminal:
 
-* Usage: python entity_linking.py -q "NATURAL LANGUAGE QUESTION"
-* Example: python entity_linking.py "What is the ticker symbol of Post NL?"
+* Usage: python kgqa.py -q "NATURAL LANGUAGE QUESTION"
+* Example: python kgqa.py "What is the ticker symbol of Post NL?"
 
 ### GUI:
 
