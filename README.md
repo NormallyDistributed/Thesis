@@ -2,6 +2,9 @@
 
 The semantic question answering system can either be accessed via Terminal or using a simple GUI.
 
+## Download: Pre-traind model
+https://www.dropbox.com/sh/zl9op0of2g65ct1/AABOOC735aEsEyYaMsdjBLlka?dl=0
+
 ## Run:
 
 Define paths in framework/spert/configs/example_predict.conf
